@@ -1,0 +1,29 @@
+{
+  "reason": { "react-jsx": 3 },
+  "name": "setUI",
+  "sources": [
+    {
+      "dir": "src",
+      "subdirs": true
+    }
+  ],
+  "gentypeconfig": {
+    "language": "typescript",
+    "generatedFileExtension": ".gen.ts",
+    "importPath": "relative",
+    "shims": {
+      "Js": "Js",
+      "React": "ReactShim",
+      "ReactEvent": "ReactEvent",
+      "ReasonPervasives": "ReasonPervasives",
+      "ReasonReact": "ReactShim"
+    },
+    "exportInterfaces": true
+  },
+  "package-specs": {
+    "module": "es6",
+    "in-source": true
+  },
+  "suffix": ".js",
+  "bs-dependencies": ["@rescript/react", "rescript-classnames"]
+}

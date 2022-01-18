@@ -1,0 +1,8 @@
+/node_modules
+/dist
+/.next
+/lib
+.npmrc
+.merlin
+src/**/*.js
+src/**/*.gen.ts
