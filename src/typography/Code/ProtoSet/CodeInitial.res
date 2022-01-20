@@ -4,6 +4,22 @@ open Cx
 
 let className = classNameRoot;
 
+type defaultProps = {
+  color: Color.t,
+
+  fontSize: FontSize.t,
+  fontWeight: FontWeight.t,
+  fontFamily: FontFamily.t,
+  fontStyle: FontStyle.t,
+
+  textDecorationColor: TextDecorationColor.t,
+  textDecorationLine: TextDecorationLine.t,
+  textDecorationStyle: TextDecorationStyle.t,
+  textDecorationThickness: TextDecorationThickness.t,
+
+  textTransform: TextTransform.t,
+}
+
 @genType
 type tag = [
   | CodeHTML.tag

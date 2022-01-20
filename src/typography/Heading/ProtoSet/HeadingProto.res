@@ -1,4 +1,7 @@
 @genType
+type defaultProps = HeadingInitial.defaultProps
+
+@genType
 type level = HeadingInitial.level
 
 @genType
