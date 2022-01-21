@@ -1,5 +1,5 @@
 open Cx
-open HeadingSetDefaultProps
+open HeadingSetStyleProps
 
 @module("./HeadingSetStyle.css.js") external classNameRoot: string = "className"
 
@@ -12,38 +12,38 @@ let make = (
   ~tag: option<HeadingProto.tag>,
   ~className: option<string>,
 
-  ~charsPerLine: CharsPerLine.t = defaultProps.charsPerLine,
-  ~color: Color.t = defaultProps.color,
-  ~contentAlign: ContentAlign.t = defaultProps.contentAlign,
+  ~charsPerLine: CharsPerLine.t = styleProps.charsPerLine,
+  ~color: Color.t = styleProps.color,
+  ~contentAlign: ContentAlign.t = styleProps.contentAlign,
 
-  ~fontSize: FontSize.t = defaultProps.fontSize,
-  ~fontWeight: FontWeight.t = defaultProps.fontWeight,
-  ~fontFamily: FontFamily.t = defaultProps.fontFamily,
-  ~fontStyle: FontStyle.t = defaultProps.fontStyle,
+  ~fontSize: FontSize.t = styleProps.fontSize,
+  ~fontWeight: FontWeight.t = styleProps.fontWeight,
+  ~fontFamily: FontFamily.t = styleProps.fontFamily,
+  ~fontStyle: FontStyle.t = styleProps.fontStyle,
 
-  ~textDecorationColor: TextDecorationColor.t = defaultProps.textDecorationColor,
-  ~textDecorationLine: TextDecorationLine.t = defaultProps.textDecorationLine,
-  ~textDecorationStyle: TextDecorationStyle.t = defaultProps.textDecorationStyle,
-  ~textDecorationThickness: TextDecorationThickness.t = defaultProps.textDecorationThickness,
+  ~textDecorationColor: TextDecorationColor.t = styleProps.textDecorationColor,
+  ~textDecorationLine: TextDecorationLine.t = styleProps.textDecorationLine,
+  ~textDecorationStyle: TextDecorationStyle.t = styleProps.textDecorationStyle,
+  ~textDecorationThickness: TextDecorationThickness.t = styleProps.textDecorationThickness,
 
-  ~textTransform: TextTransform.t = defaultProps.textTransform,
+  ~textTransform: TextTransform.t = styleProps.textTransform,
 
-  ~hyphens: Hyphens.t = defaultProps.hyphens,
-  ~overflowWrap: OverflowWrap.t = defaultProps.overflowWrap,
-  ~textOverflow: TextOverflow.t = defaultProps.textOverflow,
-  ~wordBreak: WordBreak.t = defaultProps.wordBreak,
+  ~hyphens: Hyphens.t = styleProps.hyphens,
+  ~overflowWrap: OverflowWrap.t = styleProps.overflowWrap,
+  ~textOverflow: TextOverflow.t = styleProps.textOverflow,
+  ~wordBreak: WordBreak.t = styleProps.wordBreak,
 
   // margin
-  ~marginBlockEnd: MarginBlockEnd.t = defaultProps.marginBlockEnd,
-  ~marginBlockStart: MarginBlockStart.t = defaultProps.marginBlockStart,
-  ~marginInlineEnd: MarginInlineEnd.t = defaultProps.marginInlineEnd,
-  ~marginInlineStart: MarginInlineStart.t = defaultProps.marginInlineStart,
+  ~marginBlockEnd: MarginBlockEnd.t = styleProps.marginBlockEnd,
+  ~marginBlockStart: MarginBlockStart.t = styleProps.marginBlockStart,
+  ~marginInlineEnd: MarginInlineEnd.t = styleProps.marginInlineEnd,
+  ~marginInlineStart: MarginInlineStart.t = styleProps.marginInlineStart,
 
   // padding
-  ~paddingBlockEnd: PaddingBlockEnd.t = defaultProps.paddingBlockEnd,
-  ~paddingBlockStart: PaddingBlockStart.t = defaultProps.paddingBlockStart,
-  ~paddingInlineStart: PaddingInlineEnd.t = defaultProps.paddingInlineStart,
-  ~paddingInlineEnd: PaddingInlineStart.t = defaultProps.paddingInlineEnd,
+  ~paddingBlockEnd: PaddingBlockEnd.t = styleProps.paddingBlockEnd,
+  ~paddingBlockStart: PaddingBlockStart.t = styleProps.paddingBlockStart,
+  ~paddingInlineStart: PaddingInlineEnd.t = styleProps.paddingInlineStart,
+  ~paddingInlineEnd: PaddingInlineStart.t = styleProps.paddingInlineEnd,
 
   ~children: React.element,
 ) => HeadingProto.make({

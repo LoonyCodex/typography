@@ -1,5 +1,5 @@
 open Cx
-open CodeDefaultProps
+open CodeStyleProps
 
 @module("./CodeStyle.css.js") external classNameRoot: string = "className"
 
@@ -13,16 +13,16 @@ let make = (
   ~color: option<Color.t>,
 
   ~fontSize: option<FontSize.t>,
-  ~fontWeight: FontWeight.t = defaultProps.fontWeight,
-  ~fontFamily: FontFamily.t = defaultProps.fontFamily,
-  ~fontStyle: FontStyle.t = defaultProps.fontStyle,
+  ~fontWeight: FontWeight.t = styleProps.fontWeight,
+  ~fontFamily: FontFamily.t = styleProps.fontFamily,
+  ~fontStyle: FontStyle.t = styleProps.fontStyle,
 
-  ~textDecorationColor: TextDecorationColor.t = defaultProps.textDecorationColor,
-  ~textDecorationLine: TextDecorationLine.t = defaultProps.textDecorationLine,
-  ~textDecorationStyle: TextDecorationStyle.t = defaultProps.textDecorationStyle,
-  ~textDecorationThickness: TextDecorationThickness.t = defaultProps.textDecorationThickness,
+  ~textDecorationColor: TextDecorationColor.t = styleProps.textDecorationColor,
+  ~textDecorationLine: TextDecorationLine.t = styleProps.textDecorationLine,
+  ~textDecorationStyle: TextDecorationStyle.t = styleProps.textDecorationStyle,
+  ~textDecorationThickness: TextDecorationThickness.t = styleProps.textDecorationThickness,
 
-  ~textTransform: TextTransform.t = defaultProps.textTransform,
+  ~textTransform: TextTransform.t = styleProps.textTransform,
 
   ~children: React.element,
 ) => {
@@ -44,7 +44,7 @@ let make = (
     | Some(e) => e
     | None => switch colorCtx {
       | Some(l) => l
-      | None => defaultProps.color
+      | None => styleProps.color
       }
     },
 
@@ -54,7 +54,7 @@ let make = (
     | Some(e) => e
     | None => switch fontSizeCtx {
       | Some(l) => l
-      | None => defaultProps.fontSize
+      | None => styleProps.fontSize
       }
     },
     "fontStyle": fontStyle,

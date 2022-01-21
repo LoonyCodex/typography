@@ -1,5 +1,5 @@
 @genType
-type defaultProps = TextContainerInitial.defaultProps
+type styleProps = TextContainerInitial.styleProps
 
 @genType
 type tag = TextContainerInitial.tag

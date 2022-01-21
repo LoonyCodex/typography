@@ -1,5 +1,5 @@
 @genType
-type defaultProps = LinkInitial.defaultProps
+type styleProps = LinkInitial.styleProps
 
 @genType
 type tag = LinkInitial.tag

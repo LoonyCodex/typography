@@ -1,5 +1,5 @@
 @genType
-type defaultProps = CodeInitial.defaultProps
+type styleProps = CodeInitial.styleProps
 
 @genType
 type tag = CodeInitial.tag

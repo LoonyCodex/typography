@@ -1,5 +1,5 @@
 @genType
-type defaultProps = HeadingInitial.defaultProps
+type styleProps = HeadingInitial.styleProps
 
 @genType
 type level = HeadingInitial.level

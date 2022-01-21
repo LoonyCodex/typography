@@ -4,7 +4,8 @@ open Cx
 
 let className = classNameRoot;
 
-type defaultProps = {
+@genType
+type styleProps = {
   charsPerLine: CharsPerLine.t,
   color: Color.t,
   contentAlign: ContentAlign.t,

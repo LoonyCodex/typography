@@ -1,5 +1,5 @@
 @genType
-type defaultProps = TimeInitial.defaultProps
+type styleProps = TimeInitial.styleProps
 
 @genType
 type tag = TimeInitial.tag
