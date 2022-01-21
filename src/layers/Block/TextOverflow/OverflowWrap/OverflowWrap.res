@@ -1,5 +1,3 @@
-let key = "overflowWrap"
-
 @genType
 type t = [
   | #normal
@@ -11,39 +9,40 @@ type t = [
   | #unset
 ]
 
-let initial = #normal;
+let initial: t = #normal;
 
 type value = string;
 
 type options = {
-  "normal": value,
-  "breakWord": value,
-  "anywhere": value,
-  "inherit": value,
-  "initial": value,
-  "revert": value,
-  "unset": value,
+  normal: value,
+  breakWord: value,
+  anywhere: value,
+  inherit: value,
+  initial: value,
+  revert: value,
+  unset: value,
 };
 
 let options = {
-  "normal": "normal",
-  "breakWord": "break-word",
-  "anywhere": "anywhere",
-  "inherit": "inherit",
-  "initial": "initial",
-  "revert": "revert",
-  "unset": "unset",
+  normal: "normal",
+  breakWord: "break-word",
+  anywhere: "anywhere",
+  inherit: "inherit",
+  initial: "initial",
+  revert: "revert",
+  unset: "unset",
 }
 
 type variant = {
-  "normal": string,
-  "breakWord": string,
-  "anywhere": string,
-  "inherit": string,
-  "initial": string,
-  "revert": string,
-  "unset": string,
+  normal: string,
+  breakWord: string,
+  anywhere: string,
+  inherit: string,
+  initial: string,
+  revert: string,
+  unset: string,
 };
 
-type output = { "overflowWrap": value }
-type cssResolve = (value) => output
+type output = { overflowWrap: value }
+type resolve = (value) => output
+type make = (. t) => string

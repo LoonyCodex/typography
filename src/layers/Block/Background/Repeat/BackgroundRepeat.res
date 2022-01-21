@@ -1,5 +1,3 @@
-let key = "backgroundRepeat"
-
 @genType
 type t = [
   | #repeatX
@@ -18,64 +16,65 @@ type t = [
   | #unset
 ]
 
-let initial = #center;
+let initial: t = #noRepeat;
 
 type value = string;
 
 type options = {
-  "repeatX": value,
-  "repeatY": value,
-  "repeat": value,
-  "space": value,
-  "round": value,
-  "noRepeat": value,
-  "repeat_Space": value,
-  "repeat_Repeat": value,
-  "round_Space": value,
-  "noRepeat_Round": value,
-  "inherit": value,
-  "initial": value,
-  "revert": value,
-  "unset": value,
+  repeatX: value,
+  repeatY: value,
+  repeat: value,
+  space: value,
+  round: value,
+  noRepeat: value,
+  repeat_Space: value,
+  repeat_Repeat: value,
+  round_Space: value,
+  noRepeat_Round: value,
+  inherit: value,
+  initial: value,
+  revert: value,
+  unset: value,
 };
 
 let options = {
-  "repeatX": "repeat-x",
-  "repeatY": "repeat-y",
-  "repeat": "repeat",
-  "space": "space",
-  "round": "round",
-  "noRepeat": "no-repeat",
+  repeatX: "repeat-x",
+  repeatY: "repeat-y",
+  repeat: "repeat",
+  space: "space",
+  round: "round",
+  noRepeat: "no-repeat",
 
   /* Two-value syntax: horizontal | vertical */
-  "repeat_Space": "repeat space",
-  "repeat_Repeat": "repeat repeat",
-  "round_Space": "round space",
-  "noRepeat_Round": "no-repeat round",
+  repeat_Space: "repeat space",
+  repeat_Repeat: "repeat repeat",
+  round_Space: "round space",
+  noRepeat_Round: "no-repeat round",
 
   /* Global values */
-  "inherit": "inherit",
-  "initial": "initial",
-  "revert": "revert",
-  "unset": "unset",
+  inherit: "inherit",
+  initial: "initial",
+  revert: "revert",
+  unset: "unset",
 }
 
 type variant = {
-  "repeatX": string,
-  "repeatY": string,
-  "repeat": string,
-  "space": string,
-  "round": string,
-  "noRepeat": string,
-  "repeat_Space": string,
-  "repeat_Repeat": string,
-  "round_Space": string,
-  "noRepeat_Round": string,
-  "inherit": string,
-  "initial": string,
-  "revert": string,
-  "unset": string,
+  repeatX: string,
+  repeatY: string,
+  repeat: string,
+  space: string,
+  round: string,
+  noRepeat: string,
+  repeat_Space: string,
+  repeat_Repeat: string,
+  round_Space: string,
+  noRepeat_Round: string,
+  inherit: string,
+  initial: string,
+  revert: string,
+  unset: string,
 };
 
-type output = { "backgroundRepeat": value }
-type cssResolve = (value) => output
+type output = { backgroundRepeat: value }
+type resolve = (value) => output
+type make = (. t) => string

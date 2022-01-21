@@ -1,15 +1,4 @@
-open Cx;
-
-@module("./CharsPerLine/CharsPerLineStyle.css.js") external chars: CharsPerLine.variant = "make"
+@module("./CharsPerLine/CharsPerLineStyle.css.js") external chars: CharsPerLine.make = "make"
 
 @genType
-let resolve = (
-  ~charsPerLine: CharsPerLine.t,
-) => cx([
-  switch (charsPerLine) {
-  | #none   => chars["none"]
-  | #small  => chars["small"]
-  | #medium => chars["medium"]
-  | #large  => chars["large"]
-  },
-]);
+let resolve = (~charsPerLine: CharsPerLine.t) => chars(. charsPerLine);

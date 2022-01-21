@@ -1,5 +1,3 @@
-let key = "backgroundSize"
-
 @genType
 type t = [
   | #cover
@@ -12,47 +10,48 @@ type t = [
   | #unset
 ]
 
-let initial = #auto;
+let initial: t = #auto;
 
 type value = string;
 
 type options = {
-  "cover": value,
-  "contain": value,
-  "50": value,
-  "auto": value,
-  "inherit": value,
-  "initial": value,
-  "revert": value,
-  "unset": value,
+  cover: value,
+  contain: value,
+  @as("50") n50: value,
+  auto: value,
+  inherit: value,
+  initial: value,
+  revert: value,
+  unset: value,
 };
 
 let options = {
   /* Keyword values */
-  "cover": "cover",
-  "contain": "contain",
+  cover: "cover",
+  contain: "contain",
 
   /* One-value syntax */
-  "50": "50%",
-  "auto": "auto",
+  n50: "50%",
+  auto: "auto",
 
   /* Global values */
-  "inherit": "inherit",
-  "initial": "initial",
-  "revert": "revert",
-  "unset": "unset",
+  inherit: "inherit",
+  initial: "initial",
+  revert: "revert",
+  unset: "unset",
 }
 
 type variant = {
-  "cover": string,
-  "contain": string,
-  "50": string,
-  "auto": string,
-  "inherit": string,
-  "initial": string,
-  "revert": string,
-  "unset": string,
+  cover: string,
+  contain: string,
+  @as("50") n50: string,
+  auto: string,
+  inherit: string,
+  initial: string,
+  revert: string,
+  unset: string,
 };
 
-type output = { "backgroundSize": value }
-type cssResolve = (value) => output
+type output = { backgroundSize: value }
+type resolve = (value) => output
+type make = (. t) => string

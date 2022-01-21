@@ -1,5 +1,3 @@
-let key = "textDecorationColor"
-
 @genType
 type t = [
   | #currentColor
@@ -9,33 +7,34 @@ type t = [
   | #white
 ]
 
-let initial = #currentColor;
+let initial: t = #currentColor;
 
 type value = string;
 
 type options = {
-  "currentColor": value,
-  "primary": value,
-  "secondary": value,
-  "black": value,
-  "white": value,
+  currentColor: value,
+  primary: value,
+  secondary: value,
+  black: value,
+  white: value,
 };
 
 let options = {
-  "currentColor": "currentColor",
-  "primary": "#0078D4",
-  "secondary": "#2B88D8",
-  "black": "#000000",
-  "white": "#FFFFFF",
+  currentColor: "currentColor",
+  primary: "#0078D4",
+  secondary: "#2B88D8",
+  black: "#000000",
+  white: "#FFFFFF",
 }
 
 type variant = {
-  "currentColor": string,
-  "primary": string,
-  "secondary": string,
-  "black": string,
-  "white": string,
+  currentColor: string,
+  primary: string,
+  secondary: string,
+  black: string,
+  white: string,
 };
 
-type output = { "textDecorationColor": value }
-type cssResolve = (value) => output
+type output = { textDecorationColor: value }
+type resolve = (value) => output
+type make = (. t) => string

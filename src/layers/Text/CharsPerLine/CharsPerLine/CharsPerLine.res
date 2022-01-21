@@ -1,5 +1,3 @@
-let key = "charsPerLine"
-
 @genType
 type t = [
   | #none
@@ -8,30 +6,31 @@ type t = [
   | #large
 ]
 
-let initial = #none;
+let initial: t = #none;
 
 type value = string;
 
 type options = {
-  "none": value,
-  "small": value,
-  "medium": value,
-  "large": value,
+  none: value,
+  small: value,
+  medium: value,
+  large: value,
 };
 
 let options = {
-  "none": "max-content",
-  "small": "18ch",
-  "medium": "24ch",
-  "large": "36ch",
+  none: "max-content",
+  small: "18ch",
+  medium: "24ch",
+  large: "36ch",
 };
 
 type variant = {
-  "none": string,
-  "small": string,
-  "medium": string,
-  "large": string,
+  none: string,
+  small: string,
+  medium: string,
+  large: string,
 };
 
-type output = { "maxWidth": value }
-type cssResolve = (value) => output
+type output = { maxWidth: value }
+type resolve = (value) => output
+type make = (. t) => string

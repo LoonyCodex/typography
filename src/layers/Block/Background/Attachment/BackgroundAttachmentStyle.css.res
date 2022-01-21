@@ -1,3 +1,19 @@
-@module("@vanilla-extract/css") external styleVariants: (BackgroundAttachment.options, BackgroundAttachment.cssResolve) => BackgroundAttachment.variant = "styleVariants"
+type t = BackgroundAttachment.t
+type options = BackgroundAttachment.options
+type resolve = BackgroundAttachment.resolve
+type variant = BackgroundAttachment.variant
+let { options } = module(BackgroundAttachment)
 
-let make = styleVariants(BackgroundAttachment.options, (value) => {{ "backgroundAttachment": value }})
+@module("@vanilla-extract/css") external styles: (options, resolve) => variant = "styleVariants"
+
+let style = styles(options, (value) => {{ backgroundAttachment: value }})
+
+let make = (key: t) => switch (key) {
+| #scroll  => style.scroll
+| #fixed   => style.fixed
+| #local   => style.local
+| #inherit => style.inherit
+| #initial => style.initial
+| #revert  => style.revert
+| #unset   => style.unset
+};

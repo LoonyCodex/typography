@@ -1,11 +1,24 @@
-@module("@vanilla-extract/css") external styleVariants: (BackgroundColor.options, BackgroundColor.cssResolve) => BackgroundColor.variant = "styleVariants"
+type t = BackgroundColor.t
+type options = BackgroundColor.options
+type resolve = BackgroundColor.resolve
+type variant = BackgroundColor.variant
+let { options } = module(BackgroundColor)
 
-let make = styleVariants(BackgroundColor.options, (value) => {
+@module("@vanilla-extract/css") external styles: (options, resolve) => variant = "styleVariants"
+
+let style = styles(options, (value) => {
   {
-    "--background-hue": value["hue"],
-    "--background-saturation": value["saturation"],
-    "--background-lightness": value["lightness"],
-    "--background-color": "hsl(var(--background-hue) var(--background-saturation) var(--background-lightness) / var(--background-opacity, 1))",
-    "backgroundColor": "var(--background-color)",
+    hue: value.hue,
+    saturation: value.saturation,
+    lightness: value.lightness,
+    color: "hsl(var(--background-hue) var(--background-saturation) var(--background-lightness) / var(--background-opacity, 1))",
+    backgroundColor: "var(--background-color)",
   }
 })
+
+let make = (key: t) => switch (key) {
+| #primary   => style.primary
+| #secondary => style.secondary
+| #white     => style.white
+| #black     => style.black
+};

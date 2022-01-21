@@ -12,45 +12,47 @@ type t = [
   | #xxxlarge
 ]
 
-let initial = #none;
+let initial: t = #none;
 
 type value = int;
 
 type options = {
-  "none": value,
-  "xxxsmall": value,
-  "xxsmall": value,
-  "xsmall": value,
-  "small": value,
-  "medium": value,
-  "large": value,
-  "xlarge": value,
-  "xxlarge": value,
-  "xxxlarge": value,
+  none: value,
+  xxxsmall: value,
+  xxsmall: value,
+  xsmall: value,
+  small: value,
+  medium: value,
+  large: value,
+  xlarge: value,
+  xxlarge: value,
+  xxxlarge: value,
 };
 
 let options = {
-  "none": 0,
-  "xxxsmall": 4,
-  "xxsmall": 8,
-  "xsmall": 12,
-  "small": 16,
-  "medium": 24,
-  "large": 36,
-  "xlarge": 48,
-  "xxlarge": 96,
-  "xxxlarge": 128,
+  none: 0,
+  xxxsmall: 4,
+  xxsmall: 8,
+  xsmall: 12,
+  small: 16,
+  medium: 24,
+  large: 36,
+  xlarge: 48,
+  xxlarge: 96,
+  xxxlarge: 128,
 };
 
 type variant = {
-  "none": string,
-  "xxxsmall": string,
-  "xxsmall": string,
-  "xsmall": string,
-  "small": string,
-  "medium": string,
-  "large": string,
-  "xlarge": string,
-  "xxlarge": string,
-  "xxxlarge": string,
+  none: string,
+  xxxsmall: string,
+  xxsmall: string,
+  xsmall: string,
+  small: string,
+  medium: string,
+  large: string,
+  xlarge: string,
+  xxlarge: string,
+  xxxlarge: string,
 };
+
+type make = (. t) => string

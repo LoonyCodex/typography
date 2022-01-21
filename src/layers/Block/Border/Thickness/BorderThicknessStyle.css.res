@@ -1,3 +1,17 @@
-@module("@vanilla-extract/css") external styleVariants: (BorderThickness.options, BorderThickness.cssResolve) => BorderThickness.variant = "styleVariants"
+type t = BorderThickness.t
+type options = BorderThickness.options
+type resolve = BorderThickness.resolve
+type variant = BorderThickness.variant
+let { options } = module(BorderThickness)
 
-let make = styleVariants(BorderThickness.options, (value) => {{ "borderWidth": value }})
+@module("@vanilla-extract/css") external styles: (options, resolve) => variant = "styleVariants"
+
+let style = styles(options, (value) => {{ borderWidth: value }})
+
+let make = (key: t) => switch (key) {
+| #none   => style.none
+| #thin   => style.thin
+| #light  => style.light
+| #medium => style.medium
+| #bold   => style.bold
+};

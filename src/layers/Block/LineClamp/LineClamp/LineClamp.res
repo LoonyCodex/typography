@@ -1,5 +1,3 @@
-let key = "lineClamp"
-
 @genType
 type t = [
   | #none
@@ -11,85 +9,86 @@ type t = [
   | #6
 ]
 
-let initial = #none;
+let initial: t = #none;
 
 type value = {
-  "overflow": string,
-  "display": string,
-  "-webkit-line-clamp": string,
-  "-webkit-box-orient": string,
+  overflow: string,
+  display: string,
+  @as("-webkit-line-clamp") lineClamp: string,
+  @as("-webkit-box-orient") boxOrient: string,
 }
 
 type options = {
-  "none": value,
-  "1": value,
-  "2": value,
-  "3": value,
-  "4": value,
-  "5": value,
-  "6": value,
+  none: value,
+  @as("1") n1: value,
+  @as("2") n2: value,
+  @as("3") n3: value,
+  @as("4") n4: value,
+  @as("5") n5: value,
+  @as("6") n6: value,
 };
 
 let options = {
-  "none": {
-    "overflow": "initial",
-    "display": "initial",
-    "-webkit-line-clamp": "initial",
-    "-webkit-box-orient": "initial",  
+  none: {
+    overflow: "initial",
+    display: "initial",
+    lineClamp: "initial",
+    boxOrient: "initial",
   },
-  "1": {
-    "overflow": "hidden",
-    "display": "-webkit-box",
-    "-webkit-line-clamp": "1",
-    "-webkit-box-orient": "vertical",  
+  n1: {
+    overflow: "hidden",
+    display: "-webkit-box",
+    lineClamp: "1",
+    boxOrient: "vertical",
   },
-  "2": {
-    "overflow": "hidden",
-    "display": "-webkit-box",
-    "-webkit-line-clamp": "2",
-    "-webkit-box-orient": "vertical",  
+  n2: {
+    overflow: "hidden",
+    display: "-webkit-box",
+    lineClamp: "2",
+    boxOrient: "vertical",
   },
-  "3": {
-    "overflow": "hidden",
-    "display": "-webkit-box",
-    "-webkit-line-clamp": "3",
-    "-webkit-box-orient": "vertical",  
+  n3: {
+    overflow: "hidden",
+    display: "-webkit-box",
+    lineClamp: "3",
+    boxOrient: "vertical",
   },
-  "4": {
-    "overflow": "hidden",
-    "display": "-webkit-box",
-    "-webkit-line-clamp": "4",
-    "-webkit-box-orient": "vertical",  
+  n4: {
+    overflow: "hidden",
+    display: "-webkit-box",
+    lineClamp: "4",
+    boxOrient: "vertical",
   },
-  "5": {
-    "overflow": "hidden",
-    "display": "-webkit-box",
-    "-webkit-line-clamp": "5",
-    "-webkit-box-orient": "vertical",  
+  n5: {
+    overflow: "hidden",
+    display: "-webkit-box",
+    lineClamp: "5",
+    boxOrient: "vertical",
   },
-  "6": {
-    "overflow": "hidden",
-    "display": "-webkit-box",
-    "-webkit-line-clamp": "6",
-    "-webkit-box-orient": "vertical",  
+  n6: {
+    overflow: "hidden",
+    display: "-webkit-box",
+    lineClamp: "6",
+    boxOrient: "vertical",
   },
 }
 
 type variant = {
-  "none": string,
-  "1": string,
-  "2": string,
-  "3": string,
-  "4": string,
-  "5": string,
-  "6": string,
+  none: string,
+  @as("1") n1: string,
+  @as("2") n2: string,
+  @as("3") n3: string,
+  @as("4") n4: string,
+  @as("5") n5: string,
+  @as("6") n6: string,
 };
 
 type output = {
-  "overflow": string,
-  "display": string,
-  "-webkit-line-clamp": string,
-  "-webkit-box-orient": string, 
+  overflow: string,
+  display: string,
+  @as("-webkit-line-clamp") lineClamp: string,
+  @as("-webkit-box-orient") boxOrient: string,
 }
 
-type cssResolve = (value) => output
+type resolve = (value) => output
+type make = (. t) => string

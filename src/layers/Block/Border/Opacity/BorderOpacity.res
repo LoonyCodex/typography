@@ -1,5 +1,3 @@
-let key = "borderOpacity"
-
 @genType
 type t = [
   | #0
@@ -15,51 +13,52 @@ type t = [
   | #100
 ]
 
-let initial = #100;
+let initial: t = #100;
 
 type value = string;
 
 type options = {
-  "0": value,
-  "10": value,
-  "20": value,
-  "30": value,
-  "40": value,
-  "50": value,
-  "60": value,
-  "70": value,
-  "80": value,
-  "90": value,
-  "100": value,
+  @as("0")   n000: value,
+  @as("10")  n010: value,
+  @as("20")  n020: value,
+  @as("30")  n030: value,
+  @as("40")  n040: value,
+  @as("50")  n050: value,
+  @as("60")  n060: value,
+  @as("70")  n070: value,
+  @as("80")  n080: value,
+  @as("90")  n090: value,
+  @as("100") n100: value,
 };
 
 let options = {
-  "0": "0",
-  "10": ".1",
-  "20": ".2",
-  "30": ".3",
-  "40": ".4",
-  "50": ".5",
-  "60": ".6",
-  "70": ".7",
-  "80": ".8",
-  "90": ".9",
-  "100": "1",
+  n000: "0",
+  n010: ".1",
+  n020: ".2",
+  n030: ".3",
+  n040: ".4",
+  n050: ".5",
+  n060: ".6",
+  n070: ".7",
+  n080: ".8",
+  n090: ".9",
+  n100: "1",
 }
 
 type variant = {
-  "0": string,
-  "10": string,
-  "20": string,
-  "30": string,
-  "40": string,
-  "50": string,
-  "60": string,
-  "70": string,
-  "80": string,
-  "90": string,
-  "100": string,
+  @as("0")   n000: string,
+  @as("10")  n010: string,
+  @as("20")  n020: string,
+  @as("30")  n030: string,
+  @as("40")  n040: string,
+  @as("50")  n050: string,
+  @as("60")  n060: string,
+  @as("70")  n070: string,
+  @as("80")  n080: string,
+  @as("90")  n090: string,
+  @as("100") n100: string,
 };
 
-type output = { "--border-opacity": value }
-type cssResolve = (value) => output
+type output = { @as("--border-opacity") opacity: value }
+type resolve = (value) => output
+type make = (. t) => string

@@ -1,5 +1,3 @@
-let key = "textDecorationThickness"
-
 type single = [
   | #auto
   | #fromFont
@@ -31,47 +29,48 @@ type t = [
   | #unset
 ]
 
-let initial = #initial;
+let initial: t = #initial;
 
 type value = string
 
 type options = {
-  "auto": value,
-  "fromFont": value,
-  "thin": value,
-  "light": value,
-  "medium": value,
-  "bold": value,
-  "inherit": value,
-  "initial": value,
-  "unset": value,
+  auto: value,
+  fromFont: value,
+  thin: value,
+  light: value,
+  medium: value,
+  bold: value,
+  inherit: value,
+  initial: value,
+  unset: value,
 };
 
 let options = {
-  "auto": "auto",
-  "fromFont": "fromFont",
+  auto: "auto",
+  fromFont: "fromFont",
 
-  "thin": "1px",
-  "light": "2px",
-  "medium": "3px",
-  "bold": "4px",
+  thin: "1px",
+  light: "2px",
+  medium: "3px",
+  bold: "4px",
 
-  "inherit": "inheritValue",
-  "initial": "initial",
-  "unset": "unset",
+  inherit: "inheritValue",
+  initial: "initial",
+  unset: "unset",
 }
 
 type variant = {
-  "auto": string,
-  "fromFont": string,
-  "thin": string,
-  "light": string,
-  "medium": string,
-  "bold": string,
-  "inherit": string,
-  "initial": string,
-  "unset": string,
+  auto: string,
+  fromFont: string,
+  thin: string,
+  light: string,
+  medium: string,
+  bold: string,
+  inherit: string,
+  initial: string,
+  unset: string,
 };
 
-type output = { "textDecorationThickness": value }
-type cssResolve = (value) => output
+type output = { textDecorationThickness: value }
+type resolve = (value) => output
+type make = (. t) => string

@@ -1,5 +1,3 @@
-let key = "wordBreak"
-
 @genType
 type t = [
   | #normal
@@ -12,42 +10,43 @@ type t = [
   | #unset
 ]
 
-let initial = #normal;
+let initial: t = #normal;
 
 type value = string;
 
 type options = {
-  "normal": value,
-  "breakAll": value,
-  "keepAll": value,
-  "breakWord": value,
-  "inherit": value,
-  "initial": value,
-  "revert": value,
-  "unset": value,
+  normal: value,
+  breakAll: value,
+  keepAll: value,
+  breakWord: value,
+  inherit: value,
+  initial: value,
+  revert: value,
+  unset: value,
 };
 
 let options = {
-  "normal": "normal",
-  "breakAll": "break-all",
-  "keepAll": "keep-all",
-  "breakWord": "break-word",
-  "inherit": "inherit",
-  "initial": "initial",
-  "revert": "revert",
-  "unset": "unset",
+  normal: "normal",
+  breakAll: "break-all",
+  keepAll: "keep-all",
+  breakWord: "break-word",
+  inherit: "inherit",
+  initial: "initial",
+  revert: "revert",
+  unset: "unset",
 }
 
 type variant = {
-  "normal": string,
-  "breakAll": string,
-  "keepAll": string,
-  "breakWord": string,
-  "inherit": string,
-  "initial": string,
-  "revert": string,
-  "unset": string,
+  normal: string,
+  breakAll: string,
+  keepAll: string,
+  breakWord: string,
+  inherit: string,
+  initial: string,
+  revert: string,
+  unset: string,
 };
 
-type output = { "wordBreak": value }
-type cssResolve = (value) => output
+type output = { wordBreak: value }
+type resolve = (value) => output
+type make = (. t) => string

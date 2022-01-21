@@ -1,3 +1,22 @@
-@module("@vanilla-extract/css") external styleVariants: (MarginReflection.options, MarginBlockEnd.cssResolve) => MarginReflection.variant = "styleVariants"
+type t = MarginReflection.t
+type options = MarginReflection.options
+type resolve = MarginBlockEnd.resolve
+type variant = MarginReflection.variant
+let { options } = module(MarginReflection)
 
-let make = styleVariants(MarginReflection.options, (value) => {{ "marginBlockEnd": value }})
+@module("@vanilla-extract/css") external styles: (options, resolve) => variant = "styleVariants"
+
+let style = styles(options, (value) => {{ marginBlockEnd: value }})
+
+let make = (key: t) => switch (key) {
+| #none     => style.none
+| #xxxsmall => style.xxxsmall
+| #xxsmall  => style.xxsmall
+| #xsmall   => style.xsmall
+| #small    => style.small
+| #medium   => style.medium
+| #large    => style.large
+| #xlarge   => style.xlarge
+| #xxlarge  => style.xxlarge
+| #xxxlarge => style.xxxlarge
+};

@@ -1,3 +1,20 @@
-@module("@vanilla-extract/css") external styleVariants: (TextDecorationStyle.options, TextDecorationStyle.cssResolve) => TextDecorationStyle.variant = "styleVariants"
+type t = TextDecorationStyle.t
+type options = TextDecorationStyle.options
+type resolve = TextDecorationStyle.resolve
+type variant = TextDecorationStyle.variant
+let { options } = module(TextDecorationStyle)
 
-let make = styleVariants(TextDecorationStyle.options, (value) => {{ "textDecorationStyle": value }})
+@module("@vanilla-extract/css") external styles: (options, resolve) => variant = "styleVariants"
+
+let style = styles(options, (value) => {{ textDecorationStyle: value }})
+
+let make = (key: t) => switch (key) {
+| #solid   => style.solid
+| #double  => style.double
+| #dotted  => style.dotted
+| #dashed  => style.dashed
+| #wavy    => style.wavy
+| #inherit => style.inherit
+| #initial => style.initial
+| #unset   => style.unset
+};

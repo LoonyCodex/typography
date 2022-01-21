@@ -1,5 +1,3 @@
-let key = "color"
-
 @genType
 type t = [
   | #primary
@@ -11,8 +9,10 @@ type t = [
 let initial: t = #primary;
 
 type variant = {
-  "primary": string,
-  "secondary": string,
-  "black": string,
-  "white": string,
+  primary: string,
+  secondary: string,
+  black: string,
+  white: string,
 };
+
+type make = (. t) => string

@@ -1,5 +1,3 @@
-let key = "hyphens"
-
 @genType
 type t = [
   | #none
@@ -11,39 +9,40 @@ type t = [
   | #unset
 ]
 
-let initial = #manual;
+let initial: t = #manual;
 
 type value = string;
 
 type options = {
-  "none": value,
-  "manual": value,
-  "auto": value,
-  "inherit": value,
-  "initial": value,
-  "revert": value,
-  "unset": value,
+  none: value,
+  manual: value,
+  auto: value,
+  inherit: value,
+  initial: value,
+  revert: value,
+  unset: value,
 };
 
 let options = {
-  "none": "none",
-  "manual": "manual",
-  "auto": "auto",
-  "inherit": "inherit",
-  "initial": "initial",
-  "revert": "revert",
-  "unset": "unset",
+  none: "none",
+  manual: "manual",
+  auto: "auto",
+  inherit: "inherit",
+  initial: "initial",
+  revert: "revert",
+  unset: "unset",
 }
 
 type variant = {
-  "none": string,
-  "manual": string,
-  "auto": string,
-  "inherit": string,
-  "initial": string,
-  "revert": string,
-  "unset": string,
+  none: string,
+  manual: string,
+  auto: string,
+  inherit: string,
+  initial: string,
+  revert: string,
+  unset: string,
 };
 
-type output = { "hyphens": value }
-type cssResolve = (value) => output
+type output = { hyphens: value }
+type resolve = (value) => output
+type make = (. t) => string

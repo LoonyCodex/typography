@@ -1,5 +1,3 @@
-let key = "backgroundPosition"
-
 @genType
 type t = [
   | #top
@@ -13,48 +11,49 @@ type t = [
   | #unset
 ]
 
-let initial = #center;
+let initial: t = #center;
 
 type value = string;
 
 type options = {
-  "top": value,
-  "bottom": value,
-  "left": value,
-  "right": value,
-  "center": value,
-  "inherit": value,
-  "initial": value,
-  "revert": value,
-  "unset": value,
+  top: value,
+  bottom: value,
+  left: value,
+  right: value,
+  center: value,
+  inherit: value,
+  initial: value,
+  revert: value,
+  unset: value,
 };
 
 let options = {
   /* Keyword values */
-  "top": "top",
-  "bottom": "bottom",
-  "left": "left",
-  "right": "right",
-  "center": "center",
+  top: "top",
+  bottom: "bottom",
+  left: "left",
+  right: "right",
+  center: "center",
 
   /* Global values */
-  "inherit": "inherit",
-  "initial": "initial",
-  "revert": "revert",
-  "unset": "unset",
+  inherit: "inherit",
+  initial: "initial",
+  revert: "revert",
+  unset: "unset",
 }
 
 type variant = {
-  "top": string,
-  "bottom": string,
-  "left": string,
-  "right": string,
-  "center": string,
-  "inherit": string,
-  "initial": string,
-  "revert": string,
-  "unset": string,
+  top: string,
+  bottom: string,
+  left: string,
+  right: string,
+  center: string,
+  inherit: string,
+  initial: string,
+  revert: string,
+  unset: string,
 };
 
-type output = { "backgroundPosition": value }
-type cssResolve = (value) => output
+type output = { backgroundPosition: value }
+type resolve = (value) => output
+type make = (. t) => string
