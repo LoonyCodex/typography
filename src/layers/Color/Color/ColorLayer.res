@@ -1,4 +1,2 @@
-@module("./ColorStyle.css.js") external colorStyle: ColorReflection.make = "make"
-
 @genType
-let resolve = (~color: ColorReflection.t) => colorStyle(. color);
+let resolve = (~color: ColorReflection.t) => ColorResolver.make(. color);

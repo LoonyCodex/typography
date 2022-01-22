@@ -1,4 +1,3 @@
-type t = BackgroundColor.t
 type options = BackgroundColor.options
 type resolve = BackgroundColor.resolve
 type variant = BackgroundColor.variant
@@ -6,7 +5,7 @@ let { options } = module(BackgroundColor)
 
 @module("@vanilla-extract/css") external styles: (options, resolve) => variant = "styleVariants"
 
-let style = styles(options, (value) => {
+let make = styles(options, (value) => {
   {
     hue: value.hue,
     saturation: value.saturation,
@@ -15,10 +14,3 @@ let style = styles(options, (value) => {
     backgroundColor: "var(--background-color)",
   }
 })
-
-let make = (key: t) => switch (key) {
-| #primary   => style.primary
-| #secondary => style.secondary
-| #white     => style.white
-| #black     => style.black
-};
