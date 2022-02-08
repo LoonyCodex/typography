@@ -1,6 +1,6 @@
 {
   "private": false,
-  "version": "0.0.2",
+  "version": "0.0.5",
   "type": "module",
   "main": "dist/index.gen.js",
   "module": "dist/index.gen.js",
@@ -18,9 +18,9 @@
     "access": "public",
     "registry": "https://npm.pkg.github.com"
   },
-  "homepage": "http://ProtoSetUI.github.io/typography",
-  "name": "@ProtoSetUI/typography",
-  "repository": "git://github.com/ProtoSetUI/typography.git",
+  "homepage": "http://LoonyCodex.github.io/typography",
+  "name": "@LoonyCodex/typography",
+  "repository": "git://github.com/LoonyCodex/typography.git",
   "scripts": {
     "ts-types": "tsc --emitDeclarationOnly --outDir dist",
     "build": "rimraf lib && rimraf dist && npx yarn re:build && node scripts/build.cjs && npm run ts-types",
