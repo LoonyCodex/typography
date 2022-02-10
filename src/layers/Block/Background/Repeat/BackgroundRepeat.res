@@ -16,26 +16,48 @@ type t = [
   | #unset
 ]
 
-let initial: t = #noRepeat;
+let args: array<t> = [
+  #repeatX,
+  #repeatY,
+  #repeat,
+  #space,
+  #round,
+  #noRepeat,
+  #repeat_Space,
+  #repeat_Repeat,
+  #round_Space,
+  #noRepeat_Round,
+  #inherit,
+  #initial,
+  #revert,
+  #unset,
+]
+
+type r<'a> = {
+  repeatX: 'a,
+  repeatY: 'a,
+  repeat: 'a,
+  space: 'a,
+  round: 'a,
+  noRepeat: 'a,
+  repeat_Space: 'a,
+  repeat_Repeat: 'a,
+  round_Space: 'a,
+  noRepeat_Round: 'a,
+  inherit: 'a,
+  initial: 'a,
+  revert: 'a,
+  unset: 'a,
+}
 
 type value = string;
+type options = r<value>;
+type variant = r<string>;
+type output = { backgroundRepeat: value }
+type resolve = (value) => output
+type make = (. t) => string
 
-type options = {
-  repeatX: value,
-  repeatY: value,
-  repeat: value,
-  space: value,
-  round: value,
-  noRepeat: value,
-  repeat_Space: value,
-  repeat_Repeat: value,
-  round_Space: value,
-  noRepeat_Round: value,
-  inherit: value,
-  initial: value,
-  revert: value,
-  unset: value,
-};
+let initial: t = #noRepeat;
 
 let options = {
   repeatX: "repeat-x",
@@ -57,24 +79,3 @@ let options = {
   revert: "revert",
   unset: "unset",
 }
-
-type variant = {
-  repeatX: string,
-  repeatY: string,
-  repeat: string,
-  space: string,
-  round: string,
-  noRepeat: string,
-  repeat_Space: string,
-  repeat_Repeat: string,
-  round_Space: string,
-  noRepeat_Round: string,
-  inherit: string,
-  initial: string,
-  revert: string,
-  unset: string,
-};
-
-type output = { backgroundRepeat: value }
-type resolve = (value) => output
-type make = (. t) => string

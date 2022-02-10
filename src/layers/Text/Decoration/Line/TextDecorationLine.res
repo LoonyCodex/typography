@@ -14,24 +14,44 @@ type t = [
   | #unset
 ]
 
+let args: array<t> = [
+  #none,
+  #underline,
+  #overline,
+  #lineThrough,
+  #blink,
+  #overline_lineThrough,
+  #overline_underline,
+  #lineThrough_underline,
+  #overline_lineThrough_underline,
+  #inherit,
+  #initial,
+  #unset,
+]
+
+type r<'a> = {
+  none: 'a,
+  underline: 'a,
+  overline: 'a,
+  lineThrough: 'a,
+  blink: 'a,
+  overline_lineThrough: 'a,
+  overline_underline: 'a,
+  lineThrough_underline: 'a,
+  overline_lineThrough_underline: 'a,
+  inherit: 'a,
+  initial: 'a,
+  unset: 'a,
+}
+
+type value = string;
+type options = r<value>;
+type variant = r<string>;
+type output = { textDecorationLine: value }
+type resolve = (value) => output
+type make = (. t) => string
+
 let initial: t = #none;
-
-type value = string
-
-type options = {
-  none: value,
-  underline: value,
-  overline: value,
-  lineThrough: value,
-  blink: value,
-  overline_lineThrough: value,
-  overline_underline: value,
-  lineThrough_underline: value,
-  overline_lineThrough_underline: value,
-  inherit: value,
-  initial: value,
-  unset: value,
-};
 
 let options = {
   none: "none",
@@ -47,22 +67,3 @@ let options = {
   initial: "initial",
   unset: "unset",
 }
-
-type variant = {
-  none: string,
-  underline: string,
-  overline: string,
-  lineThrough: string,
-  blink: string,
-  overline_lineThrough: string,
-  overline_underline: string,
-  lineThrough_underline: string,
-  overline_lineThrough_underline: string,
-  inherit: string,
-  initial: string,
-  unset: string,
-};
-
-type output = { textDecorationLine: value }
-type resolve = (value) => output
-type make = (. t) => string

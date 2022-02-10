@@ -10,20 +10,36 @@ type t = [
   | #unset
 ]
 
-let initial: t = #solid;
+let args: array<t> = [
+  #solid,
+  #double,
+  #dotted,
+  #dashed,
+  #wavy,
+  #inherit,
+  #initial,
+  #unset,
+]
+
+type r<'a> = {
+  solid: 'a,
+  double: 'a,
+  dotted: 'a,
+  dashed: 'a,
+  wavy: 'a,
+  inherit: 'a,
+  initial: 'a,
+  unset: 'a,
+}
 
 type value = string;
+type options = r<value>;
+type variant = r<string>;
+type output = { textDecorationStyle: value }
+type resolve = (value) => output
+type make = (. t) => string
 
-type options = {
-  solid: value,
-  double: value,
-  dotted: value,
-  dashed: value,
-  wavy: value,
-  inherit: value,
-  initial: value,
-  unset: value,
-};
+let initial: t = #solid;
 
 let options = {
   solid: "solid",
@@ -35,18 +51,3 @@ let options = {
   initial: "initial",
   unset: "unset",
 }
-
-type variant = {
-  solid: string,
-  double: string,
-  dotted: string,
-  dashed: string,
-  wavy: string,
-  inherit: string,
-  initial: string,
-  unset: string,
-};
-
-type output = { textDecorationStyle: value }
-type resolve = (value) => output
-type make = (. t) => string

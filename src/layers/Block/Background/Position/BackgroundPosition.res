@@ -11,21 +11,38 @@ type t = [
   | #unset
 ]
 
-let initial: t = #center;
+let args: array<t> = [
+  #top,
+  #bottom,
+  #left,
+  #right,
+  #center,
+  #inherit,
+  #initial,
+  #revert,
+  #unset,
+]
+
+type r<'a> = {
+  top: 'a,
+  bottom: 'a,
+  left: 'a,
+  right: 'a,
+  center: 'a,
+  inherit: 'a,
+  initial: 'a,
+  revert: 'a,
+  unset: 'a,
+}
 
 type value = string;
+type options = r<value>;
+type variant = r<string>;
+type output = { backgroundPosition: value }
+type resolve = (value) => output
+type make = (. t) => string
 
-type options = {
-  top: value,
-  bottom: value,
-  left: value,
-  right: value,
-  center: value,
-  inherit: value,
-  initial: value,
-  revert: value,
-  unset: value,
-};
+let initial: t = #center;
 
 let options = {
   /* Keyword values */
@@ -41,19 +58,3 @@ let options = {
   revert: "revert",
   unset: "unset",
 }
-
-type variant = {
-  top: string,
-  bottom: string,
-  left: string,
-  right: string,
-  center: string,
-  inherit: string,
-  initial: string,
-  revert: string,
-  unset: string,
-};
-
-type output = { backgroundPosition: value }
-type resolve = (value) => output
-type make = (. t) => string

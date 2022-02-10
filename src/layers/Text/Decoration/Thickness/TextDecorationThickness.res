@@ -1,21 +1,3 @@
-type single = [
-  | #auto
-  | #fromFont
-]
-
-type pixels = [
-  | #thin
-  | #light
-  | #medium
-  | #bold
-]
-
-type global = [
-  | #inherit
-  | #initial
-  | #unset
-]
-
 @genType
 type t = [
   | #auto
@@ -29,21 +11,38 @@ type t = [
   | #unset
 ]
 
+let args: array<t> = [
+  #auto,
+  #fromFont,
+  #thin,
+  #light,
+  #medium,
+  #bold,
+  #inherit,
+  #initial,
+  #unset,
+]
+
+type r<'a> = {
+  auto: 'a,
+  fromFont: 'a,
+  thin: 'a,
+  light: 'a,
+  medium: 'a,
+  bold: 'a,
+  inherit: 'a,
+  initial: 'a,
+  unset: 'a,
+}
+
+type value = string;
+type options = r<value>;
+type variant = r<string>;
+type output = { textDecorationThickness: value }
+type resolve = (value) => output
+type make = (. t) => string
+
 let initial: t = #initial;
-
-type value = string
-
-type options = {
-  auto: value,
-  fromFont: value,
-  thin: value,
-  light: value,
-  medium: value,
-  bold: value,
-  inherit: value,
-  initial: value,
-  unset: value,
-};
 
 let options = {
   auto: "auto",
@@ -58,19 +57,3 @@ let options = {
   initial: "initial",
   unset: "unset",
 }
-
-type variant = {
-  auto: string,
-  fromFont: string,
-  thin: string,
-  light: string,
-  medium: string,
-  bold: string,
-  inherit: string,
-  initial: string,
-  unset: string,
-};
-
-type output = { textDecorationThickness: value }
-type resolve = (value) => output
-type make = (. t) => string

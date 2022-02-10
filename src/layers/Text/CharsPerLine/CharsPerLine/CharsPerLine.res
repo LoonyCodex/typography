@@ -6,16 +6,28 @@ type t = [
   | #large
 ]
 
-let initial: t = #none;
+let args: array<t> = [
+  #none,
+  #small,
+  #medium,
+  #large,
+]
+
+type r<'a> = {
+  none: 'a,
+  small: 'a,
+  medium: 'a,
+  large: 'a,
+}
 
 type value = string;
+type options = r<value>;
+type variant = r<string>;
+type output = { maxWidth: value }
+type resolve = (value) => output
+type make = (. t) => string
 
-type options = {
-  none: value,
-  small: value,
-  medium: value,
-  large: value,
-};
+let initial: t = #none;
 
 let options = {
   none: "max-content",
@@ -23,14 +35,3 @@ let options = {
   medium: "24ch",
   large: "36ch",
 };
-
-type variant = {
-  none: string,
-  small: string,
-  medium: string,
-  large: string,
-};
-
-type output = { maxWidth: value }
-type resolve = (value) => output
-type make = (. t) => string

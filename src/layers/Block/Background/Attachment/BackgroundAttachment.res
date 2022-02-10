@@ -9,19 +9,34 @@ type t = [
   | #unset
 ]
 
-let initial: t = #scroll;
+let args: array<t> = [
+  #scroll,
+  #fixed,
+  #local,
+  #inherit,
+  #initial,
+  #revert,
+  #unset,
+]
+
+type r<'a> = {
+  scroll: 'a,
+  fixed: 'a,
+  local: 'a,
+  inherit: 'a,
+  initial: 'a,
+  revert: 'a,
+  unset: 'a,
+}
 
 type value = string;
+type options = r<value>;
+type variant = r<string>;
+type output = { backgroundAttachment: value }
+type resolve = (value) => output
+type make = (. t) => string
 
-type options = {
-  scroll: value,
-  fixed: value,
-  local: value,
-  inherit: value,
-  initial: value,
-  revert: value,
-  unset: value,
-};
+let initial: t = #scroll;
 
 let options = {
   /* Keyword values */
@@ -35,17 +50,3 @@ let options = {
   revert: "revert",
   unset: "unset",
 }
-
-type variant = {
-  scroll: string,
-  fixed: string,
-  local: string,
-  inherit: string,
-  initial: string,
-  revert: string,
-  unset: string,
-};
-
-type output = { backgroundAttachment: value }
-type resolve = (value) => output
-type make = (. t) => string

@@ -8,18 +8,32 @@ type t = [
   | #fullSizeKana
 ]
 
-let initial: t = #none;
+let args: array<t> = [
+  #none,
+  #uppercase,
+  #lowercase,
+  #capitalize,
+  #fullWidth,
+  #fullSizeKana,
+]
+
+type r<'a> = {
+  none: 'a,
+  uppercase: 'a,
+  lowercase: 'a,
+  capitalize: 'a,
+  fullWidth: 'a,
+  fullSizeKana: 'a,
+}
 
 type value = string;
+type options = r<value>;
+type variant = r<string>;
+type output = { textTransform: value }
+type resolve = (value) => output
+type make = (. t) => string
 
-type options = {
-  none: value,
-  uppercase: value,
-  lowercase: value,
-  capitalize: value,
-  fullWidth: value,
-  fullSizeKana: value,
-};
+let initial: t = #none;
 
 let options = {
   none: "none",
@@ -29,16 +43,3 @@ let options = {
   fullWidth: "full-width",
   fullSizeKana: "full-size-kana",
 }
-
-type variant = {
-  none: string,
-  uppercase: string,
-  lowercase: string,
-  capitalize: string,
-  fullWidth: string,
-  fullSizeKana: string,
-};
-
-type output = { textTransform: value }
-type resolve = (value) => output
-type make = (. t) => string

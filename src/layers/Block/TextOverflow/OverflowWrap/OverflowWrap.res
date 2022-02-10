@@ -9,19 +9,34 @@ type t = [
   | #unset
 ]
 
-let initial: t = #normal;
+let args: array<t> = [
+  #normal,
+  #breakWord,
+  #anywhere,
+  #inherit,
+  #initial,
+  #revert,
+  #unset,
+]
+
+type r<'a> = {
+  normal: 'a,
+  breakWord: 'a,
+  anywhere: 'a,
+  inherit: 'a,
+  initial: 'a,
+  revert: 'a,
+  unset: 'a,
+}
 
 type value = string;
+type options = r<value>;
+type variant = r<string>;
+type output = { overflowWrap: value }
+type resolve = (value) => output
+type make = (. t) => string
 
-type options = {
-  normal: value,
-  breakWord: value,
-  anywhere: value,
-  inherit: value,
-  initial: value,
-  revert: value,
-  unset: value,
-};
+let initial: t = #normal;
 
 let options = {
   normal: "normal",
@@ -32,17 +47,3 @@ let options = {
   revert: "revert",
   unset: "unset",
 }
-
-type variant = {
-  normal: string,
-  breakWord: string,
-  anywhere: string,
-  inherit: string,
-  initial: string,
-  revert: string,
-  unset: string,
-};
-
-type output = { overflowWrap: value }
-type resolve = (value) => output
-type make = (. t) => string

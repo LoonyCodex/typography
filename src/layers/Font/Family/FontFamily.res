@@ -4,25 +4,26 @@ type t = [
   | #monospace
 ]
 
-let initial: t = #primary;
+let args: array<t> = [
+  #primary,
+  #monospace,
+]
+
+type r<'a> = {
+  primary: 'a,
+  monospace: 'a,
+}
 
 type value = string;
+type options = r<value>;
+type variant = r<string>;
+type output = { fontFamily: value }
+type resolve = (value) => output
+type make = (. t) => string
 
-type options = {
-  primary: value,
-  monospace: value,
-};
+let initial: t = #primary;
 
 let options = {
   primary: "'Montserrat', Arial, sans-serif",
   monospace: "monospace",
 };
-
-type variant = {
-  primary: string,
-  monospace: string,
-};
-
-type output = { fontFamily: value }
-type resolve = (value) => output
-type make = (. t) => string

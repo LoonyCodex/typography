@@ -7,17 +7,30 @@ type t = [
   | #bold
 ]
 
-let initial: t = #none;
+let args: array<t> = [
+  #none,
+  #thin,
+  #light,
+  #medium,
+  #bold,
+]
+
+type r<'a> = {
+  none: 'a,
+  thin: 'a,
+  light: 'a,
+  medium: 'a,
+  bold: 'a,
+}
 
 type value = string;
+type options = r<value>;
+type variant = r<string>;
+type output = { borderWidth: value }
+type resolve = (value) => output
+type make = (. t) => string
 
-type options = {
-  none: value,
-  thin: value,
-  light: value,
-  medium: value,
-  bold: value,
-};
+let initial: t = #none;
 
 let options = {
   none: "0px",
@@ -26,15 +39,3 @@ let options = {
   medium: "3px",
   bold: "4px",
 }
-
-type variant = {
-  none: string,
-  thin: string,
-  light: string,
-  medium: string,
-  bold: string,
-};
-
-type output = { borderWidth: value }
-type resolve = (value) => output
-type make = (. t) => string

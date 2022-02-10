@@ -9,26 +9,46 @@ type t = [
   | #6
 ]
 
-let initial: t = #none;
+let args: array<t> = [
+  #none,
+  #1,
+  #2,
+  #3,
+  #4,
+  #5,
+  #6,
+]
+
+type r<'a> = {
+  none: 'a,
+  @as("1") n1: 'a,
+  @as("2") n2: 'a,
+  @as("3") n3: 'a,
+  @as("4") n4: 'a,
+  @as("5") n5: 'a,
+  @as("6") n6: 'a,
+}
 
 type value = {
+  overflow: string,
+  display: string,
+  lineClamp: string,
+  boxOrient: string,
+}
+type options = r<value>;
+type variant = r<string>;
+type output = {
   overflow: string,
   display: string,
   @as("-webkit-line-clamp") lineClamp: string,
   @as("-webkit-box-orient") boxOrient: string,
 }
+type resolve = (value) => output
+type make = (. t) => string
 
-type options = {
-  none: value,
-  @as("1") n1: value,
-  @as("2") n2: value,
-  @as("3") n3: value,
-  @as("4") n4: value,
-  @as("5") n5: value,
-  @as("6") n6: value,
-};
+let initial: t = #none;
 
-let options = {
+let options: options = {
   none: {
     overflow: "initial",
     display: "initial",
@@ -72,23 +92,3 @@ let options = {
     boxOrient: "vertical",
   },
 }
-
-type variant = {
-  none: string,
-  @as("1") n1: string,
-  @as("2") n2: string,
-  @as("3") n3: string,
-  @as("4") n4: string,
-  @as("5") n5: string,
-  @as("6") n6: string,
-};
-
-type output = {
-  overflow: string,
-  display: string,
-  @as("-webkit-line-clamp") lineClamp: string,
-  @as("-webkit-box-orient") boxOrient: string,
-}
-
-type resolve = (value) => output
-type make = (. t) => string

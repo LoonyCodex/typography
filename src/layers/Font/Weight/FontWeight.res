@@ -16,26 +16,48 @@ type t = [
   | #unset
 ]
 
-let initial: t = #normal;
+let args: array<t> = [
+  #thin,
+  #extraLight,
+  #light,
+  #normal,
+  #medium,
+  #semiBold,
+  #bold,
+  #extraBold,
+  #heavy,
+  #lighter,
+  #bolder,
+  #inherit,
+  #initial,
+  #unset,
+]
+
+type r<'a> = {
+  thin: 'a,
+  extraLight: 'a,
+  light: 'a,
+  normal: 'a,
+  medium: 'a,
+  semiBold: 'a,
+  bold: 'a,
+  extraBold: 'a,
+  heavy: 'a,
+  lighter: 'a,
+  bolder: 'a,
+  inherit: 'a,
+  initial: 'a,
+  unset: 'a,
+}
 
 type value = string;
+type options = r<value>;
+type variant = r<string>;
+type output = { fontWeight: value }
+type resolve = (value) => output
+type make = (. t) => string
 
-type options = {
-  thin: value,
-  extraLight: value,
-  light: value,
-  normal: value,
-  medium: value,
-  semiBold: value,
-  bold: value,
-  extraBold: value,
-  heavy: value,
-  lighter: value,
-  bolder: value,
-  inherit: value,
-  initial: value,
-  unset: value,
-};
+let initial: t = #normal;
 
 let options = {
   thin: "100",
@@ -53,24 +75,3 @@ let options = {
   initial: "initial",
   unset: "unset",
 }
-
-type variant = {
-  thin: string,
-  extraLight: string,
-  light: string,
-  normal: string,
-  medium: string,
-  semiBold: string,
-  bold: string,
-  extraBold: string,
-  heavy: string,
-  lighter: string,
-  bolder: string,
-  inherit: string,
-  initial: string,
-  unset: string,
-};
-
-type output = { fontWeight: value }
-type resolve = (value) => output
-type make = (. t) => string

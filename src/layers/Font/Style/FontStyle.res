@@ -8,18 +8,32 @@ type t = [
   | #unset
 ]
 
-let initial: t = #normal;
+let args: array<t> = [
+  #normal,
+  #italic,
+  #oblique,
+  #inherit,
+  #initial,
+  #unset,
+]
+
+type r<'a> = {
+  normal: 'a,
+  italic: 'a,
+  oblique: 'a,
+  inherit: 'a,
+  initial: 'a,
+  unset: 'a,
+}
 
 type value = string;
+type options = r<value>;
+type variant = r<string>;
+type output = { fontStyle: value }
+type resolve = (value) => output
+type make = (. t) => string
 
-type options = {
-  normal: value,
-  italic: value,
-  oblique: value,
-  inherit: value,
-  initial: value,
-  unset: value,
-};
+let initial: t = #normal;
 
 let options = {
   normal: "normal",
@@ -29,16 +43,3 @@ let options = {
   initial: "initial",
   unset: "unset",
 }
-
-type variant = {
-  normal: string,
-  italic: string,
-  oblique: string,
-  inherit: string,
-  initial: string,
-  unset: string,
-};
-
-type output = { fontStyle: value }
-type resolve = (value) => output
-type make = (. t) => string

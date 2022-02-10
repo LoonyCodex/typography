@@ -9,19 +9,34 @@ type t = [
   | #unset
 ]
 
-let initial: t = #paddingBox;
+let args: array<t> = [
+  #borderBox,
+  #paddingBox,
+  #contentBox,
+  #inherit,
+  #initial,
+  #revert,
+  #unset,
+]
+
+type r<'a> = {
+  borderBox: 'a,
+  paddingBox: 'a,
+  contentBox: 'a,
+  inherit: 'a,
+  initial: 'a,
+  revert: 'a,
+  unset: 'a,
+}
 
 type value = string;
+type options = r<value>;
+type variant = r<string>;
+type output = { backgroundOrigin: value }
+type resolve = (value) => output
+type make = (. t) => string
 
-type options = {
-  borderBox: value,
-  paddingBox: value,
-  contentBox: value,
-  inherit: value,
-  initial: value,
-  revert: value,
-  unset: value,
-};
+let initial: t = #paddingBox;
 
 let options = {
   /* Keyword values */
@@ -35,17 +50,3 @@ let options = {
   revert: "revert",
   unset: "unset",
 }
-
-type variant = {
-  borderBox: string,
-  paddingBox: string,
-  contentBox: string,
-  inherit: string,
-  initial: string,
-  revert: string,
-  unset: string,
-};
-
-type output = { backgroundOrigin: value }
-type resolve = (value) => output
-type make = (. t) => string

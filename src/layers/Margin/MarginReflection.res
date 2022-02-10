@@ -12,22 +12,38 @@ type t = [
   | #xxxlarge
 ]
 
-let initial: t = #none;
+let args: array<t> = [
+  #none,
+  #xxxsmall,
+  #xxsmall,
+  #xsmall,
+  #small,
+  #medium,
+  #large,
+  #xlarge,
+  #xxlarge,
+  #xxxlarge,
+]
+
+type r<'a> = {
+  none: 'a,
+  xxxsmall: 'a,
+  xxsmall: 'a,
+  xsmall: 'a,
+  small: 'a,
+  medium: 'a,
+  large: 'a,
+  xlarge: 'a,
+  xxlarge: 'a,
+  xxxlarge: 'a,
+}
 
 type value = int;
+type options = r<value>;
+type variant = r<string>;
+type make = (. t) => string
 
-type options = {
-  none: value,
-  xxxsmall: value,
-  xxsmall: value,
-  xsmall: value,
-  small: value,
-  medium: value,
-  large: value,
-  xlarge: value,
-  xxlarge: value,
-  xxxlarge: value,
-};
+let initial: t = #none;
 
 let options = {
   none: 0,
@@ -41,18 +57,3 @@ let options = {
   xxlarge: 96,
   xxxlarge: 128,
 };
-
-type variant = {
-  none: string,
-  xxxsmall: string,
-  xxsmall: string,
-  xsmall: string,
-  small: string,
-  medium: string,
-  large: string,
-  xlarge: string,
-  xxlarge: string,
-  xxxlarge: string,
-};
-
-type make = (. t) => string

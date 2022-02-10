@@ -16,26 +16,48 @@ type t = [
   | #unset
 ]
 
-let initial: t = #none;
+let args: array<t> = [
+  #none,
+  #hidden,
+  #dotted,
+  #dashed,
+  #solid,
+  #double,
+  #groove,
+  #ridge,
+  #inset,
+  #outset,
+  #inherit,
+  #initial,
+  #revert,
+  #unset,
+]
+
+type r<'a> = {
+  none: 'a,
+  hidden: 'a,
+  dotted: 'a,
+  dashed: 'a,
+  solid: 'a,
+  double: 'a,
+  groove: 'a,
+  ridge: 'a,
+  inset: 'a,
+  outset: 'a,
+  inherit: 'a,
+  initial: 'a,
+  revert: 'a,
+  unset: 'a,
+}
 
 type value = string;
+type options = r<value>;
+type variant = r<string>;
+type output = { borderStyle: value }
+type resolve = (value) => output
+type make = (. t) => string
 
-type options = {
-  none: value,
-  hidden: value,
-  dotted: value,
-  dashed: value,
-  solid: value,
-  double: value,
-  groove: value,
-  ridge: value,
-  inset: value,
-  outset: value,
-  inherit: value,
-  initial: value,
-  revert: value,
-  unset: value,
-};
+let initial: t = #none;
 
 let options = {
   /* Keyword values */
@@ -56,24 +78,3 @@ let options = {
   revert: "revert",
   unset: "unset",
 }
-
-type variant = {
-  none: string,
-  hidden: string,
-  dotted: string,
-  dashed: string,
-  solid: string,
-  double: string,
-  groove: string,
-  ridge: string,
-  inset: string,
-  outset: string,
-  inherit: string,
-  initial: string,
-  revert: string,
-  unset: string,
-};
-
-type output = { borderStyle: value }
-type resolve = (value) => output
-type make = (. t) => string

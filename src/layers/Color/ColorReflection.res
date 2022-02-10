@@ -6,13 +6,21 @@ type t = [
   | #white
 ]
 
-let initial: t = #primary;
+let args: array<t> = [
+  #primary,
+  #secondary,
+  #black,
+  #white,
+]
 
-type variant = {
-  primary: string,
-  secondary: string,
-  black: string,
-  white: string,
-};
+type r<'a> = {
+  primary: 'a,
+  secondary: 'a,
+  black: 'a,
+  white: 'a,
+}
 
+type variant = r<string>;
 type make = (. t) => string
+
+let initial: t = #primary;

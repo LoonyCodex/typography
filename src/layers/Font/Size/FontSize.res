@@ -1,10 +1,7 @@
 @genType
 type t = [
-  // relative
   | #larger
   | #smaller
-
-  // scale
   | #none
   | #xxxsmall
   | #xxsmall
@@ -17,24 +14,47 @@ type t = [
   | #xxxlarge
 ]
 
-let initial: t = #none;
+let args: array<t> = [
+  #larger,
+  #smaller,
+  #none,
+  #xxxsmall,
+  #xxsmall,
+  #xsmall,
+  #small,
+  #medium,
+  #large,
+  #xlarge,
+  #xxlarge,
+  #xxxlarge,
+]
+
+type r<'a> = {
+  larger: 'a,
+  smaller: 'a,
+  none: 'a,
+  xxxsmall: 'a,
+  xxsmall: 'a,
+  xsmall: 'a,
+  small: 'a,
+  medium: 'a,
+  large: 'a,
+  xlarge: 'a,
+  xxlarge: 'a,
+  xxxlarge: 'a,
+}
 
 type value = string;
+type options = r<value>;
+type variant = r<string>;
+type output = {
+  lineHeight: value,
+  fontSize: value
+}
+type resolve = (value) => output
+type make = (. t) => string
 
-type options = {
-  none: value,
-  xxxsmall: value,
-  xxsmall: value,
-  xsmall: value,
-  small: value,
-  medium: value,
-  large: value,
-  xlarge: value,
-  xxlarge: value,
-  xxxlarge: value,
-  smaller: value,
-  larger: value,
-};
+let initial: t = #none;
 
 let options = {
   none    : "0px",
@@ -50,29 +70,6 @@ let options = {
   smaller : "smaller",
   larger  : "larger",
 }
-
-type variant = {
-  none: string,
-  xxxsmall: string,
-  xxsmall: string,
-  xsmall: string,
-  small: string,
-  medium: string,
-  large: string,
-  xlarge: string,
-  xxlarge: string,
-  xxxlarge: string,
-  smaller: string,
-  larger: string,
-};
-
-type output = {
-  lineHeight: value,
-  fontSize: value
-}
-
-type resolve = (value) => output
-type make = (. t) => string
 
 let fontSizeContext: React.Context.t<option<t>> = React.createContext(None)
 let useFontSize = () => React.useContext(fontSizeContext)

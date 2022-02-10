@@ -10,20 +10,36 @@ type t = [
   | #unset
 ]
 
-let initial: t = #auto;
+let args: array<t> = [
+  #cover,
+  #contain,
+  #50,
+  #auto,
+  #inherit,
+  #initial,
+  #revert,
+  #unset,
+]
+
+type r<'a> = {
+  cover: 'a,
+  contain: 'a,
+  @as("50") n50: 'a,
+  auto: 'a,
+  inherit: 'a,
+  initial: 'a,
+  revert: 'a,
+  unset: 'a,
+}
 
 type value = string;
+type options = r<value>;
+type variant = r<string>;
+type output = { backgroundSize: value }
+type resolve = (value) => output
+type make = (. t) => string
 
-type options = {
-  cover: value,
-  contain: value,
-  @as("50") n50: value,
-  auto: value,
-  inherit: value,
-  initial: value,
-  revert: value,
-  unset: value,
-};
+let initial: t = #auto;
 
 let options = {
   /* Keyword values */
@@ -40,18 +56,3 @@ let options = {
   revert: "revert",
   unset: "unset",
 }
-
-type variant = {
-  cover: string,
-  contain: string,
-  @as("50") n50: string,
-  auto: string,
-  inherit: string,
-  initial: string,
-  revert: string,
-  unset: string,
-};
-
-type output = { backgroundSize: value }
-type resolve = (value) => output
-type make = (. t) => string

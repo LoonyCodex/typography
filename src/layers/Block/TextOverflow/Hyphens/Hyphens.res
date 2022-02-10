@@ -9,19 +9,34 @@ type t = [
   | #unset
 ]
 
-let initial: t = #manual;
+let args: array<t> = [
+  #none,
+  #manual,
+  #auto,
+  #inherit,
+  #initial,
+  #revert,
+  #unset,
+]
+
+type r<'a> = {
+  none: 'a,
+  manual: 'a,
+  auto: 'a,
+  inherit: 'a,
+  initial: 'a,
+  revert: 'a,
+  unset: 'a,
+}
 
 type value = string;
+type options = r<value>;
+type variant = r<string>;
+type output = { hyphens: value }
+type resolve = (value) => output
+type make = (. t) => string
 
-type options = {
-  none: value,
-  manual: value,
-  auto: value,
-  inherit: value,
-  initial: value,
-  revert: value,
-  unset: value,
-};
+let initial: t = #manual;
 
 let options = {
   none: "none",
@@ -32,17 +47,3 @@ let options = {
   revert: "revert",
   unset: "unset",
 }
-
-type variant = {
-  none: string,
-  manual: string,
-  auto: string,
-  inherit: string,
-  initial: string,
-  revert: string,
-  unset: string,
-};
-
-type output = { hyphens: value }
-type resolve = (value) => output
-type make = (. t) => string

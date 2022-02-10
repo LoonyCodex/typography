@@ -6,20 +6,38 @@ type t = [
   | #black
 ]
 
-let initial: t = #primary;
+let args: array<t> = [
+  #primary,
+  #secondary,
+  #white,
+  #black,
+]
+
+type r<'a> = {
+  primary: 'a,
+  secondary: 'a,
+  white: 'a,
+  black: 'a,
+}
 
 type value = {
   hue: string,
   saturation: string,
   lightness: string,
 };
+type options = r<value>;
+type variant = r<string>;
+type output = {
+  @as("--border-hue") hue: string,
+  @as("--border-saturation") saturation: string,
+  @as("--border-lightness") lightness: string,
+  @as("--border-color") color: string,
+  borderColor: string,
+}
+type resolve = (value) => output
+type make = (. t) => string
 
-type options = {
-  primary: value,
-  secondary: value,
-  white: value,
-  black: value,
-};
+let initial: t = #primary;
 
 let options = {
   primary: {
@@ -43,21 +61,3 @@ let options = {
     lightness: "0%",
   },
 }
-
-type variant = {
-  primary: string,
-  secondary: string,
-  white: string,
-  black: string,
-};
-
-type output = {
-  @as("--border-hue") hue: string,
-  @as("--border-saturation") saturation: string,
-  @as("--border-lightness") lightness: string,
-  @as("--border-color") color: string,
-  borderColor: string,
-}
-
-type resolve = (value) => output
-type make = (. t) => string

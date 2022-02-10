@@ -8,18 +8,32 @@ type t = [
   | #unset
 ]
 
-let initial: t = #clip;
+let args: array<t> = [
+  #clip,
+  #ellipsis,
+  #inherit,
+  #initial,
+  #revert,
+  #unset,
+]
+
+type r<'a> = {
+  clip: 'a,
+  ellipsis: 'a,
+  inherit: 'a,
+  initial: 'a,
+  revert: 'a,
+  unset: 'a,
+}
 
 type value = string;
+type options = r<value>;
+type variant = r<string>;
+type output = { textOverflow: value }
+type resolve = (value) => output
+type make = (. t) => string
 
-type options = {
-  clip: value,
-  ellipsis: value,
-  inherit: value,
-  initial: value,
-  revert: value,
-  unset: value,
-};
+let initial: t = #clip;
 
 let options = {
   clip: "clip",
@@ -29,16 +43,3 @@ let options = {
   revert: "revert",
   unset: "unset",
 }
-
-type variant = {
-  clip: string,
-  ellipsis: string,
-  inherit: string,
-  initial: string,
-  revert: string,
-  unset: string,
-};
-
-type output = { textOverflow: value }
-type resolve = (value) => output
-type make = (. t) => string

@@ -7,17 +7,30 @@ type t = [
   | #white
 ]
 
-let initial: t = #currentColor;
+let args: array<t> = [
+  #currentColor,
+  #primary,
+  #secondary,
+  #black,
+  #white,
+]
+
+type r<'a> = {
+  currentColor: 'a,
+  primary: 'a,
+  secondary: 'a,
+  black: 'a,
+  white: 'a,
+}
 
 type value = string;
+type options = r<value>;
+type variant = r<string>;
+type output = { textDecorationColor: value }
+type resolve = (value) => output
+type make = (. t) => string
 
-type options = {
-  currentColor: value,
-  primary: value,
-  secondary: value,
-  black: value,
-  white: value,
-};
+let initial: t = #currentColor;
 
 let options = {
   currentColor: "currentColor",
@@ -26,15 +39,3 @@ let options = {
   black: "#000000",
   white: "#FFFFFF",
 }
-
-type variant = {
-  currentColor: string,
-  primary: string,
-  secondary: string,
-  black: string,
-  white: string,
-};
-
-type output = { textDecorationColor: value }
-type resolve = (value) => output
-type make = (. t) => string

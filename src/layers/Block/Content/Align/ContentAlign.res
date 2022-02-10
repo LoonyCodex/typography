@@ -15,25 +15,46 @@ type t = [
   | #unset
 ]
 
-let initial: t = #start;
+let args: array<t> = [
+  #left,
+  #right,
+  #center,
+  #justify,
+  #justifyAll,
+  #start,
+  #end,
+  #matchParent,
+  #dot,
+  #dotCenter,
+  #inherit,
+  #initial,
+  #unset,
+]
+
+type r<'a> = {
+  left: 'a,
+  right: 'a,
+  center: 'a,
+  justify: 'a,
+  justifyAll: 'a,
+  start: 'a,
+  end: 'a,
+  matchParent: 'a,
+  dot: 'a,
+  dotCenter: 'a,
+  inherit: 'a,
+  initial: 'a,
+  unset: 'a,
+}
 
 type value = string;
+type options = r<value>;
+type variant = r<string>;
+type output = { textAlign: value }
+type resolve = (value) => output
+type make = (. t) => string
 
-type options = {
-  left: value,
-  right: value,
-  center: value,
-  justify: value,
-  justifyAll: value,
-  start: value,
-  end: value,
-  matchParent: value,
-  dot: value,
-  dotCenter: value,
-  inherit: value,
-  initial: value,
-  unset: value,
-};
+let initial: t = #start;
 
 let options = {
   /* Keyword values */
@@ -55,23 +76,3 @@ let options = {
   initial: "initial",
   unset: "unset",
 }
-
-type variant = {
-  left: string,
-  right: string,
-  center: string,
-  justify: string,
-  justifyAll: string,
-  start: string,
-  end: string,
-  matchParent: string,
-  dot: string,
-  dotCenter: string,
-  inherit: string,
-  initial: string,
-  unset: string,
-};
-
-type output = { textAlign: value }
-type resolve = (value) => output
-type make = (. t) => string
