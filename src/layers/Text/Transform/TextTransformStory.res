@@ -1,13 +1,4 @@
-type textTransform = StoryBook.argType<TextTransform.t>
-let textTransform = {
-  "options": TextTransform.args,
-  "control": { "type": "select" },
-}
+open StoryBook
 
-type argTypes = {
-  "textTransform": textTransform,
-}
-
-let argTypes = {
-  "textTransform": textTransform,
-}
+type textTransform = Obj
+let textTransform = TextTransform.args -> #select -> toJS

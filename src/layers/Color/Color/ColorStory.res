@@ -1,13 +1,4 @@
-type color = StoryBook.argType<ColorReflection.t>;
-let color = {
-  "options": ColorReflection.args,
-  "control": { "type": "select" },
-}
+open StoryBook
 
-type argTypes = {
-  "color": color,
-}
-
-let argTypes = {
-  "color": color,
-}
+type color = Obj
+let color = ColorReflection.args -> #select -> toJS

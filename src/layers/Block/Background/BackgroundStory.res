@@ -1,69 +1,25 @@
-type backgroundAttachment = StoryBook.argType<BackgroundAttachment.t>
-let backgroundAttachment = {
-  "options": BackgroundAttachment.args,
-  "control": { "type": "select" },
-}
+open StoryBook
 
-type backgroundClip = StoryBook.argType<BackgroundClip.t>
-let backgroundClip = {
-  "options": BackgroundClip.args,
-  "control": { "type": "select" },
-}
+type backgroundAttachment = Obj
+let backgroundAttachment  = BackgroundAttachment.args -> #select -> toJS
 
-type backgroundColor = StoryBook.argType<BackgroundColor.t>
-let backgroundColor = {
-  "options": BackgroundColor.args,
-  "control": { "type": "select" },
-}
+type backgroundClip       = Obj
+let backgroundClip        = BackgroundClip.args       -> #select -> toJS
 
-type backgroundOpacity = StoryBook.argType<BackgroundOpacity.t>
-let backgroundOpacity = {
-  "options": BackgroundOpacity.args,
-  "control": { "type": "select" },
-}
+type backgroundColor      = Obj
+let backgroundColor       = BackgroundColor.args      -> #select -> toJS
 
-type backgroundOrigin = StoryBook.argType<BackgroundOrigin.t>
-let backgroundOrigin = {
-  "options": BackgroundOrigin.args,
-  "control": { "type": "select" },
-}
+type backgroundOpacity    = Obj
+let backgroundOpacity     = BackgroundOpacity.args    -> #select -> toJS
 
-type backgroundPosition = StoryBook.argType<BackgroundPosition.t>
-let backgroundPosition = {
-  "options": BackgroundPosition.args,
-  "control": { "type": "select" },
-}
+type backgroundOrigin     = Obj
+let backgroundOrigin      = BackgroundOrigin.args     -> #select -> toJS
 
-type backgroundRepeat = StoryBook.argType<BackgroundRepeat.t>
-let backgroundRepeat = {
-  "options": BackgroundRepeat.args,
-  "control": { "type": "select" },
-}
+type backgroundPosition   = Obj
+let backgroundPosition    = BackgroundPosition.args   -> #select -> toJS
 
-type backgroundSize = StoryBook.argType<BackgroundSize.t>
-let backgroundSize = {
-  "options": BackgroundSize.args,
-  "control": { "type": "select" },
-}
+type backgroundRepeat     = Obj
+let backgroundRepeat      = BackgroundRepeat.args     -> #select -> toJS
 
-type argTypes = {
-  "backgroundAttachment": backgroundAttachment,
-  "backgroundClip": backgroundClip,
-  "backgroundColor": backgroundColor,
-  "backgroundOpacity": backgroundOpacity,
-  "backgroundOrigin": backgroundOrigin,
-  "backgroundPosition": backgroundPosition,
-  "backgroundRepeat": backgroundRepeat,
-  "backgroundSize": backgroundSize,
-}
-
-let argTypes = {
-  "backgroundAttachment": backgroundAttachment,
-  "backgroundClip": backgroundClip,
-  "backgroundColor": backgroundColor,
-  "backgroundOpacity": backgroundOpacity,
-  "backgroundOrigin": backgroundOrigin,
-  "backgroundPosition": backgroundPosition,
-  "backgroundRepeat": backgroundRepeat,
-  "backgroundSize": backgroundSize,
-}
+type backgroundSize       = Obj
+let backgroundSize        = BackgroundSize.args       -> #select -> toJS

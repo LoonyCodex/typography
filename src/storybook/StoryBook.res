@@ -1,10 +1,13 @@
-type control = {
-  "type": string,
+let toJS = (c) => switch c {
+| #select(array) => Js.Obj.assign(Js.Obj.empty(), {
+  "control": "select",
+  "options": array,
+})
+| #text => Js.Obj.assign(Js.Obj.empty(), { "control": "text" })
 }
 
-type argType<'a> = {
-  "options": array<'a>,
-  "control": control,
+let childrenArgTypes = {
+  "children": toJS(#text),
 }
 
 type default<'props, 'style, 'argTypes> = {

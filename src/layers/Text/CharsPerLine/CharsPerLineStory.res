@@ -1,13 +1,4 @@
-type charsPerLine = StoryBook.argType<CharsPerLine.t>
-let charsPerLine = {
-  "options": CharsPerLine.args,
-  "control": { "type": "select" },
-}
+open StoryBook
 
-type argTypes = {
-  "charsPerLine": charsPerLine,
-}
-
-let argTypes = {
-  "charsPerLine": charsPerLine,
-}
+type charsPerLine = Obj
+let charsPerLine = CharsPerLine.args -> #select -> toJS

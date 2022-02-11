@@ -1,37 +1,13 @@
-type marginBlockEnd = StoryBook.argType<MarginReflection.t>
-let marginBlockEnd = {
-  "options": MarginReflection.args,
-  "control": { "type": "select" },
-}
+open StoryBook
 
-type marginBlockStart = StoryBook.argType<MarginReflection.t>
-let marginBlockStart = {
-  "options": MarginReflection.args,
-  "control": { "type": "select" },
-}
+type marginBlockEnd    = Obj
+let marginBlockEnd     = MarginReflection.args -> #select -> toJS
 
-type marginInlineEnd = StoryBook.argType<MarginReflection.t>
-let marginInlineEnd = {
-  "options": MarginReflection.args,
-  "control": { "type": "select" },
-}
+type marginBlockStart  = Obj
+let marginBlockStart   = MarginReflection.args -> #select -> toJS
 
-type marginInlineStart = StoryBook.argType<MarginReflection.t>
-let marginInlineStart = {
-  "options": MarginReflection.args,
-  "control": { "type": "select" },
-}
+type marginInlineEnd   = Obj
+let marginInlineEnd    = MarginReflection.args -> #select -> toJS
 
-type argTypes = {
-  "marginBlockEnd": marginBlockEnd,
-  "marginBlockStart": marginBlockStart,
-  "marginInlineEnd": marginInlineEnd,
-  "marginInlineStart": marginInlineStart,
-}
-
-let argTypes = {
-  "marginBlockEnd": marginBlockEnd,
-  "marginBlockStart": marginBlockStart,
-  "marginInlineEnd": marginInlineEnd,
-  "marginInlineStart": marginInlineStart,
-}
+type marginInlineStart = Obj
+let marginInlineStart  = MarginReflection.args -> #select -> toJS

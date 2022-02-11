@@ -1,37 +1,13 @@
-type textDecorationColor = StoryBook.argType<TextDecorationColor.t>
-let textDecorationColor = {
-  "options": TextDecorationColor.args,
-  "control": { "type": "select" },
-}
+open StoryBook
 
-type textDecorationLine = StoryBook.argType<TextDecorationLine.t>
-let textDecorationLine = {
-  "options": TextDecorationLine.args,
-  "control": { "type": "select" },
-}
+type textDecorationColor     = Obj
+let textDecorationColor      = TextDecorationColor.args     -> #select -> toJS
 
-type textDecorationStyle = StoryBook.argType<TextDecorationStyle.t>
-let textDecorationStyle = {
-  "options": TextDecorationStyle.args,
-  "control": { "type": "select" },
-}
+type textDecorationLine      = Obj
+let textDecorationLine       = TextDecorationLine.args      -> #select -> toJS
 
-type textDecorationThickness = StoryBook.argType<TextDecorationThickness.t>
-let textDecorationThickness = {
-  "options": TextDecorationThickness.args,
-  "control": { "type": "select" },
-}
+type textDecorationStyle     = Obj
+let textDecorationStyle      = TextDecorationStyle.args     -> #select -> toJS
 
-type argTypes = {
-  "textDecorationColor": textDecorationColor,
-  "textDecorationLine": textDecorationLine,
-  "textDecorationStyle": textDecorationStyle,
-  "textDecorationThickness": textDecorationThickness,
-}
-
-let argTypes = {
-  "textDecorationColor": textDecorationColor,
-  "textDecorationLine": textDecorationLine,
-  "textDecorationStyle": textDecorationStyle,
-  "textDecorationThickness": textDecorationThickness,
-}
+type textDecorationThickness = Obj
+let textDecorationThickness  = TextDecorationThickness.args -> #select -> toJS

@@ -1,13 +1,4 @@
-type cornerRadius = StoryBook.argType<CornerRadius.t>
-let cornerRadius = {
-  "options": CornerRadius.args,
-  "control": { "type": "select" },
-}
+open StoryBook
 
-type argTypes = {
-  "cornerRadius": cornerRadius,
-}
-
-let argTypes = {
-  "cornerRadius": cornerRadius,
-}
+type cornerRadius = Obj
+let cornerRadius = CornerRadius.args -> #select -> toJS

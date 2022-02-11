@@ -1,37 +1,13 @@
-type paddingBlockEnd = StoryBook.argType<PaddingReflection.t>
-let paddingBlockEnd = {
-  "options": PaddingReflection.args,
-  "control": { "type": "select" },
-}
+open StoryBook
 
-type paddingBlockStart = StoryBook.argType<PaddingReflection.t>
-let paddingBlockStart = {
-  "options": PaddingReflection.args,
-  "control": { "type": "select" },
-}
+type paddingBlockEnd    = Obj
+let paddingBlockEnd     = PaddingReflection.args -> #select -> toJS
 
-type paddingInlineEnd = StoryBook.argType<PaddingReflection.t>
-let paddingInlineEnd = {
-  "options": PaddingReflection.args,
-  "control": { "type": "select" },
-}
+type paddingBlockStart  = Obj
+let paddingBlockStart   = PaddingReflection.args -> #select -> toJS
 
-type paddingInlineStart = StoryBook.argType<PaddingReflection.t>
-let paddingInlineStart = {
-  "options": PaddingReflection.args,
-  "control": { "type": "select" },
-}
+type paddingInlineEnd   = Obj
+let paddingInlineEnd    = PaddingReflection.args -> #select -> toJS
 
-type argTypes = {
-  "paddingBlockEnd": paddingBlockEnd,
-  "paddingBlockStart": paddingBlockStart,
-  "paddingInlineEnd": paddingInlineEnd,
-  "paddingInlineStart": paddingInlineStart,
-}
-
-let argTypes = {
-  "paddingBlockEnd": paddingBlockEnd,
-  "paddingBlockStart": paddingBlockStart,
-  "paddingInlineEnd": paddingInlineEnd,
-  "paddingInlineStart": paddingInlineStart,
-}
+type paddingInlineStart = Obj
+let paddingInlineStart  = PaddingReflection.args -> #select -> toJS

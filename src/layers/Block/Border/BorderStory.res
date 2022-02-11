@@ -1,37 +1,13 @@
-type borderColor = StoryBook.argType<BorderColor.t>
-let borderColor = {
-  "options": BorderColor.args,
-  "control": { "type": "select" },
-}
+open StoryBook
 
-type borderOpacity = StoryBook.argType<BorderOpacity.t>
-let borderOpacity = {
-  "options": BorderOpacity.args,
-  "control": { "type": "select" },
-}
+type borderColor     = Obj
+let borderColor      = BorderColor.args     -> #select -> toJS
 
-type borderStyle = StoryBook.argType<BorderStyle.t>
-let borderStyle = {
-  "options": BorderStyle.args,
-  "control": { "type": "select" },
-}
+type borderOpacity   = Obj
+let borderOpacity    = BorderOpacity.args   -> #select -> toJS
 
-type borderThickness = StoryBook.argType<BorderThickness.t>
-let borderThickness = {
-  "options": BorderThickness.args,
-  "control": { "type": "select" },
-}
+type borderStyle     = Obj
+let borderStyle      = BorderStyle.args     -> #select -> toJS
 
-type argTypes = {
-  "borderColor": borderColor,
-  "borderOpacity": borderOpacity,
-  "borderStyle": borderStyle,
-  "borderThickness": borderThickness,
-}
-
-let argTypes = {
-  "borderColor": borderColor,
-  "borderOpacity": borderOpacity,
-  "borderStyle": borderStyle,
-  "borderThickness": borderThickness,
-}
+type borderThickness = Obj
+let borderThickness  = BorderThickness.args -> #select -> toJS
