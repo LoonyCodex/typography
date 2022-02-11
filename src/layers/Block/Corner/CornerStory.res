@@ -1,4 +1,4 @@
 open StoryBook
 
-type cornerRadius = Obj
+type cornerRadius = Js.t<{}>
 let cornerRadius = CornerRadius.args -> #select -> toJS

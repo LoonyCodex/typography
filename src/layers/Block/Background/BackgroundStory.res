@@ -1,25 +1,25 @@
 open StoryBook
 
-type backgroundAttachment = Obj
+type backgroundAttachment = Js.t<{}>
 let backgroundAttachment  = BackgroundAttachment.args -> #select -> toJS
 
-type backgroundClip       = Obj
+type backgroundClip       = Js.t<{}>
 let backgroundClip        = BackgroundClip.args       -> #select -> toJS
 
-type backgroundColor      = Obj
+type backgroundColor      = Js.t<{}>
 let backgroundColor       = BackgroundColor.args      -> #select -> toJS
 
-type backgroundOpacity    = Obj
+type backgroundOpacity    = Js.t<{}>
 let backgroundOpacity     = BackgroundOpacity.args    -> #select -> toJS
 
-type backgroundOrigin     = Obj
+type backgroundOrigin     = Js.t<{}>
 let backgroundOrigin      = BackgroundOrigin.args     -> #select -> toJS
 
-type backgroundPosition   = Obj
+type backgroundPosition   = Js.t<{}>
 let backgroundPosition    = BackgroundPosition.args   -> #select -> toJS
 
-type backgroundRepeat     = Obj
+type backgroundRepeat     = Js.t<{}>
 let backgroundRepeat      = BackgroundRepeat.args     -> #select -> toJS
 
-type backgroundSize       = Obj
+type backgroundSize       = Js.t<{}>
 let backgroundSize        = BackgroundSize.args       -> #select -> toJS

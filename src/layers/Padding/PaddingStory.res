@@ -1,13 +1,13 @@
 open StoryBook
 
-type paddingBlockEnd    = Obj
+type paddingBlockEnd    = Js.t<{}>
 let paddingBlockEnd     = PaddingReflection.args -> #select -> toJS
 
-type paddingBlockStart  = Obj
+type paddingBlockStart  = Js.t<{}>
 let paddingBlockStart   = PaddingReflection.args -> #select -> toJS
 
-type paddingInlineEnd   = Obj
+type paddingInlineEnd   = Js.t<{}>
 let paddingInlineEnd    = PaddingReflection.args -> #select -> toJS
 
-type paddingInlineStart = Obj
+type paddingInlineStart = Js.t<{}>
 let paddingInlineStart  = PaddingReflection.args -> #select -> toJS

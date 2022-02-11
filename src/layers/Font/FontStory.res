@@ -1,13 +1,13 @@
 open StoryBook
 
-type fontFamily = Obj
+type fontFamily = Js.t<{}>
 let fontFamily  = FontFamily.args -> #select -> toJS
 
-type fontSize   = Obj
+type fontSize   = Js.t<{}>
 let fontSize    = FontSize.args   -> #select -> toJS
 
-type fontStyle  = Obj
+type fontStyle  = Js.t<{}>
 let fontStyle   = FontStyle.args  -> #select -> toJS
 
-type fontWeight = Obj
+type fontWeight = Js.t<{}>
 let fontWeight  = FontWeight.args -> #select -> toJS

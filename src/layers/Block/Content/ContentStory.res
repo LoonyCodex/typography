@@ -1,4 +1,4 @@
 open StoryBook
 
-type contentAlign = Obj
+type contentAlign = Js.t<{}>
 let contentAlign = ContentAlign.args -> #select -> toJS

@@ -1,13 +1,13 @@
 open StoryBook
 
-type borderColor     = Obj
+type borderColor     = Js.t<{}>
 let borderColor      = BorderColor.args     -> #select -> toJS
 
-type borderOpacity   = Obj
+type borderOpacity   = Js.t<{}>
 let borderOpacity    = BorderOpacity.args   -> #select -> toJS
 
-type borderStyle     = Obj
+type borderStyle     = Js.t<{}>
 let borderStyle      = BorderStyle.args     -> #select -> toJS
 
-type borderThickness = Obj
+type borderThickness = Js.t<{}>
 let borderThickness  = BorderThickness.args -> #select -> toJS

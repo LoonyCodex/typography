@@ -1,13 +1,13 @@
 open StoryBook
 
-type hyphens      = Obj
+type hyphens      = Js.t<{}>
 let hyphens       = Hyphens.args      -> #select -> toJS
 
-type overflowWrap = Obj
+type overflowWrap = Js.t<{}>
 let overflowWrap  = OverflowWrap.args -> #select -> toJS
 
-type textOverflow = Obj
+type textOverflow = Js.t<{}>
 let textOverflow  = TextOverflow.args -> #select -> toJS
 
-type wordBreak    = Obj
+type wordBreak    = Js.t<{}>
 let wordBreak     = WordBreak.args    -> #select -> toJS

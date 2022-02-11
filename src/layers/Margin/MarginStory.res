@@ -1,13 +1,13 @@
 open StoryBook
 
-type marginBlockEnd    = Obj
+type marginBlockEnd    = Js.t<{}>
 let marginBlockEnd     = MarginReflection.args -> #select -> toJS
 
-type marginBlockStart  = Obj
+type marginBlockStart  = Js.t<{}>
 let marginBlockStart   = MarginReflection.args -> #select -> toJS
 
-type marginInlineEnd   = Obj
+type marginInlineEnd   = Js.t<{}>
 let marginInlineEnd    = MarginReflection.args -> #select -> toJS
 
-type marginInlineStart = Obj
+type marginInlineStart = Js.t<{}>
 let marginInlineStart  = MarginReflection.args -> #select -> toJS

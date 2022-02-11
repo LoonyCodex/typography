@@ -1,4 +1,4 @@
 open StoryBook
 
-type lineClamp = Obj
+type lineClamp = Js.t<{}>
 let lineClamp = LineClamp.args -> #select -> toJS

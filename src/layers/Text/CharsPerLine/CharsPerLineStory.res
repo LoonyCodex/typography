@@ -1,4 +1,4 @@
 open StoryBook
 
-type charsPerLine = Obj
+type charsPerLine = Js.t<{}>
 let charsPerLine = CharsPerLine.args -> #select -> toJS

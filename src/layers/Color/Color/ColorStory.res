@@ -1,4 +1,4 @@
 open StoryBook
 
-type color = Obj
+type color = Js.t<{}>
 let color = ColorReflection.args -> #select -> toJS
