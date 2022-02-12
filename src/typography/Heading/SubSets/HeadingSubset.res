@@ -1,12 +1,5 @@
-open Cx
-
-@module("./HeadingSetStyle.css.js") external classNameRoot: string = "className"
-
 @genType
 type props = {
-  "level": HeadingProto.level,
-  "tag": option<HeadingProto.tag>,
-
   "className": option<string>,
 
   "charsPerLine": option<CharsPerLine.t>,
@@ -44,9 +37,6 @@ type props = {
 }
 
 @obj external makeProps:(
-  ~level: HeadingProto.level,
-  ~tag: option<HeadingProto.tag>,
-
   ~className: option<string>,
 
   ~charsPerLine: option<CharsPerLine.t>,
@@ -84,22 +74,19 @@ type props = {
   unit
 ) => props = ""
 
-let className = classNameRoot
-let displayName = "Heading"
-type styleProps = HeadingProto.styleProps
-let styleProps = HeadingSetStyleProps.styleProps
+let argTypes = HeadingSubsetStory.argTypes
+type argTypes = HeadingSubsetStory.argTypes
 
-let make = (props: props) => HeadingProto.make({
-  "level": props["level"],
-  "tag": props["tag"],
+let make = (
+  ~level: HeadingProto.level,
+  ~tag: option<HeadingProto.tag>,
+  ~className: string,
+  ~styleProps: HeadingProto.styleProps,
+) => (props: props) => HeadingProto.make({
+  "level": level,
+  "tag": tag,
 
-  "className": cx([
-    classNameRoot,
-    switch props["className"] {
-    | Some(s) => s
-    | None => ""
-    }
-  ]),
+  "className": className,
 
   "charsPerLine": switch props["charsPerLine"] {
   | Some(s) => s
