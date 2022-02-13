@@ -1,18 +1,12 @@
-open H1
-
-type args = { "children": string };
-let args: args = { "children": "Heading 1" };
-
 @as("default")
-let default: StoryBook.default<props, args, HeadingSubset.argTypes> = {
-  title: displayName,
-  component: make,
-  args,
-  // args: Js.Obj.assign(Js.Obj.assign(Js.Obj.empty(), styleProps), { "children": "Heading 1" }),
+let default: StoryBook.default<props, HeadingSubset.props, HeadingSubset.argTypes> = {
+  title: H1.displayName,
+  component: H1.make,
+  args: HeadingSubset.getProps(~children = "Heading 1"),
   argTypes: HeadingSubset.argTypes,
 };
 
-let button = () => make({
+let minimalistic = () => H1.make({
   "className": None,
 
   "charsPerLine": None,
@@ -46,5 +40,5 @@ let button = () => make({
   "paddingInlineEnd": None,
   "paddingInlineStart": None,
 
-  "children": <>{React.string("H1")}</>,
+  "children": React.string("Minimalistic Heading (level 1)"),
 })

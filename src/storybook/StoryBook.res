@@ -3,9 +3,8 @@ let toJS = c => switch c {
 | #text => Js.Obj.assign(Js.Obj.empty(), { "control": "text" })
 }
 
-let childrenArgTypes = {
-  "children": toJS(#text),
-}
+type argType = Js.t<{}>
+let argTypeChildren = toJS(#text)
 
 type default<'props, 'style, 'argTypes> = {
   title: string,
