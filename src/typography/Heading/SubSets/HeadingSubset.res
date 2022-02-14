@@ -36,51 +36,6 @@ type props = {
   "children": React.element,
 }
 
-let getProps: props = (
-  ~children: React.element,
-) => {
-  "className": None,
-
-  "charsPerLine": None,
-  "color": None,
-  "contentAlign": None,
-
-  // font
-  "fontFamily": None,
-  "fontSize": None,
-  "fontStyle": None,
-  "fontWeight": None,
-
-  // textDecoration
-  "textDecorationColor": None,
-  "textDecorationLine": None,
-  "textDecorationStyle": None,
-  "textDecorationThickness": None,
-
-  // text
-  "textTransform": None,
-
-  // textOverflow
-  "hyphens": None,
-  "overflowWrap": None,
-  "textOverflow": None,
-  "wordBreak": None,
-
-  // margin
-  "marginBlockEnd": None,
-  "marginBlockStart": None,
-  "marginInlineEnd": None,
-  "marginInlineStart": None,
-
-  // padding
-  "paddingBlockEnd": None,
-  "paddingBlockStart": None,
-  "paddingInlineStart": None,
-  "paddingInlineEnd": None,
-
-  "children": children,
-}
-
 @obj external makeProps:(
   ~className: option<string>,
 

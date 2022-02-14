@@ -17,7 +17,7 @@ require("esbuild")
     sourcemap: true,
     // minify: true,
     splitting: true,
-    outdir: 'dist',
+    outdir: 'semicolon',
     plugins: [
       vanillaExtractPlugin({
         processCss,

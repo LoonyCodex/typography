@@ -2,6 +2,7 @@
 /dist
 /.next
 /lib
+/semicolon
 .npmrc
 .merlin
 src/**/*.js

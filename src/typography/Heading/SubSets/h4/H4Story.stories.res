@@ -1,9 +1,7 @@
-open H4
-
 @as("default")
-let default: StoryBook.default<props, styleProps, HeadingSubset.argTypes> = {
-  title: displayName,
-  component: make,
-  args: Js.Obj.assign(Js.Obj.assign(Js.Obj.empty(), styleProps), { "children": "Heading 4" }),
+let default: StoryBook.default<HeadingSubset.props, HeadingSubset.props, HeadingSubset.argTypes> = {
+  title: H4.displayName,
+  component: H4.make,
+  args: Js.Obj.assign(Js.Obj.assign(Js.Obj.empty(), H4.styleProps), { "children": React.string("Heading 4") }),
   argTypes: HeadingSubset.argTypes,
 };
