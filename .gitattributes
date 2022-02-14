@@ -1,6 +1,8 @@
+.config/ linguist-vendored
+.storybook/ linguist-vendored
+docs/** linguist-vendored
 scripts/** linguist-vendored
 .fatherrc.ts linguist-vendored
 .prettierrc.cjs linguist-vendored
 .umirc.ts linguist-vendored
 .postcss.config.cjs linguist-vendored
-.storybook linguist-vendored
