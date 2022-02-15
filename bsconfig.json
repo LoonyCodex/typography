@@ -5,7 +5,11 @@
     {
       "dir": "src",
       "subdirs": true
-    }
+    },
+    {
+      "dir": ".playroom",
+      "subdirs": true
+    },
   ],
   "gentypeconfig": {
     "language": "typescript",

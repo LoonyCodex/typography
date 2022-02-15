@@ -37,7 +37,9 @@
     "prettier": "prettier --write \"**/*.{js,jsx,tsx,ts,less,md,json}\"",
     "test": "umi-test",
     "test:coverage": "umi-test --coverage",
-    "prepublishOnly": "npm run build"
+    "prepublishOnly": "npm run build",
+    "playroom:start": "playroom start --config playroom.config.cjs",
+    "playroom:build": "playroom build --config playroom.config.cjs"
   },
   "devDependencies": {
     "@babel/core": "^7.17.2",
@@ -68,6 +70,7 @@
     "html-webpack-plugin": "^5.5.0",
     "lint-staged": "^10.0.7",
     "mini-css-extract-plugin": "^2.4.5",
+    "playroom": "^0.27.9",
     "postcss": "^8.4.4",
     "prettier": "^2.2.1",
     "react": "^17.0.2",
