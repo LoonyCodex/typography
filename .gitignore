@@ -8,7 +8,6 @@
 src/**/*.js
 src/**/*.gen.ts
 
-
 # playroom
 /.playroom/build/**
 /.playroom/package/**

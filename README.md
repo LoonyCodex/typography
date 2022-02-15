@@ -8,26 +8,20 @@ Install dependencies,
 $ npm i
 ```
 
-Start the dev server,
+Compile rescript,
 
 ```bash
-$ npm start
+$ npm run rescript
 ```
 
 Build documentation,
 
 ```bash
-$ npm run docs:build
+$ npm run dumi
 ```
 
-Run test,
+Publish documentation via Github Pages,
 
 ```bash
-$ npm test
-```
-
-Build library via `father-build`,
-
-```bash
-$ npm run build
+$ npm run dumi:publish
 ```

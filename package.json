@@ -2,16 +2,16 @@
   "private": false,
   "version": "0.0.5",
   "type": "module",
-  "main": "semicolon/index.gen.js",
-  "module": "semicolon/index.gen.js",
-  "types": "semicolon/index.gen.d.ts",
-  "typings": "semicolon/index.gen.d.ts",
+  "main": "package/index.gen.js",
+  "module": "package/index.gen.js",
+  "types": "package/index.gen.d.ts",
+  "typings": "package/index.gen.d.ts",
   "files": [
-    "semicolon",
+    "package",
     "src"
   ],
   "directories": {
-    "semicolon": "semicolon",
+    "package": "package",
     "src": "src"
   },
   "publishConfig": {
@@ -25,6 +25,7 @@
     "ts-types": "tsc --emitDeclarationOnly --outDir package",
     "build": "rimraf lib && rimraf package && npx yarn re:build && node scripts/build.cjs && npm run ts-types",
     "cocaine": "rescript build -w",
+    "rescript": "rescript build -w",
     "re:build": "rescript",
     "re:clean": "rescript clean",
     "storybook": "start-storybook -p 6006",
@@ -33,7 +34,7 @@
     "dumi:_build": "npm run dumi:_cleanup && npm run build && shx cp ./package/index.gen.css ./src/global.css",
     "dumi": "npm run dumi:_build && dumi dev",
     "dumi:package": "npm run dumi:_build && dumi build",
-    "dumi:publish": "gh-pages -d ./.umi/package",
+    "dumi:publish": "npm run dumi:package && gh-pages -d ./.umi/package",
     "prettier": "prettier --write \"**/*.{js,jsx,tsx,ts,less,md,json}\"",
     "prepublishOnly": "npm run build",
     "playroom:_cleanup": "rimraf ./.playroom/package",
@@ -66,7 +67,7 @@
     "esbuild": "^0.12.15",
     "father-build": "^1.17.2",
     "gentype": "^4.3.0",
-    "gh-pages": "^3.0.0",
+    "gh-pages": "^3.2.3",
     "html-webpack-plugin": "^5.5.0",
     "lint-staged": "^10.0.7",
     "mini-css-extract-plugin": "^2.4.5",
