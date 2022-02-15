@@ -8,8 +8,12 @@
 src/**/*.js
 src/**/*.gen.ts
 
+# playroom
 /.playroom/build/**
 /.playroom/package/**
+
+# storybook
+/.storybook/StoryBook.js
 
 # dependencies
 /node_modules
