@@ -28,7 +28,7 @@
     "re:build": "rescript",
     "re:clean": "rescript clean",
     "storybook": "start-storybook -p 6006",
-    "build-storybook": "build-storybook",
+    "storybook:package": "build-storybook",
     "start": "dumi dev",
     "docs:build": "dumi build",
     "docs:deploy": "gh-pages -d docs-dist",
