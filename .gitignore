@@ -8,6 +8,7 @@
 src/**/*.js
 src/**/*.gen.ts
 
+
 # playroom
 /.playroom/build/**
 /.playroom/package/**
@@ -36,6 +37,7 @@ src/**/*.gen.ts
 .umi-production
 .umi-test
 .env.local
+src/global.css
 
 # ide
 /.vscode
