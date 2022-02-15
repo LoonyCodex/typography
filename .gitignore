@@ -14,6 +14,7 @@ src/**/*.gen.ts
 
 # storybook
 /.storybook/StoryBook.js
+/.storybook/package/**
 
 # dependencies
 /node_modules

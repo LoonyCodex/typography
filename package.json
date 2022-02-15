@@ -28,7 +28,7 @@
     "re:build": "rescript",
     "re:clean": "rescript clean",
     "storybook": "start-storybook -p 6006",
-    "storybook:package": "build-storybook",
+    "storybook:package": "rimraf ./.storybook/package && build-storybook --output-dir ./.storybook/package",
     "start": "dumi dev",
     "docs:build": "dumi build",
     "docs:deploy": "gh-pages -d docs-dist",
