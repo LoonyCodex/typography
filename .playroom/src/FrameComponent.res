@@ -8,7 +8,7 @@ type head = {
   removeChild: (. string) => unit,
 }
 
-%%raw("import './styles.module.css'")
+%%raw("import '../build/index.gen.css'")
 
 @react.component
 let default = (

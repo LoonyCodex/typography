@@ -22,8 +22,8 @@
   "name": "@LoonyCodex/typography",
   "repository": "git://github.com/LoonyCodex/typography.git",
   "scripts": {
-    "ts-types": "tsc --emitDeclarationOnly --outDir semicolon",
-    "build": "rimraf lib && rimraf semicolon && npx yarn re:build && node scripts/build.cjs && npm run ts-types",
+    "ts-types": "tsc --emitDeclarationOnly --outDir package",
+    "build": "rimraf lib && rimraf package && npx yarn re:build && node scripts/build.cjs && npm run ts-types",
     "cocaine": "rescript build -w",
     "re:build": "rescript",
     "re:clean": "rescript clean",
@@ -38,8 +38,10 @@
     "test": "umi-test",
     "test:coverage": "umi-test --coverage",
     "prepublishOnly": "npm run build",
-    "playroom:start": "playroom start --config playroom.config.cjs",
-    "playroom:build": "playroom build --config playroom.config.cjs"
+    "playroom:_cleanup": "rimraf ./.playroom/package",
+    "playroom:_build": "npm run build && rimraf ./.playroom/build && shx cp -r ./package ./.playroom/build",
+    "playroom": "npm run playroom:_build && playroom start --config ./.playroom/config.cjs",
+    "playroom:package": "npm run playroom:_cleanup && npm run playroom:_build && playroom build --config ./.playroom/config.cjs"
   },
   "devDependencies": {
     "@babel/core": "^7.17.2",
@@ -77,6 +79,7 @@
     "react-dom": "^17.0.2",
     "rescript": "^9.1.3",
     "rescript-classnames": "^6.0.0",
+    "shx": "^0.3.4",
     "typescript": "4.5.2",
     "typography": "^0.16.21",
     "yorkie": "^2.0.0"

@@ -2,7 +2,7 @@
 
 import * as React from "react";
 
-import './styles.module.css'
+import '../build/index.gen.css'
 ;
 
 function FrameComponent$default(Props) {

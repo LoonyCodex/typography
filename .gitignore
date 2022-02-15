@@ -2,11 +2,14 @@
 /dist
 /.next
 /lib
-/semicolon
+/package
 .npmrc
 .merlin
 src/**/*.js
 src/**/*.gen.ts
+
+/.playroom/build/**
+/.playroom/package/**
 
 # dependencies
 /node_modules

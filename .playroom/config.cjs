@@ -1,12 +1,12 @@
 module.exports = {
-  components: './semicolon/index.gen.js',
-  outputPath: './playroom',
+  components: './build/index.gen.js',
+  outputPath: './package',
 
   // Optional:
   title: 'typography',
   // themes: './src/themes',
   // snippets: './.playroom/Snippets.js',
-  frameComponent: './.playroom/FrameComponent.js',
+  frameComponent: './src/FrameComponent.js',
   // scope: './playroom/useScope.js',
   widths: [320, 768, 1024],
   port: 9000,
