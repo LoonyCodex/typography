@@ -16,7 +16,7 @@ let varClassName = Var.className
 
 // Heading
 @genType.as("heading")
-let headingSetClassName = HeadingSet.className
+let headingSetClassName = Heading.className
 
 @genType.as("h1")
 let h1ClassName = H1.className

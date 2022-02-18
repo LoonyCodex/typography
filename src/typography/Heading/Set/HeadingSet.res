@@ -1,46 +1,8 @@
-open Cx
-
-@module("./HeadingSetStyle.css.js") external classNameRoot: string = "className"
-
 @genType
 type props = {
+  ...HeadingSubset.props,
   "level": HeadingProto.level,
   "tag": option<HeadingProto.tag>,
-
-  "className": option<string>,
-
-  "charsPerLine": option<CharsPerLine.t>,
-  "color": option<Color.t>,
-  "contentAlign": option<ContentAlign.t>,
-
-  "fontFamily": option<FontFamily.t>,
-  "fontSize": option<FontSize.t>,
-  "fontStyle": option<FontStyle.t>,
-  "fontWeight": option<FontWeight.t>,
-
-  "textDecorationColor": option<TextDecorationColor.t>,
-  "textDecorationLine": option<TextDecorationLine.t>,
-  "textDecorationStyle": option<TextDecorationStyle.t>,
-  "textDecorationThickness": option<TextDecorationThickness.t>,
-
-  "textTransform": option<TextTransform.t>,
-
-  "hyphens": option<Hyphens.t>,
-  "overflowWrap": option<OverflowWrap.t>,
-  "textOverflow": option<TextOverflow.t>,
-  "wordBreak": option<WordBreak.t>,
-
-  "marginBlockEnd": option<MarginBlockEnd.t>,
-  "marginBlockStart": option<MarginBlockStart.t>,
-  "marginInlineEnd": option<MarginInlineEnd.t>,
-  "marginInlineStart": option<MarginInlineStart.t>,
-
-  "paddingBlockEnd": option<PaddingBlockEnd.t>,
-  "paddingBlockStart": option<PaddingBlockStart.t>,
-  "paddingInlineEnd": option<PaddingInlineEnd.t>,
-  "paddingInlineStart": option<PaddingInlineStart.t>,
-
-  "children": React.element,
 }
 
 @obj external makeProps:(
@@ -84,22 +46,14 @@ type props = {
   unit
 ) => props = ""
 
-let className = classNameRoot
-let displayName = "Heading"
-type styleProps = HeadingProto.styleProps
-let styleProps = HeadingSetStyleProps.styleProps
-
-let make = (props: props) => HeadingProto.make({
+let make = (
+  ~className: string,
+  ~styleProps: HeadingProto.styleProps,
+) => (props: props) => HeadingProto.make({
   "level": props["level"],
   "tag": props["tag"],
 
-  "className": cx([
-    classNameRoot,
-    switch props["className"] {
-    | Some(s) => s
-    | None => ""
-    }
-  ]),
+  "className": className,
 
   "charsPerLine": switch props["charsPerLine"] {
   | Some(s) => s
