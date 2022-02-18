@@ -45,9 +45,6 @@ let lineBreak = LineBreak.make
 let lineBreakOpportunity = LineBreakOpportunity.make
 
 // Link
-@genType.as("LinkSet")
-let linkSet = LinkSet.make
-
 @genType.as("Link")
 let a = A.make
 

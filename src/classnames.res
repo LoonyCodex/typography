@@ -37,9 +37,6 @@ let h5ClassName = H5.className
 let h6ClassName = H6.className
 
 // Link
-@genType.as("linkSet")
-let linkSetClassName = LinkSet.className
-
 @genType.as("link")
 let aClassName = A.className
 
