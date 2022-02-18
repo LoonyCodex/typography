@@ -1,10 +1,4 @@
-type playroom = {
-  group: string,
-  name: string,
-  code: string,
-}
-
-let make = [
+let make: array<Playroom.t> = [
   {
     group: H1.displayName,
     name: "<H1>: Heading level 1",
