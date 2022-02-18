@@ -1,6 +1,6 @@
 // Code
-@genType.as("code")
-let codeSetClassName = CodeSet.className
+@genType.as("codex")
+let codexClassName = Codex.className
 
 @genType.as("codeInline")
 let codeClassName = Code.className

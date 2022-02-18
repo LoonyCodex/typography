@@ -1,24 +1,24 @@
 open Cx
 
-@module("./CodeProtoStyle.css.js") external classNameRoot: string = "className"
+@module("./CodexProtoStyle.css.js") external classNameRoot: string = "className"
 
 let className = classNameRoot;
 
 @genType
 type styleProps = {
-  color: Color.t,
+  "color": Color.t,
 
-  fontSize: FontSize.t,
-  fontWeight: FontWeight.t,
-  fontFamily: FontFamily.t,
-  fontStyle: FontStyle.t,
+  "fontSize": FontSize.t,
+  "fontWeight": FontWeight.t,
+  "fontFamily": FontFamily.t,
+  "fontStyle": FontStyle.t,
 
-  textDecorationColor: TextDecorationColor.t,
-  textDecorationLine: TextDecorationLine.t,
-  textDecorationStyle: TextDecorationStyle.t,
-  textDecorationThickness: TextDecorationThickness.t,
+  "textDecorationColor": TextDecorationColor.t,
+  "textDecorationLine": TextDecorationLine.t,
+  "textDecorationStyle": TextDecorationStyle.t,
+  "textDecorationThickness": TextDecorationThickness.t,
 
-  textTransform: TextTransform.t,
+  "textTransform": TextTransform.t,
 }
 
 @genType
@@ -30,23 +30,10 @@ type tag = [
 ]
 
 type props = {
+  ...styleProps,
+
   "tag": tag,
   "className": string,
-
-  "color": Color.t,
-
-  "fontFamily": FontFamily.t,
-  "fontSize": FontSize.t,
-  "fontStyle": FontStyle.t,
-  "fontWeight": FontWeight.t,
-
-  "textDecorationColor": TextDecorationColor.t,
-  "textDecorationLine": TextDecorationLine.t,
-  "textDecorationStyle": TextDecorationStyle.t,
-  "textDecorationThickness": TextDecorationThickness.t,
-
-  "textTransform": TextTransform.t,
-
   "children": React.element,
 }
 

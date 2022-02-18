@@ -1,6 +1,6 @@
 // Code
-@genType.as("Code")
-let codeSet = CodeSet.make
+@genType.as("Codex")
+let codex = Codex.make
 
 @genType.as("CodeInline")
 let code = Code.make
