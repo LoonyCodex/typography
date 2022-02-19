@@ -1,4 +1,4 @@
-@module("./TextSetStyle.css.js") external classNameRoot: string = "className"
+@module("./TextStyle.css.js") external classNameRoot: string = "className"
 
 let className = classNameRoot
 let displayName = "Text"
