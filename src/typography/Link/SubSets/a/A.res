@@ -8,6 +8,6 @@ type props = LinkSubset.props
 
 let make = LinkSubset.make(
   ~tag = #a,
-  ~className = classNameRoot,
-  ~styleProps = styleProps,
+  ~className,
+  ~styleProps,
 )

@@ -1,4 +1,4 @@
-let { component, displayName, description, tag }: Meta.t = H1Meta.make
+let { component, displayName, description, tag }: Meta.t = CodeMeta.make
 
 let make: array<Playroom.t> = [
   {

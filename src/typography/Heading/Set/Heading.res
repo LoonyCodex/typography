@@ -7,6 +7,6 @@ let styleProps = HeadingStyleProps.styleProps
 type props = HeadingSet.props
 
 let make = HeadingSet.make(
-  ~className = classNameRoot,
-  ~styleProps = styleProps,
+  ~className,
+  ~styleProps,
 )

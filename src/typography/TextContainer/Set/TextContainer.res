@@ -7,6 +7,6 @@ let styleProps = TextContainerStyleProps.styleProps
 type props = TextContainerSet.props
 
 let make = TextContainerSet.make(
-  ~className = classNameRoot,
-  ~styleProps = styleProps,
+  ~className,
+  ~styleProps,
 )
