@@ -4,7 +4,7 @@ let styleProps: TextProto.styleProps = {
 
   // font
   "fontFamily": #primary,
-  "fontSize": #small,
+  "fontSize": #xxxlarge,
   "fontStyle": #normal,
   "fontWeight": #bold,
 

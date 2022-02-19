@@ -50,7 +50,7 @@ let a = A.make
 
 // Text
 @genType.as("Text")
-let text = TextSet.make
+let text = Text.make
 
 @genType.as("Abbreviation")
 let abbreviation = Abbr.make

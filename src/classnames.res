@@ -42,7 +42,7 @@ let aClassName = A.className
 
 // Text
 @genType.as("text")
-let textClassName = TextSet.className
+let textClassName = Text.className
 
 @genType.as("abbreviation")
 let abbreviationClassName = Abbr.className

@@ -1,20 +1,33 @@
 @genType
 type props = {
-  ...TextSubset.props,
-  "tag": TextProto.tag,
+  "className": option<string>,
+
+  "color": option<Color.t>,
+
+  "fontSize": option<FontSize.t>,
+  "fontWeight": option<FontWeight.t>,
+  "fontFamily": option<FontFamily.t>,
+  "fontStyle": option<FontStyle.t>,
+
+  "textDecorationColor": option<TextDecorationColor.t>,
+  "textDecorationLine": option<TextDecorationLine.t>,
+  "textDecorationStyle": option<TextDecorationStyle.t>,
+  "textDecorationThickness": option<TextDecorationThickness.t>,
+
+  "textTransform": option<TextTransform.t>,
+
+  "children": React.element,
 }
 
 @obj external makeProps:(
-  ~tag: TextProto.tag,
-
   ~className: option<string>,
 
   ~color: option<Color.t>,
 
-  ~fontFamily: option<FontFamily.t>,
   ~fontSize: option<FontSize.t>,
-  ~fontStyle: option<FontStyle.t>,
   ~fontWeight: option<FontWeight.t>,
+  ~fontFamily: option<FontFamily.t>,
+  ~fontStyle: option<FontStyle.t>,
 
   ~textDecorationColor: option<TextDecorationColor.t>,
   ~textDecorationLine: option<TextDecorationLine.t>,
@@ -28,6 +41,7 @@ type props = {
 ) => props = ""
 
 let make = (
+  ~tag: TextProto.tag,
   ~className: string,
   ~styleProps: TextProto.styleProps,
 ) => (props: props) => {
@@ -35,7 +49,7 @@ let make = (
   let fontSizeCtx = FontSize.useFontSize();
 
   TextProto.make({
-    "tag": props["tag"],
+    "tag": tag,
 
     "className": className,
 
