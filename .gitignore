@@ -11,8 +11,9 @@ src/**/*.gen.ts
 # playroom
 /.playroom/build/**
 /.playroom/package/**
-/.playroom/Playroom.js
-/.playroom/src/Snippets.js
+.playroom/Playroom.js
+playroom/src/Snippets.js
+
 
 # storybook
 /.storybook/StoryBook.js
