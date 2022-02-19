@@ -1,7 +1,7 @@
 @module("./H1Style.css.js") external classNameRoot: string = "className"
 
+let { displayName }: Meta.t = H1Meta.make
 let className = classNameRoot
-let displayName = "H1"
 type styleProps = HeadingProto.styleProps
 let styleProps = H1StyleProps.styleProps
 type props = HeadingSubset.props

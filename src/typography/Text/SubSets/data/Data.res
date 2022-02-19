@@ -1,7 +1,7 @@
 @module("./DataStyle.css.js") external classNameRoot: string = "className"
 
+let { displayName }: Meta.t = DataMeta.make
 let className = classNameRoot
-let displayName = "Data"
 type styleProps = TextProto.styleProps
 let styleProps = DataStyleProps.styleProps
 type props = TextSubset.props

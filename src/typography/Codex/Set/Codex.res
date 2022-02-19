@@ -1,7 +1,7 @@
 @module("./CodexStyle.css.js") external classNameRoot: string = "className"
 
+let { displayName }: Meta.t = CodexMeta.make
 let className = classNameRoot
-let displayName = "Codex"
 type styleProps = CodexProto.styleProps
 let styleProps = CodexStyleProps.styleProps
 type props = CodexSet.props

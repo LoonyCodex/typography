@@ -1,7 +1,7 @@
 @module("./CiteStyle.css.js") external classNameRoot: string = "className"
 
+let { displayName }: Meta.t = CiteMeta.make
 let className = classNameRoot
-let displayName = "Citation"
 type styleProps = TextProto.styleProps
 let styleProps = CiteStyleProps.styleProps
 type props = TextSubset.props

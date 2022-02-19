@@ -1,7 +1,7 @@
 @module("./AbbrStyle.css.js") external classNameRoot: string = "className"
 
+let { displayName }: Meta.t = AbbrMeta.make
 let className = classNameRoot
-let displayName = "Abbreviation"
 type styleProps = TextProto.styleProps
 let styleProps = AbbrStyleProps.styleProps
 type props = TextSubset.props

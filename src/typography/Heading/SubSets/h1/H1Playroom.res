@@ -1,7 +1,10 @@
+let { displayName, description }: Meta.t = H1Meta.make
+let tag = `<${displayName}>`
+
 let make: array<Playroom.t> = [
   {
-    group: H1.displayName,
-    name: "<H1>: Heading level 1",
-    code: "<H1>Heading level 1</H1>",
+    group: displayName,
+    name: `${displayName}: ${description}`,
+    code: `<${tag}>${description}</${tag}>`,
   },
 ]

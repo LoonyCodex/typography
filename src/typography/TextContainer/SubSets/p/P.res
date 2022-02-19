@@ -2,8 +2,8 @@
 
 @module("./PStyle.css.js") external classNameRoot: string = "className"
 
+let { displayName }: Meta.t = PMeta.make
 let className = classNameRoot
-let displayName = "Paragraph"
 type styleProps = TextContainerProto.styleProps
 let styleProps = PStyleProps.styleProps
 type props = TextContainerSubset.props

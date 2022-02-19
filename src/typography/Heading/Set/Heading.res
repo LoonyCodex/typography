@@ -1,7 +1,7 @@
 @module("./HeadingStyle.css.js") external classNameRoot: string = "className"
 
+let { displayName }: Meta.t = HeadingMeta.make
 let className = classNameRoot
-let displayName = "Heading"
 type styleProps = HeadingProto.styleProps
 let styleProps = HeadingStyleProps.styleProps
 type props = HeadingSet.props

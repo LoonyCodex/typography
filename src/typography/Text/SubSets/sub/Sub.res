@@ -1,7 +1,7 @@
 @module("./SubStyle.css.js") external classNameRoot: string = "className"
 
+let { displayName }: Meta.t = SubMeta.make
 let className = classNameRoot
-let displayName = "Subscript"
 type styleProps = TextProto.styleProps
 let styleProps = SubStyleProps.styleProps
 type props = TextSubset.props

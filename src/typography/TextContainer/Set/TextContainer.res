@@ -1,7 +1,7 @@
 @module("./TextContainerStyle.css.js") external classNameRoot: string = "className"
 
+let { displayName }: Meta.t = TextContainerMeta.make
 let className = classNameRoot
-let displayName = "TextContainer"
 type styleProps = TextContainerProto.styleProps
 let styleProps = TextContainerStyleProps.styleProps
 type props = TextContainerSet.props

@@ -1,7 +1,7 @@
 @module("./SampStyle.css.js") external classNameRoot: string = "className"
 
+let { displayName }: Meta.t = SampMeta.make
 let className = classNameRoot
-let displayName = "CodeOutput"
 type styleProps = CodexProto.styleProps
 let styleProps = SampStyleProps.styleProps
 type props = CodexSubset.props

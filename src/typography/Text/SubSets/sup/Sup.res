@@ -1,7 +1,7 @@
 @module("./SupStyle.css.js") external classNameRoot: string = "className"
 
+let { displayName }: Meta.t = SupMeta.make
 let className = classNameRoot
-let displayName = "Superscript"
 type styleProps = TextProto.styleProps
 let styleProps = SupStyleProps.styleProps
 type props = TextSubset.props

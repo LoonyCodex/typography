@@ -1,7 +1,7 @@
 @module("./MarkStyle.css.js") external classNameRoot: string = "className"
 
+let { displayName }: Meta.t = MarkMeta.make
 let className = classNameRoot
-let displayName = "Highlight"
 type styleProps = TextProto.styleProps
 let styleProps = MarkStyleProps.styleProps
 type props = TextSubset.props

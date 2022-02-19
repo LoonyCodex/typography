@@ -1,7 +1,7 @@
 @module("./IStyle.css.js") external classNameRoot: string = "className"
 
+let { displayName }: Meta.t = IMeta.make
 let className = classNameRoot
-let displayName = "Idiomatic"
 type styleProps = TextProto.styleProps
 let styleProps = IStyleProps.styleProps
 type props = TextSubset.props

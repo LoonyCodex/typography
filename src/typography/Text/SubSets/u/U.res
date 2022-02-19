@@ -1,7 +1,7 @@
 @module("./UStyle.css.js") external classNameRoot: string = "className"
 
+let { displayName }: Meta.t = UMeta.make
 let className = classNameRoot
-let displayName = "UnarticulatedAnnotation"
 type styleProps = TextProto.styleProps
 let styleProps = UStyleProps.styleProps
 type props = TextSubset.props

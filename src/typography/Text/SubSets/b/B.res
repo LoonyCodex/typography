@@ -1,7 +1,7 @@
 @module("./BStyle.css.js") external classNameRoot: string = "className"
 
+let { displayName }: Meta.t = BMeta.make
 let className = classNameRoot
-let displayName = "Attention"
 type styleProps = TextProto.styleProps
 let styleProps = BStyleProps.styleProps
 type props = TextSubset.props

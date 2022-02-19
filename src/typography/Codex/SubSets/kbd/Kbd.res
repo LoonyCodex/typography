@@ -1,7 +1,7 @@
 @module("./KbdStyle.css.js") external classNameRoot: string = "className"
 
+let { displayName }: Meta.t = KbdMeta.make
 let className = classNameRoot
-let displayName = "Keyboard"
 type styleProps = CodexProto.styleProps
 let styleProps = KbdStyleProps.styleProps
 type props = CodexSubset.props

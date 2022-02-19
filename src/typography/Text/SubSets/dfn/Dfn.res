@@ -1,7 +1,7 @@
 @module("./DfnStyle.css.js") external classNameRoot: string = "className"
 
+let { displayName }: Meta.t = DfnMeta.make
 let className = classNameRoot
-let displayName = "DefinedTerm"
 type styleProps = TextProto.styleProps
 let styleProps = DfnStyleProps.styleProps
 type props = TextSubset.props

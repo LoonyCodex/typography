@@ -1,7 +1,7 @@
 @module("./AStyle.css.js") external classNameRoot: string = "className"
 
+let { displayName }: Meta.t = AMeta.make
 let className = classNameRoot
-let displayName = "Link"
 type styleProps = LinkProto.styleProps
 let styleProps = AStyleProps.styleProps
 type props = LinkSubset.props

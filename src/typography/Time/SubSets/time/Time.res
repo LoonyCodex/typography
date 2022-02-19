@@ -1,7 +1,7 @@
 @module("./TimeStyle.css.js") external classNameRoot: string = "className"
 
+let { displayName }: Meta.t = TimeMeta.make
 let className = classNameRoot
-let displayName = "Time"
 type styleProps = TimeProto.styleProps
 let styleProps = TimeStyleProps.styleProps
 type props = TimeSubset.props
