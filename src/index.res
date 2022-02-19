@@ -102,7 +102,7 @@ let unarticulatedAnnotation = U.make
 
 // TextContainer
 @genType.as("TextContainer")
-let textContainer = TextContainerSet.make
+let textContainer = TextContainer.make
 
 @genType.as("Paragraph")
 let paragraph = P.make

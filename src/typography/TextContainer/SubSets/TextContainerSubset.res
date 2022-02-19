@@ -1,12 +1,25 @@
 @genType
 type props = {
-  ...TextContainerSubset.props,
-  "tag": TextContainerProto.tag,
+  "className": option<string>,
+
+  "color": option<Color.t>,
+
+  "fontFamily": option<FontFamily.t>,
+  "fontSize": option<FontSize.t>,
+  "fontStyle": option<FontStyle.t>,
+  "fontWeight": option<FontWeight.t>,
+
+  "textDecorationColor": option<TextDecorationColor.t>,
+  "textDecorationLine": option<TextDecorationLine.t>,
+  "textDecorationStyle": option<TextDecorationStyle.t>,
+  "textDecorationThickness": option<TextDecorationThickness.t>,
+
+  "textTransform": option<TextTransform.t>,
+
+  "children": React.element,
 }
 
 @obj external makeProps:(
-  ~tag: TextContainerProto.tag,
-
   ~className: option<string>,
 
   ~color: option<Color.t>,
@@ -28,10 +41,11 @@ type props = {
 ) => props = ""
 
 let make = (
+  ~tag: TextContainerProto.tag,
   ~className: string,
   ~styleProps: TextContainerProto.styleProps,
 ) => (props: props) => TextContainerProto.make({
-  "tag": props["tag"],
+  "tag": tag,
 
   "className": className,
 

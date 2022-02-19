@@ -4,7 +4,7 @@ let styleProps: TextContainerProto.styleProps = {
 
   // font
   "fontFamily": #primary,
-  "fontSize": #small,
+  "fontSize": #xxxlarge,
   "fontStyle": #normal,
   "fontWeight": #bold,
 

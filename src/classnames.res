@@ -94,7 +94,7 @@ let unarticulatedAnnotationClassName = U.className
 
 // TextContainer
 @genType.as("textContainer")
-let textContainerClassName = TextContainerSet.className
+let textContainerClassName = TextContainer.className
 
 @genType.as("paragraph")
 let paragraphClassName = P.className
