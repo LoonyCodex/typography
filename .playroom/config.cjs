@@ -1,23 +1,13 @@
 module.exports = {
   components: './build/index.gen.js',
   outputPath: './package',
-
-  // Optional:
   title: 'typography',
-  // themes: './src/themes',
-  // snippets: './.playroom/Snippets.js',
+  snippets: './src/Snippets.js',
   frameComponent: './src/FrameComponent.js',
-  // scope: './playroom/useScope.js',
   widths: [320, 768, 1024],
   port: 9000,
   openBrowser: true,
-  // paramType: 'search', // default is 'hash'
-  exampleCode: `
-    <H1>
-      Welcome
-    </H1>
-  `,
-  // baseUrl: '/playroom/',
+  exampleCode: `<H1>Welcome</H1>`,
   webpackConfig: () => ({
     module: {
       rules: [
@@ -43,5 +33,5 @@ module.exports = {
       ],
     },
   }),
-  // iframeSandbox: 'allow-scripts',
+  iframeSandbox: 'allow-scripts',
 };
