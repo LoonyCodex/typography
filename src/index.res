@@ -108,8 +108,5 @@ let textContainer = TextContainerSet.make
 let paragraph = P.make
 
 // Time
-@genType.as("TimeSet")
-let timeSet = TimeSet.make
-
 @genType.as("Time")
 let time = Time.make

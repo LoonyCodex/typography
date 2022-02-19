@@ -100,8 +100,5 @@ let textContainerClassName = TextContainerSet.className
 let paragraphClassName = P.className
 
 // Time
-@genType.as("timeSet")
-let timeSetClassName = TimeSet.className
-
 @genType.as("time")
 let timeClassName = Time.className

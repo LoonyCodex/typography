@@ -1,19 +1,19 @@
 @genType
 let styleProps: TimeProto.styleProps = {
-  color: #black,
+  "color": #black,
 
   // font
-  fontFamily: #primary,
-  fontSize: #small,
-  fontStyle: #normal,
-  fontWeight: #bold,
+  "fontFamily": #primary,
+  "fontSize": #small,
+  "fontStyle": #normal,
+  "fontWeight": #bold,
 
   // textDecoration
-  textDecorationColor: #currentColor,
-  textDecorationLine: #none,
-  textDecorationStyle: #initial,
-  textDecorationThickness: #initial,
+  "textDecorationColor": #currentColor,
+  "textDecorationLine": #none,
+  "textDecorationStyle": #initial,
+  "textDecorationThickness": #initial,
 
   // text
-  textTransform: #none,
+  "textTransform": #none,
 }
