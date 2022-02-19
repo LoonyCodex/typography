@@ -12,11 +12,11 @@ let kbd = Kbd.make
 let samp = Samp.make
 
 @genType.as("Variable")
-let var = Var.make
+let _var = Var.make
 
 // Heading
 @genType.as("Heading")
-let headingSet = HeadingSet.make
+let heading = Heading.make
 
 @genType.as("H1")
 let h1 = H1.make
