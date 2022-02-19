@@ -2,7 +2,7 @@
 @genType.as("Codex")
 let codex = Codex.make
 
-@genType.as("CodeInline")
+@genType.as("Code")
 let code = Code.make
 
 @genType.as("Keyboard")
