@@ -17,5 +17,7 @@ let options: options = {
   white: "#FFFFFF",
 };
 
+let initial = ColorReflection.initial;
+
 let colorContext: React.Context.t<option<t>> = React.createContext(None)
 let useColor = () => React.useContext(colorContext)
