@@ -1,7 +1,8 @@
-type t = {
+type t<'a> = {
   name: string,
   css: string,
-  example: string,
+  args: array<'a>,
+  initial: string,
   description: string,
   mdn: string,
 }

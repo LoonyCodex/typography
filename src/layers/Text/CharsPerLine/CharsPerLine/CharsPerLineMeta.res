@@ -1,9 +1,10 @@
 let css = "max-width";
 
-let make: LayerMeta.t = {
+let make: LayerMeta.t<CharsPerLine.t> = {
   name: "charsPerLine",
   css,
-  example: `${css}="${CharsPerLine.initial :> string}"`,
+  args: CharsPerLine.args,
+  initial: `${css}="${CharsPerLine.initial :> string}"`,
   description: "Artificial property",
   mdn: "",
 }

@@ -1,9 +1,10 @@
 let css = "--border-opacity";
 
-let make: LayerMeta.t = {
+let make: LayerMeta.t<BorderOpacity.t> = {
   name: "borderOpacity",
   css,
-  example: `${css}="${(BorderOpacity.initial :> int) -> Belt.Int.toString}"`,
+  args: BorderOpacity.args,
+  initial: `${css}="${(BorderOpacity.initial :> int) -> Belt.Int.toString}"`,
   description: "Artificial property",
   mdn: "",
 }
