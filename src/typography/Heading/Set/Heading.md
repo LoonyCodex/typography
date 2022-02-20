@@ -69,7 +69,7 @@ import React from 'react';
 import { Heading } from 'typography';
 
 export default () => (<>
-	<Heading level={2}>Heading level 2 as div</Heading>
-	<Heading level={6}>Heading level 6 span</Heading>
+	<Heading level={2} tag="div">Heading level 2 as div</Heading>
+	<Heading level={6} tag="span">Heading level 6 span</Heading>
 </>);
 ```
