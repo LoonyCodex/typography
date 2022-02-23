@@ -6,6 +6,7 @@ let make: Meta.t = {
     #var,
   ]),
   displayName: "Codex",
+  parentName: "Codex",
   component: "Codex",
   description: "Codex",
   mdn: None,

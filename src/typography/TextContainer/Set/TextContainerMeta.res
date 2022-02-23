@@ -4,6 +4,7 @@ let make: Meta.t = {
     #p,
   ]),
   displayName: "TextContainer",
+  parentName: "TextContainer",
   component: "TextContainer",
   description: "TextContainer",
   mdn: None,

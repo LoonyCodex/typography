@@ -18,6 +18,7 @@ let make: Meta.t = {
     #u,
   ]),
   displayName: "Text",
+  parentName: "Text",
   component: "Text",
   description: "Text",
   mdn: None,

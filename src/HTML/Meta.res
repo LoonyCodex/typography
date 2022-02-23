@@ -40,6 +40,7 @@ type tag =
 type t = {
   tag: tag,
   displayName: string,
+  parentName: string,
   component: string,
   description: string,
   mdn: option<string>,
