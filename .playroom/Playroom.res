@@ -14,15 +14,4 @@ let getName = (
   }
 }
 
-let propsToString = (. acc, (k, v)) => acc ++ (acc == "" ? "" : " ") ++ k ++ "=" ++ `"${v}"`
-
-let getCode = (
-  ~component: string,
-  ~content: option<string>,
-  ~props: list<'a>,
-) => {
-  switch content {
-  | Some(s) => `<${component} ${props -> Belt.List.reduceU("", propsToString)}>${s}</${component}>`
-  | None => `<${component} />`
-  }
-}
+let getCode = Template.make
