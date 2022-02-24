@@ -5,4 +5,5 @@ let make: Meta.t = {
   component: "Link",
   description: "The Anchor element",
   mdn: Some("https://developer.mozilla.org/en-US/docs/Web/HTML/Element/a"),
+  docs: [],
 }

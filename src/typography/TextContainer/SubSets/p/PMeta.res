@@ -5,4 +5,5 @@ let make: Meta.t = {
   component: "Paragraph",
   description: "The Paragraph element",
   mdn: Some("https://developer.mozilla.org/en-US/docs/Web/HTML/Element/p"),
+  docs: [],
 }

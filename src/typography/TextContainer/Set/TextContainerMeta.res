@@ -8,4 +8,5 @@ let make: Meta.t = {
   component: "TextContainer",
   description: "TextContainer",
   mdn: None,
+  docs: [],
 }

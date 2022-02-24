@@ -5,4 +5,5 @@ let make: Meta.t = {
   component: "Idiomatic",
   description: "The Idiomatic Text element",
   mdn: Some("https://developer.mozilla.org/en-US/docs/Web/HTML/Element/i"),
+  docs: [],
 }

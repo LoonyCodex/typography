@@ -5,4 +5,5 @@ let make: Meta.t = {
   component: "Attention",
   description: "The Bring Attention To element",
   mdn: Some("https://developer.mozilla.org/en-US/docs/Web/HTML/Element/b"),
+  docs: [],
 }

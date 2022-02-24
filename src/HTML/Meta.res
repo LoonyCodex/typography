@@ -37,6 +37,16 @@ type tag =
   | HTMLTag(htmlTag)
   | HTMLSet(array<htmlTag>)
 
+type k = {
+  "title": string,
+  "description": option<string>,
+  "tag": string,
+  "key": string,
+  "content": option<string>,
+  "args": array<string>,
+  "props": option<list<(string, string)>>,
+}
+
 type t = {
   tag: tag,
   displayName: string,
@@ -44,4 +54,5 @@ type t = {
   component: string,
   description: string,
   mdn: option<string>,
+  docs: array<Js.t<k>>,
 }

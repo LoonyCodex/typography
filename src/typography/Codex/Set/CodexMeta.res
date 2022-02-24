@@ -10,4 +10,5 @@ let make: Meta.t = {
   component: "Codex",
   description: "Codex",
   mdn: None,
+  docs: [],
 }

@@ -5,4 +5,5 @@ let make: Meta.t = {
   component: "DefinedTerm",
   description: "The Definition element",
   mdn: Some("https://developer.mozilla.org/en-US/docs/Web/HTML/Element/dfn"),
+  docs: [],
 }

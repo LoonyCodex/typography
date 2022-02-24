@@ -22,4 +22,5 @@ let make: Meta.t = {
   component: "Text",
   description: "Text",
   mdn: None,
+  docs: [],
 }

@@ -5,4 +5,5 @@ let make: Meta.t = {
   component: "Outdated",
   description: "The Strikethrough element",
   mdn: Some("https://developer.mozilla.org/en-US/docs/Web/HTML/Element/s"),
+  docs: [],
 }

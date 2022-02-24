@@ -8,6 +8,21 @@ type t<'a> = {
 }
 
 external str: 'a => string = "%identity"
+// external str: a => string = "%identity"
+
+let title = (
+  ~name: string,
+  ~group: option<string>,
+) => `
+---
+title: ${name}
+
+${switch group {
+| Some(s) => "group:\n\s\s\s\stitle: " ++ s
+| None => ""
+}}
+---
+`
 
 let section = (
   ~title: string,
@@ -50,4 +65,38 @@ ${Belt.Array.reduce(
 )}
 </>);
 \`\`\`
+`
+
+let gen = (
+  ~name: string,
+  ~group: option<string>,
+) => `
+${title(
+  ~name,
+  ~group,
+)}
+`
+
+let make = (
+  ~name: string,
+  ~group: option<string>,
+  ~displayName: string,
+  ~docs: array<Js.t<Meta.k>>,
+) => `
+${title(
+  ~name,
+  ~group,
+)}
+
+${Js.Array.reduce((prev, current) => {
+  prev ++ "\n" ++ section(
+    ~tag = displayName,
+    ~title = current["title"],
+    ~description = current["description"],
+    ~key = current["key"],
+    ~content = current["content"],
+    ~args = current["args"],
+    ~props = current["props"],
+  )
+}, "", docs)}
 `

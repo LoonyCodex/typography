@@ -5,4 +5,5 @@ let make: Meta.t = {
   component: "Data",
   description: "The Data element",
   mdn: Some("https://developer.mozilla.org/en-US/docs/Web/HTML/Element/data"),
+  docs: [],
 }

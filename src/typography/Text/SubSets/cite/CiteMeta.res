@@ -5,4 +5,5 @@ let make: Meta.t = {
   component: "Citation",
   description: "The Citation element",
   mdn: Some("https://developer.mozilla.org/en-US/docs/Web/HTML/Element/cite"),
+  docs: [],
 }

@@ -5,4 +5,5 @@ let make: Meta.t = {
   component: "Highlight",
   description: "The Mark Text element",
   mdn: Some("https://developer.mozilla.org/en-US/docs/Web/HTML/Element/mark"),
+  docs: [],
 }

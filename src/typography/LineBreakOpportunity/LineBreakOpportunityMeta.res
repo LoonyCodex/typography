@@ -5,4 +5,5 @@ let make: Meta.t = {
   component: "LineBreakOpportunity",
   description: "The Line Break Opportunity element",
   mdn: Some("https://developer.mozilla.org/en-US/docs/Web/HTML/Element/wbr"),
+  docs: [],
 }

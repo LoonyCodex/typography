@@ -5,4 +5,5 @@ let make: Meta.t = {
   component: "Subscript",
   description: "The Subscript element",
   mdn: Some("https://developer.mozilla.org/en-US/docs/Web/HTML/Element/sub"),
+  docs: [],
 }

@@ -5,4 +5,5 @@ let make: Meta.t = {
   component: "H1",
   description: "Heading level 1",
   mdn: Some("https://developer.mozilla.org/en-US/docs/Web/HTML/Element/Heading_Elements"),
+  docs: [],
 }

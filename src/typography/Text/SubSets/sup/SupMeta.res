@@ -5,4 +5,5 @@ let make: Meta.t = {
   component: "Superscript",
   description: "The Superscript element",
   mdn: Some("https://developer.mozilla.org/en-US/docs/Web/HTML/Element/sup"),
+  docs: [],
 }

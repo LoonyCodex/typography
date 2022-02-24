@@ -5,4 +5,5 @@ let make: Meta.t = {
   component: "FigCaption",
   description: "The Figure Caption element",
   mdn: Some("https://developer.mozilla.org/en-US/docs/Web/HTML/Element/figcaption"),
+  docs: [],
 }
