@@ -1,12 +1,12 @@
 @genType
-type styleProps = HeadingInitial.styleProps
+type styleProps = HeadingProtoMeta.styleProps
 
 @genType
-type level = HeadingInitial.level
+type level = HeadingProtoMeta.level
 
 @genType
-type tag = HeadingInitial.tag
+type tag = HeadingProtoMeta.tag
 
-type props = HeadingInitial.props
+type props = HeadingProtoMeta.props
 
 let make = HeadingInitial.make;
