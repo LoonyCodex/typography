@@ -11,24 +11,20 @@ const markdownPlugin = {
 
     md.use(prettify);
 
-    const startString = `var make = "`;
-    const endString = `";\n\nexport {`;
-
     build.onLoad({ filter: /^.*\.md\.js$/ }, async (args) => {
-      let source = await fs.promises.readFile(args.path, 'utf8');
-      const startIndex = source.indexOf(startString);
-      const endIndex = source.indexOf(endString, startIndex);
-      const content = source.slice(startIndex + startString.length, endIndex);
-      const mdFile = args.path.replace(/.js$/, '');
+      import(args.path).then(async ({ make }) => {
+        const content = make;
+        const mdFile = args.path.replace(/.js$/, '');
 
-      await fs.promises.writeFile(
-        mdFile,
-        md.render(
-          content.replace(/\\n/g, '\n\r')
-        )
-      );
+        await fs.promises.writeFile(
+          mdFile,
+          md.render(
+            content//.replace(/\\n/g, '\n\r')
+          ).replace(/\*\*\*/g, '\-\-\-')
+        );
 
-      return { contents: '' }
+        return { contents: '' }        
+      })
     })
   },
 }
