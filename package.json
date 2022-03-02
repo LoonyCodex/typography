@@ -7,12 +7,10 @@
   "types": "package/index.gen.d.ts",
   "typings": "package/index.gen.d.ts",
   "files": [
-    "package",
-    "src"
+    "package"
   ],
   "directories": {
-    "package": "package",
-    "src": "src"
+    "package": "package"
   },
   "publishConfig": {
     "access": "public",
