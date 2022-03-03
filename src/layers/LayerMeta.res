@@ -8,7 +8,6 @@ type t<'a> = {
 }
 
 external str: 'a => string = "%identity"
-// external str: a => string = "%identity"
 
 let title = (
   ~name: string,
@@ -18,8 +17,11 @@ let title = (
 title: ${name}
 
 ${switch group {
-| Some(s) => "group:\n\s\s\s\stitle: " ++ s
-| None => ""
+| Some(s) =>`
+group:
+title: ${s}
+`
+| None => ``
 }}
 ---
 `

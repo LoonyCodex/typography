@@ -1,4 +1,4 @@
-let css = "border-radius";
+let css = "text-align";
 
 let make: LayerMeta.t<ContentAlign.t> = {
   name: "contentAlign",
