@@ -1,6 +1,7 @@
 const postcss = require("postcss");
 const autoprefixer = require("autoprefixer");
 const { vanillaExtractPlugin } = require("@vanilla-extract/esbuild-plugin");
+const { dtsPlugin } = require("esbuild-plugin-d.ts");
 
 async function processCss(css) {
   const result = await postcss([autoprefixer]).process(css, {
@@ -26,5 +27,6 @@ require("esbuild")
     format: "esm",
     target: "es6",
     external: ["react", "react-dom"],
+    plugins: [dtsPlugin()],
   })
   .catch(() => process.exit(1));
