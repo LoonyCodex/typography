@@ -18,9 +18,9 @@ const markdownPlugin = {
 
         await fs.promises.writeFile(
           mdFile,
-          md.render(
-            content//.replace(/\\n/g, '\n\r')
-          ).replace(/\*\*\*/g, '\-\-\-')
+          md.render(content)
+            .replace(/\*\*\*/g, '\-\-\-')
+            .replace(/^group:\ntitle:/gm, 'group:\n    title:')
         );
 
         return { contents: '' }        
