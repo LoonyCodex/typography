@@ -1,5 +1,3 @@
-open Cx
-
 @module("./TextProtoStyle.css.js") external classNameRoot: string = "className"
 
 let className = classNameRoot;
@@ -75,7 +73,7 @@ let make = (props: props) => {
   React.createElementVariadic(
     ReactDOM.stringToComponent(props["tag"] :> string),
     ReactDOM.domProps(
-      ~className = cx([
+      ~className = Cn.make([
         classNameRoot,
         props["className"],
 

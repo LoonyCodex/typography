@@ -1,10 +1,8 @@
-open Cx;
-
 @genType
 let resolve = (
   ~paddingInlineEnd: PaddingReflection.t,
   ~paddingInlineStart: PaddingReflection.t,
-) => cx([
+) => Cn.make([
   PaddingInlineEndResolver.make   ( . paddingInlineEnd   ),
   PaddingInlineStartResolver.make ( . paddingInlineStart ),
 ]);

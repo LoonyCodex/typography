@@ -1,12 +1,10 @@
-open Cx;
-
 @genType
 let resolve = (
   ~paddingBlockEnd: PaddingReflection.t,
   ~paddingBlockStart: PaddingReflection.t,
   ~paddingInlineEnd: PaddingReflection.t,
   ~paddingInlineStart: PaddingReflection.t,
-) => cx([
+) => Cn.make([
   PaddingBlockEndResolver.make    ( . paddingBlockEnd    ),
   PaddingBlockStartResolver.make  ( . paddingBlockStart  ),
   PaddingInlineEndResolver.make   ( . paddingInlineEnd   ),

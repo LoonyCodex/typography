@@ -1,5 +1,3 @@
-open Cx;
-
 @genType
 let resolve = (
   ~backgroundAttachment: BackgroundAttachment.t,
@@ -10,7 +8,7 @@ let resolve = (
   ~backgroundPosition  : BackgroundPosition.t  ,
   ~backgroundRepeat    : BackgroundRepeat.t    ,
   ~backgroundSize      : BackgroundSize.t      ,
-) => cx([
+) => Cn.make([
   BackgroundAttachmentResolver.make( . backgroundAttachment ),
   BackgroundClipResolver.make      ( . backgroundClip       ),
   BackgroundColorResolver.make     ( . backgroundColor      ),

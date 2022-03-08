@@ -1,5 +1,3 @@
-open Cx
-
 @module("./HeadingProtoStyle.css.js") external classNameRoot: string = "className"
 
 let className = classNameRoot;
@@ -23,7 +21,7 @@ let make = (props: HeadingProtoMeta.props) => {
   React.createElementVariadic(
     ReactDOM.stringToComponent(tag),
     ReactDOM.domProps(
-      ~className = cx([
+      ~className = Cn.make([
         classNameRoot,
         props["className"],
 
