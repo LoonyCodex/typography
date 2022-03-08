@@ -25,3 +25,8 @@ Publish documentation via Github Pages,
 ```bash
 $ npm run dumi:publish
 ```
+
+## Interactive Playground
+```bash
+$ npm i && npm run playroom
+```
