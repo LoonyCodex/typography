@@ -56,8 +56,8 @@ ${Belt.Array.reduce(
     Template.make(
       ~component = tag,
       ~content = switch content {
-      | Some(s) => Some(s ++ " " ++ str(current))
-      | None => Some(tag ++ " " ++ str(current))
+      | Some(s) => Some(s)
+      | None => Some(key ++ ": " ++ str(current))
       },
       ~props = switch props {
       | Some(s) => Belt.List.concat(s, list{(key, str(current))})

@@ -1,5 +1,17 @@
 let displayName = "Heading";
 
+let docs: array<Js.t<Meta.k>> = Belt.Array.concatMany([
+  CharsPerLineLayerMeta.make,
+  ColorLayerMeta.make,
+  ContentLayerMeta.make,
+  FontLayerMeta.make,
+  TextDecorationLayerMeta.make,
+  TextTransformLayerMeta.make,
+  // TextOverflowLayerMeta.make,
+  MarginLayerMeta.make,
+  PaddingLayerMeta.make,
+]);
+
 let make: Meta.t = {
   tag: HTMLSet([
     #h1,
@@ -31,7 +43,7 @@ let make: Meta.t = {
         "description": Some("Heading has 6 levels: [1, 2, 3, 4, 5, 6], which resolve to [h1, h2, h3, h4, h5, h6]:"),
         "key": "level",
         "content": None,
-        "args": ColorMeta.make.args,
+        "args": ["1", "2", "3", "4", "5", "6"],
         "props": None,
       }),
 
@@ -39,29 +51,21 @@ let make: Meta.t = {
         "title": "Semantics override with `div`",
         "description": Some("Semantics can be overriden:"),
         "key": "level",
-        "content": None,
+        "content": Some(displayName ++ " as `div`"),
         "args": ["2", "4"],
-        "props": Some(list{("tag", "div")}),        
+        "props": Some(list{("tag", "div")}),
       }),
 
       Js.Obj.assign(Js.Obj.empty(), {
         "title": "Semantics override with `span`",
         "description": Some("Semantics can be overriden:"),
         "key": "level",
-        "content": None,
+        "content": Some(displayName ++ " as `span`"),
         "args": ["1", "3"],
-        "props": Some(list{("tag", "span")}),        
+        "props": Some(list{("tag", "span")}),
       }),
     ],
 
-    CharsPerLineLayerMeta.make,
-    ColorLayerMeta.make,
-    ContentLayerMeta.make,
-    FontLayerMeta.make,
-    TextDecorationLayerMeta.make,
-    TextTransformLayerMeta.make,
-    TextOverflowLayerMeta.make,
-    MarginLayerMeta.make,
-    PaddingLayerMeta.make,
+    docs,
   ]),
 }

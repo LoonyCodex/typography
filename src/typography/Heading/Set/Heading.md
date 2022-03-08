@@ -14,7 +14,7 @@ import React from 'react';
 import { Heading } from 'typography';
 
 export default () => (<>
-    <Heading level="1">Heading with default styles 1</Heading>
+    <Heading level="1">Heading with default styles</Heading>
 </>);
 ```
 
@@ -27,10 +27,12 @@ import React from 'react';
 import { Heading } from 'typography';
 
 export default () => (<>
-    <Heading level="primary">Heading primary</Heading>
-    <Heading level="secondary">Heading secondary</Heading>
-    <Heading level="black">Heading black</Heading>
-    <Heading level="white">Heading white</Heading>
+    <Heading level="1">level: 1</Heading>
+    <Heading level="2">level: 2</Heading>
+    <Heading level="3">level: 3</Heading>
+    <Heading level="4">level: 4</Heading>
+    <Heading level="5">level: 5</Heading>
+    <Heading level="6">level: 6</Heading>
 </>);
 ```
 
@@ -43,8 +45,8 @@ import React from 'react';
 import { Heading } from 'typography';
 
 export default () => (<>
-    <Heading tag="div" level="2">Heading 2</Heading>
-    <Heading tag="div" level="4">Heading 4</Heading>
+    <Heading tag="div" level="2">Heading as `div`</Heading>
+    <Heading tag="div" level="4">Heading as `div`</Heading>
 </>);
 ```
 
@@ -57,8 +59,8 @@ import React from 'react';
 import { Heading } from 'typography';
 
 export default () => (<>
-    <Heading tag="span" level="1">Heading 1</Heading>
-    <Heading tag="span" level="3">Heading 3</Heading>
+    <Heading tag="span" level="1">Heading as `span`</Heading>
+    <Heading tag="span" level="3">Heading as `span`</Heading>
 </>);
 ```
 
@@ -69,10 +71,10 @@ import React from 'react';
 import { Heading } from 'typography';
 
 export default () => (<>
-    <Heading charsPerLine="none">Heading none</Heading>
-    <Heading charsPerLine="small">Heading small</Heading>
-    <Heading charsPerLine="medium">Heading medium</Heading>
-    <Heading charsPerLine="large">Heading large</Heading>
+    <Heading charsPerLine="none">charsPerLine: none</Heading>
+    <Heading charsPerLine="small">charsPerLine: small</Heading>
+    <Heading charsPerLine="medium">charsPerLine: medium</Heading>
+    <Heading charsPerLine="large">charsPerLine: large</Heading>
 </>);
 ```
 
@@ -83,10 +85,10 @@ import React from 'react';
 import { Heading } from 'typography';
 
 export default () => (<>
-    <Heading color="primary">Heading primary</Heading>
-    <Heading color="secondary">Heading secondary</Heading>
-    <Heading color="black">Heading black</Heading>
-    <Heading color="white">Heading white</Heading>
+    <Heading color="primary">color: primary</Heading>
+    <Heading color="secondary">color: secondary</Heading>
+    <Heading color="black">color: black</Heading>
+    <Heading color="white">color: white</Heading>
 </>);
 ```
 
@@ -97,19 +99,19 @@ import React from 'react';
 import { Heading } from 'typography';
 
 export default () => (<>
-    <Heading contentAlign="left">Heading left</Heading>
-    <Heading contentAlign="right">Heading right</Heading>
-    <Heading contentAlign="center">Heading center</Heading>
-    <Heading contentAlign="justify">Heading justify</Heading>
-    <Heading contentAlign="justifyAll">Heading justifyAll</Heading>
-    <Heading contentAlign="start">Heading start</Heading>
-    <Heading contentAlign="end">Heading end</Heading>
-    <Heading contentAlign="matchParent">Heading matchParent</Heading>
-    <Heading contentAlign="dot">Heading dot</Heading>
-    <Heading contentAlign="dotCenter">Heading dotCenter</Heading>
-    <Heading contentAlign="inherit">Heading inherit</Heading>
-    <Heading contentAlign="initial">Heading initial</Heading>
-    <Heading contentAlign="unset">Heading unset</Heading>
+    <Heading contentAlign="left">contentAlign: left</Heading>
+    <Heading contentAlign="right">contentAlign: right</Heading>
+    <Heading contentAlign="center">contentAlign: center</Heading>
+    <Heading contentAlign="justify">contentAlign: justify</Heading>
+    <Heading contentAlign="justifyAll">contentAlign: justifyAll</Heading>
+    <Heading contentAlign="start">contentAlign: start</Heading>
+    <Heading contentAlign="end">contentAlign: end</Heading>
+    <Heading contentAlign="matchParent">contentAlign: matchParent</Heading>
+    <Heading contentAlign="dot">contentAlign: dot</Heading>
+    <Heading contentAlign="dotCenter">contentAlign: dotCenter</Heading>
+    <Heading contentAlign="inherit">contentAlign: inherit</Heading>
+    <Heading contentAlign="initial">contentAlign: initial</Heading>
+    <Heading contentAlign="unset">contentAlign: unset</Heading>
 </>);
 ```
 
@@ -120,8 +122,8 @@ import React from 'react';
 import { Heading } from 'typography';
 
 export default () => (<>
-    <Heading fontFamily="primary">Heading primary</Heading>
-    <Heading fontFamily="monospace">Heading monospace</Heading>
+    <Heading fontFamily="primary">fontFamily: primary</Heading>
+    <Heading fontFamily="monospace">fontFamily: monospace</Heading>
 </>);
 ```
 
@@ -132,18 +134,18 @@ import React from 'react';
 import { Heading } from 'typography';
 
 export default () => (<>
-    <Heading fontSize="larger">Heading larger</Heading>
-    <Heading fontSize="smaller">Heading smaller</Heading>
-    <Heading fontSize="none">Heading none</Heading>
-    <Heading fontSize="xxxsmall">Heading xxxsmall</Heading>
-    <Heading fontSize="xxsmall">Heading xxsmall</Heading>
-    <Heading fontSize="xsmall">Heading xsmall</Heading>
-    <Heading fontSize="small">Heading small</Heading>
-    <Heading fontSize="medium">Heading medium</Heading>
-    <Heading fontSize="large">Heading large</Heading>
-    <Heading fontSize="xlarge">Heading xlarge</Heading>
-    <Heading fontSize="xxlarge">Heading xxlarge</Heading>
-    <Heading fontSize="xxxlarge">Heading xxxlarge</Heading>
+    <Heading fontSize="larger">fontSize: larger</Heading>
+    <Heading fontSize="smaller">fontSize: smaller</Heading>
+    <Heading fontSize="none">fontSize: none</Heading>
+    <Heading fontSize="xxxsmall">fontSize: xxxsmall</Heading>
+    <Heading fontSize="xxsmall">fontSize: xxsmall</Heading>
+    <Heading fontSize="xsmall">fontSize: xsmall</Heading>
+    <Heading fontSize="small">fontSize: small</Heading>
+    <Heading fontSize="medium">fontSize: medium</Heading>
+    <Heading fontSize="large">fontSize: large</Heading>
+    <Heading fontSize="xlarge">fontSize: xlarge</Heading>
+    <Heading fontSize="xxlarge">fontSize: xxlarge</Heading>
+    <Heading fontSize="xxxlarge">fontSize: xxxlarge</Heading>
 </>);
 ```
 
@@ -154,12 +156,12 @@ import React from 'react';
 import { Heading } from 'typography';
 
 export default () => (<>
-    <Heading fontStyle="normal">Heading normal</Heading>
-    <Heading fontStyle="italic">Heading italic</Heading>
-    <Heading fontStyle="oblique">Heading oblique</Heading>
-    <Heading fontStyle="inherit">Heading inherit</Heading>
-    <Heading fontStyle="initial">Heading initial</Heading>
-    <Heading fontStyle="unset">Heading unset</Heading>
+    <Heading fontStyle="normal">fontStyle: normal</Heading>
+    <Heading fontStyle="italic">fontStyle: italic</Heading>
+    <Heading fontStyle="oblique">fontStyle: oblique</Heading>
+    <Heading fontStyle="inherit">fontStyle: inherit</Heading>
+    <Heading fontStyle="initial">fontStyle: initial</Heading>
+    <Heading fontStyle="unset">fontStyle: unset</Heading>
 </>);
 ```
 
@@ -170,20 +172,20 @@ import React from 'react';
 import { Heading } from 'typography';
 
 export default () => (<>
-    <Heading fontWeight="thin">Heading thin</Heading>
-    <Heading fontWeight="extraLight">Heading extraLight</Heading>
-    <Heading fontWeight="light">Heading light</Heading>
-    <Heading fontWeight="normal">Heading normal</Heading>
-    <Heading fontWeight="medium">Heading medium</Heading>
-    <Heading fontWeight="semiBold">Heading semiBold</Heading>
-    <Heading fontWeight="bold">Heading bold</Heading>
-    <Heading fontWeight="extraBold">Heading extraBold</Heading>
-    <Heading fontWeight="heavy">Heading heavy</Heading>
-    <Heading fontWeight="lighter">Heading lighter</Heading>
-    <Heading fontWeight="bolder">Heading bolder</Heading>
-    <Heading fontWeight="inherit">Heading inherit</Heading>
-    <Heading fontWeight="initial">Heading initial</Heading>
-    <Heading fontWeight="unset">Heading unset</Heading>
+    <Heading fontWeight="thin">fontWeight: thin</Heading>
+    <Heading fontWeight="extraLight">fontWeight: extraLight</Heading>
+    <Heading fontWeight="light">fontWeight: light</Heading>
+    <Heading fontWeight="normal">fontWeight: normal</Heading>
+    <Heading fontWeight="medium">fontWeight: medium</Heading>
+    <Heading fontWeight="semiBold">fontWeight: semiBold</Heading>
+    <Heading fontWeight="bold">fontWeight: bold</Heading>
+    <Heading fontWeight="extraBold">fontWeight: extraBold</Heading>
+    <Heading fontWeight="heavy">fontWeight: heavy</Heading>
+    <Heading fontWeight="lighter">fontWeight: lighter</Heading>
+    <Heading fontWeight="bolder">fontWeight: bolder</Heading>
+    <Heading fontWeight="inherit">fontWeight: inherit</Heading>
+    <Heading fontWeight="initial">fontWeight: initial</Heading>
+    <Heading fontWeight="unset">fontWeight: unset</Heading>
 </>);
 ```
 
@@ -194,11 +196,11 @@ import React from 'react';
 import { Heading } from 'typography';
 
 export default () => (<>
-    <Heading textDecorationColor="currentColor">Heading currentColor</Heading>
-    <Heading textDecorationColor="primary">Heading primary</Heading>
-    <Heading textDecorationColor="secondary">Heading secondary</Heading>
-    <Heading textDecorationColor="black">Heading black</Heading>
-    <Heading textDecorationColor="white">Heading white</Heading>
+    <Heading textDecorationStyle="solid" textDecorationLine="underline" textDecorationThickness="auto" textDecorationColor="currentColor">textDecorationColor: currentColor</Heading>
+    <Heading textDecorationStyle="solid" textDecorationLine="underline" textDecorationThickness="auto" textDecorationColor="primary">textDecorationColor: primary</Heading>
+    <Heading textDecorationStyle="solid" textDecorationLine="underline" textDecorationThickness="auto" textDecorationColor="secondary">textDecorationColor: secondary</Heading>
+    <Heading textDecorationStyle="solid" textDecorationLine="underline" textDecorationThickness="auto" textDecorationColor="black">textDecorationColor: black</Heading>
+    <Heading textDecorationStyle="solid" textDecorationLine="underline" textDecorationThickness="auto" textDecorationColor="white">textDecorationColor: white</Heading>
 </>);
 ```
 
@@ -209,18 +211,18 @@ import React from 'react';
 import { Heading } from 'typography';
 
 export default () => (<>
-    <Heading textDecorationLine="none">Heading none</Heading>
-    <Heading textDecorationLine="underline">Heading underline</Heading>
-    <Heading textDecorationLine="overline">Heading overline</Heading>
-    <Heading textDecorationLine="lineThrough">Heading lineThrough</Heading>
-    <Heading textDecorationLine="blink">Heading blink</Heading>
-    <Heading textDecorationLine="overline_lineThrough">Heading overline_lineThrough</Heading>
-    <Heading textDecorationLine="overline_underline">Heading overline_underline</Heading>
-    <Heading textDecorationLine="lineThrough_underline">Heading lineThrough_underline</Heading>
-    <Heading textDecorationLine="overline_lineThrough_underline">Heading overline_lineThrough_underline</Heading>
-    <Heading textDecorationLine="inherit">Heading inherit</Heading>
-    <Heading textDecorationLine="initial">Heading initial</Heading>
-    <Heading textDecorationLine="unset">Heading unset</Heading>
+    <Heading textDecorationStyle="solid" textDecorationColor="currentColor" textDecorationThickness="auto" textDecorationLine="none">textDecorationLine: none</Heading>
+    <Heading textDecorationStyle="solid" textDecorationColor="currentColor" textDecorationThickness="auto" textDecorationLine="underline">textDecorationLine: underline</Heading>
+    <Heading textDecorationStyle="solid" textDecorationColor="currentColor" textDecorationThickness="auto" textDecorationLine="overline">textDecorationLine: overline</Heading>
+    <Heading textDecorationStyle="solid" textDecorationColor="currentColor" textDecorationThickness="auto" textDecorationLine="lineThrough">textDecorationLine: lineThrough</Heading>
+    <Heading textDecorationStyle="solid" textDecorationColor="currentColor" textDecorationThickness="auto" textDecorationLine="blink">textDecorationLine: blink</Heading>
+    <Heading textDecorationStyle="solid" textDecorationColor="currentColor" textDecorationThickness="auto" textDecorationLine="overline_lineThrough">textDecorationLine: overline_lineThrough</Heading>
+    <Heading textDecorationStyle="solid" textDecorationColor="currentColor" textDecorationThickness="auto" textDecorationLine="overline_underline">textDecorationLine: overline_underline</Heading>
+    <Heading textDecorationStyle="solid" textDecorationColor="currentColor" textDecorationThickness="auto" textDecorationLine="lineThrough_underline">textDecorationLine: lineThrough_underline</Heading>
+    <Heading textDecorationStyle="solid" textDecorationColor="currentColor" textDecorationThickness="auto" textDecorationLine="overline_lineThrough_underline">textDecorationLine: overline_lineThrough_underline</Heading>
+    <Heading textDecorationStyle="solid" textDecorationColor="currentColor" textDecorationThickness="auto" textDecorationLine="inherit">textDecorationLine: inherit</Heading>
+    <Heading textDecorationStyle="solid" textDecorationColor="currentColor" textDecorationThickness="auto" textDecorationLine="initial">textDecorationLine: initial</Heading>
+    <Heading textDecorationStyle="solid" textDecorationColor="currentColor" textDecorationThickness="auto" textDecorationLine="unset">textDecorationLine: unset</Heading>
 </>);
 ```
 
@@ -231,14 +233,14 @@ import React from 'react';
 import { Heading } from 'typography';
 
 export default () => (<>
-    <Heading textDecorationStyle="solid">Heading solid</Heading>
-    <Heading textDecorationStyle="double">Heading double</Heading>
-    <Heading textDecorationStyle="dotted">Heading dotted</Heading>
-    <Heading textDecorationStyle="dashed">Heading dashed</Heading>
-    <Heading textDecorationStyle="wavy">Heading wavy</Heading>
-    <Heading textDecorationStyle="inherit">Heading inherit</Heading>
-    <Heading textDecorationStyle="initial">Heading initial</Heading>
-    <Heading textDecorationStyle="unset">Heading unset</Heading>
+    <Heading textDecorationLine="underline" textDecorationColor="currentColor" textDecorationThickness="auto" textDecorationStyle="solid">textDecorationStyle: solid</Heading>
+    <Heading textDecorationLine="underline" textDecorationColor="currentColor" textDecorationThickness="auto" textDecorationStyle="double">textDecorationStyle: double</Heading>
+    <Heading textDecorationLine="underline" textDecorationColor="currentColor" textDecorationThickness="auto" textDecorationStyle="dotted">textDecorationStyle: dotted</Heading>
+    <Heading textDecorationLine="underline" textDecorationColor="currentColor" textDecorationThickness="auto" textDecorationStyle="dashed">textDecorationStyle: dashed</Heading>
+    <Heading textDecorationLine="underline" textDecorationColor="currentColor" textDecorationThickness="auto" textDecorationStyle="wavy">textDecorationStyle: wavy</Heading>
+    <Heading textDecorationLine="underline" textDecorationColor="currentColor" textDecorationThickness="auto" textDecorationStyle="inherit">textDecorationStyle: inherit</Heading>
+    <Heading textDecorationLine="underline" textDecorationColor="currentColor" textDecorationThickness="auto" textDecorationStyle="initial">textDecorationStyle: initial</Heading>
+    <Heading textDecorationLine="underline" textDecorationColor="currentColor" textDecorationThickness="auto" textDecorationStyle="unset">textDecorationStyle: unset</Heading>
 </>);
 ```
 
@@ -249,15 +251,15 @@ import React from 'react';
 import { Heading } from 'typography';
 
 export default () => (<>
-    <Heading textDecorationThickness="auto">Heading auto</Heading>
-    <Heading textDecorationThickness="fromFont">Heading fromFont</Heading>
-    <Heading textDecorationThickness="thin">Heading thin</Heading>
-    <Heading textDecorationThickness="light">Heading light</Heading>
-    <Heading textDecorationThickness="medium">Heading medium</Heading>
-    <Heading textDecorationThickness="bold">Heading bold</Heading>
-    <Heading textDecorationThickness="inherit">Heading inherit</Heading>
-    <Heading textDecorationThickness="initial">Heading initial</Heading>
-    <Heading textDecorationThickness="unset">Heading unset</Heading>
+    <Heading textDecorationLine="underline" textDecorationColor="currentColor" textDecorationStyle="solid" textDecorationThickness="auto">textDecorationThickness: auto</Heading>
+    <Heading textDecorationLine="underline" textDecorationColor="currentColor" textDecorationStyle="solid" textDecorationThickness="fromFont">textDecorationThickness: fromFont</Heading>
+    <Heading textDecorationLine="underline" textDecorationColor="currentColor" textDecorationStyle="solid" textDecorationThickness="thin">textDecorationThickness: thin</Heading>
+    <Heading textDecorationLine="underline" textDecorationColor="currentColor" textDecorationStyle="solid" textDecorationThickness="light">textDecorationThickness: light</Heading>
+    <Heading textDecorationLine="underline" textDecorationColor="currentColor" textDecorationStyle="solid" textDecorationThickness="medium">textDecorationThickness: medium</Heading>
+    <Heading textDecorationLine="underline" textDecorationColor="currentColor" textDecorationStyle="solid" textDecorationThickness="bold">textDecorationThickness: bold</Heading>
+    <Heading textDecorationLine="underline" textDecorationColor="currentColor" textDecorationStyle="solid" textDecorationThickness="inherit">textDecorationThickness: inherit</Heading>
+    <Heading textDecorationLine="underline" textDecorationColor="currentColor" textDecorationStyle="solid" textDecorationThickness="initial">textDecorationThickness: initial</Heading>
+    <Heading textDecorationLine="underline" textDecorationColor="currentColor" textDecorationStyle="solid" textDecorationThickness="unset">textDecorationThickness: unset</Heading>
 </>);
 ```
 
@@ -268,80 +270,12 @@ import React from 'react';
 import { Heading } from 'typography';
 
 export default () => (<>
-    <Heading textTransform="none">Heading none</Heading>
-    <Heading textTransform="uppercase">Heading uppercase</Heading>
-    <Heading textTransform="lowercase">Heading lowercase</Heading>
-    <Heading textTransform="capitalize">Heading capitalize</Heading>
-    <Heading textTransform="fullWidth">Heading fullWidth</Heading>
-    <Heading textTransform="fullSizeKana">Heading fullSizeKana</Heading>
-</>);
-```
-
-## hyphens
-
-```tsx
-import React from 'react';
-import { Heading } from 'typography';
-
-export default () => (<>
-    <Heading hyphens="none">Heading none</Heading>
-    <Heading hyphens="manual">Heading manual</Heading>
-    <Heading hyphens="auto">Heading auto</Heading>
-    <Heading hyphens="inherit">Heading inherit</Heading>
-    <Heading hyphens="initial">Heading initial</Heading>
-    <Heading hyphens="revert">Heading revert</Heading>
-    <Heading hyphens="unset">Heading unset</Heading>
-</>);
-```
-
-## overflowWrap
-
-```tsx
-import React from 'react';
-import { Heading } from 'typography';
-
-export default () => (<>
-    <Heading overflowWrap="normal">Heading normal</Heading>
-    <Heading overflowWrap="breakWord">Heading breakWord</Heading>
-    <Heading overflowWrap="anywhere">Heading anywhere</Heading>
-    <Heading overflowWrap="inherit">Heading inherit</Heading>
-    <Heading overflowWrap="initial">Heading initial</Heading>
-    <Heading overflowWrap="revert">Heading revert</Heading>
-    <Heading overflowWrap="unset">Heading unset</Heading>
-</>);
-```
-
-## textOverflow
-
-```tsx
-import React from 'react';
-import { Heading } from 'typography';
-
-export default () => (<>
-    <Heading textOverflow="clip">Heading clip</Heading>
-    <Heading textOverflow="ellipsis">Heading ellipsis</Heading>
-    <Heading textOverflow="inherit">Heading inherit</Heading>
-    <Heading textOverflow="initial">Heading initial</Heading>
-    <Heading textOverflow="revert">Heading revert</Heading>
-    <Heading textOverflow="unset">Heading unset</Heading>
-</>);
-```
-
-## wordBreak
-
-```tsx
-import React from 'react';
-import { Heading } from 'typography';
-
-export default () => (<>
-    <Heading wordBreak="normal">Heading normal</Heading>
-    <Heading wordBreak="breakAll">Heading breakAll</Heading>
-    <Heading wordBreak="keepAll">Heading keepAll</Heading>
-    <Heading wordBreak="breakWord">Heading breakWord</Heading>
-    <Heading wordBreak="inherit">Heading inherit</Heading>
-    <Heading wordBreak="initial">Heading initial</Heading>
-    <Heading wordBreak="revert">Heading revert</Heading>
-    <Heading wordBreak="unset">Heading unset</Heading>
+    <Heading textTransform="none">textTransform: none</Heading>
+    <Heading textTransform="uppercase">textTransform: uppercase</Heading>
+    <Heading textTransform="lowercase">textTransform: lowercase</Heading>
+    <Heading textTransform="capitalize">textTransform: capitalize</Heading>
+    <Heading textTransform="fullWidth">textTransform: fullWidth</Heading>
+    <Heading textTransform="fullSizeKana">textTransform: fullSizeKana</Heading>
 </>);
 ```
 
@@ -352,16 +286,16 @@ import React from 'react';
 import { Heading } from 'typography';
 
 export default () => (<>
-    <Heading marginBlockEnd="none">Heading none</Heading>
-    <Heading marginBlockEnd="xxxsmall">Heading xxxsmall</Heading>
-    <Heading marginBlockEnd="xxsmall">Heading xxsmall</Heading>
-    <Heading marginBlockEnd="xsmall">Heading xsmall</Heading>
-    <Heading marginBlockEnd="small">Heading small</Heading>
-    <Heading marginBlockEnd="medium">Heading medium</Heading>
-    <Heading marginBlockEnd="large">Heading large</Heading>
-    <Heading marginBlockEnd="xlarge">Heading xlarge</Heading>
-    <Heading marginBlockEnd="xxlarge">Heading xxlarge</Heading>
-    <Heading marginBlockEnd="xxxlarge">Heading xxxlarge</Heading>
+    <Heading marginBlockEnd="none">marginBlockEnd: none</Heading>
+    <Heading marginBlockEnd="xxxsmall">marginBlockEnd: xxxsmall</Heading>
+    <Heading marginBlockEnd="xxsmall">marginBlockEnd: xxsmall</Heading>
+    <Heading marginBlockEnd="xsmall">marginBlockEnd: xsmall</Heading>
+    <Heading marginBlockEnd="small">marginBlockEnd: small</Heading>
+    <Heading marginBlockEnd="medium">marginBlockEnd: medium</Heading>
+    <Heading marginBlockEnd="large">marginBlockEnd: large</Heading>
+    <Heading marginBlockEnd="xlarge">marginBlockEnd: xlarge</Heading>
+    <Heading marginBlockEnd="xxlarge">marginBlockEnd: xxlarge</Heading>
+    <Heading marginBlockEnd="xxxlarge">marginBlockEnd: xxxlarge</Heading>
 </>);
 ```
 
@@ -372,16 +306,16 @@ import React from 'react';
 import { Heading } from 'typography';
 
 export default () => (<>
-    <Heading marginBlockStart="none">Heading none</Heading>
-    <Heading marginBlockStart="xxxsmall">Heading xxxsmall</Heading>
-    <Heading marginBlockStart="xxsmall">Heading xxsmall</Heading>
-    <Heading marginBlockStart="xsmall">Heading xsmall</Heading>
-    <Heading marginBlockStart="small">Heading small</Heading>
-    <Heading marginBlockStart="medium">Heading medium</Heading>
-    <Heading marginBlockStart="large">Heading large</Heading>
-    <Heading marginBlockStart="xlarge">Heading xlarge</Heading>
-    <Heading marginBlockStart="xxlarge">Heading xxlarge</Heading>
-    <Heading marginBlockStart="xxxlarge">Heading xxxlarge</Heading>
+    <Heading marginBlockStart="none">marginBlockStart: none</Heading>
+    <Heading marginBlockStart="xxxsmall">marginBlockStart: xxxsmall</Heading>
+    <Heading marginBlockStart="xxsmall">marginBlockStart: xxsmall</Heading>
+    <Heading marginBlockStart="xsmall">marginBlockStart: xsmall</Heading>
+    <Heading marginBlockStart="small">marginBlockStart: small</Heading>
+    <Heading marginBlockStart="medium">marginBlockStart: medium</Heading>
+    <Heading marginBlockStart="large">marginBlockStart: large</Heading>
+    <Heading marginBlockStart="xlarge">marginBlockStart: xlarge</Heading>
+    <Heading marginBlockStart="xxlarge">marginBlockStart: xxlarge</Heading>
+    <Heading marginBlockStart="xxxlarge">marginBlockStart: xxxlarge</Heading>
 </>);
 ```
 
@@ -392,16 +326,16 @@ import React from 'react';
 import { Heading } from 'typography';
 
 export default () => (<>
-    <Heading marginInlineEnd="none">Heading none</Heading>
-    <Heading marginInlineEnd="xxxsmall">Heading xxxsmall</Heading>
-    <Heading marginInlineEnd="xxsmall">Heading xxsmall</Heading>
-    <Heading marginInlineEnd="xsmall">Heading xsmall</Heading>
-    <Heading marginInlineEnd="small">Heading small</Heading>
-    <Heading marginInlineEnd="medium">Heading medium</Heading>
-    <Heading marginInlineEnd="large">Heading large</Heading>
-    <Heading marginInlineEnd="xlarge">Heading xlarge</Heading>
-    <Heading marginInlineEnd="xxlarge">Heading xxlarge</Heading>
-    <Heading marginInlineEnd="xxxlarge">Heading xxxlarge</Heading>
+    <Heading marginInlineEnd="none">marginInlineEnd: none</Heading>
+    <Heading marginInlineEnd="xxxsmall">marginInlineEnd: xxxsmall</Heading>
+    <Heading marginInlineEnd="xxsmall">marginInlineEnd: xxsmall</Heading>
+    <Heading marginInlineEnd="xsmall">marginInlineEnd: xsmall</Heading>
+    <Heading marginInlineEnd="small">marginInlineEnd: small</Heading>
+    <Heading marginInlineEnd="medium">marginInlineEnd: medium</Heading>
+    <Heading marginInlineEnd="large">marginInlineEnd: large</Heading>
+    <Heading marginInlineEnd="xlarge">marginInlineEnd: xlarge</Heading>
+    <Heading marginInlineEnd="xxlarge">marginInlineEnd: xxlarge</Heading>
+    <Heading marginInlineEnd="xxxlarge">marginInlineEnd: xxxlarge</Heading>
 </>);
 ```
 
@@ -412,16 +346,16 @@ import React from 'react';
 import { Heading } from 'typography';
 
 export default () => (<>
-    <Heading marginInlineStart="none">Heading none</Heading>
-    <Heading marginInlineStart="xxxsmall">Heading xxxsmall</Heading>
-    <Heading marginInlineStart="xxsmall">Heading xxsmall</Heading>
-    <Heading marginInlineStart="xsmall">Heading xsmall</Heading>
-    <Heading marginInlineStart="small">Heading small</Heading>
-    <Heading marginInlineStart="medium">Heading medium</Heading>
-    <Heading marginInlineStart="large">Heading large</Heading>
-    <Heading marginInlineStart="xlarge">Heading xlarge</Heading>
-    <Heading marginInlineStart="xxlarge">Heading xxlarge</Heading>
-    <Heading marginInlineStart="xxxlarge">Heading xxxlarge</Heading>
+    <Heading marginInlineStart="none">marginInlineStart: none</Heading>
+    <Heading marginInlineStart="xxxsmall">marginInlineStart: xxxsmall</Heading>
+    <Heading marginInlineStart="xxsmall">marginInlineStart: xxsmall</Heading>
+    <Heading marginInlineStart="xsmall">marginInlineStart: xsmall</Heading>
+    <Heading marginInlineStart="small">marginInlineStart: small</Heading>
+    <Heading marginInlineStart="medium">marginInlineStart: medium</Heading>
+    <Heading marginInlineStart="large">marginInlineStart: large</Heading>
+    <Heading marginInlineStart="xlarge">marginInlineStart: xlarge</Heading>
+    <Heading marginInlineStart="xxlarge">marginInlineStart: xxlarge</Heading>
+    <Heading marginInlineStart="xxxlarge">marginInlineStart: xxxlarge</Heading>
 </>);
 ```
 
@@ -432,16 +366,16 @@ import React from 'react';
 import { Heading } from 'typography';
 
 export default () => (<>
-    <Heading paddingBlockEnd="none">Heading none</Heading>
-    <Heading paddingBlockEnd="xxxsmall">Heading xxxsmall</Heading>
-    <Heading paddingBlockEnd="xxsmall">Heading xxsmall</Heading>
-    <Heading paddingBlockEnd="xsmall">Heading xsmall</Heading>
-    <Heading paddingBlockEnd="small">Heading small</Heading>
-    <Heading paddingBlockEnd="medium">Heading medium</Heading>
-    <Heading paddingBlockEnd="large">Heading large</Heading>
-    <Heading paddingBlockEnd="xlarge">Heading xlarge</Heading>
-    <Heading paddingBlockEnd="xxlarge">Heading xxlarge</Heading>
-    <Heading paddingBlockEnd="xxxlarge">Heading xxxlarge</Heading>
+    <Heading paddingBlockEnd="none">paddingBlockEnd: none</Heading>
+    <Heading paddingBlockEnd="xxxsmall">paddingBlockEnd: xxxsmall</Heading>
+    <Heading paddingBlockEnd="xxsmall">paddingBlockEnd: xxsmall</Heading>
+    <Heading paddingBlockEnd="xsmall">paddingBlockEnd: xsmall</Heading>
+    <Heading paddingBlockEnd="small">paddingBlockEnd: small</Heading>
+    <Heading paddingBlockEnd="medium">paddingBlockEnd: medium</Heading>
+    <Heading paddingBlockEnd="large">paddingBlockEnd: large</Heading>
+    <Heading paddingBlockEnd="xlarge">paddingBlockEnd: xlarge</Heading>
+    <Heading paddingBlockEnd="xxlarge">paddingBlockEnd: xxlarge</Heading>
+    <Heading paddingBlockEnd="xxxlarge">paddingBlockEnd: xxxlarge</Heading>
 </>);
 ```
 
@@ -452,16 +386,16 @@ import React from 'react';
 import { Heading } from 'typography';
 
 export default () => (<>
-    <Heading paddingBlockStart="none">Heading none</Heading>
-    <Heading paddingBlockStart="xxxsmall">Heading xxxsmall</Heading>
-    <Heading paddingBlockStart="xxsmall">Heading xxsmall</Heading>
-    <Heading paddingBlockStart="xsmall">Heading xsmall</Heading>
-    <Heading paddingBlockStart="small">Heading small</Heading>
-    <Heading paddingBlockStart="medium">Heading medium</Heading>
-    <Heading paddingBlockStart="large">Heading large</Heading>
-    <Heading paddingBlockStart="xlarge">Heading xlarge</Heading>
-    <Heading paddingBlockStart="xxlarge">Heading xxlarge</Heading>
-    <Heading paddingBlockStart="xxxlarge">Heading xxxlarge</Heading>
+    <Heading paddingBlockStart="none">paddingBlockStart: none</Heading>
+    <Heading paddingBlockStart="xxxsmall">paddingBlockStart: xxxsmall</Heading>
+    <Heading paddingBlockStart="xxsmall">paddingBlockStart: xxsmall</Heading>
+    <Heading paddingBlockStart="xsmall">paddingBlockStart: xsmall</Heading>
+    <Heading paddingBlockStart="small">paddingBlockStart: small</Heading>
+    <Heading paddingBlockStart="medium">paddingBlockStart: medium</Heading>
+    <Heading paddingBlockStart="large">paddingBlockStart: large</Heading>
+    <Heading paddingBlockStart="xlarge">paddingBlockStart: xlarge</Heading>
+    <Heading paddingBlockStart="xxlarge">paddingBlockStart: xxlarge</Heading>
+    <Heading paddingBlockStart="xxxlarge">paddingBlockStart: xxxlarge</Heading>
 </>);
 ```
 
@@ -472,16 +406,16 @@ import React from 'react';
 import { Heading } from 'typography';
 
 export default () => (<>
-    <Heading paddingInlineEnd="none">Heading none</Heading>
-    <Heading paddingInlineEnd="xxxsmall">Heading xxxsmall</Heading>
-    <Heading paddingInlineEnd="xxsmall">Heading xxsmall</Heading>
-    <Heading paddingInlineEnd="xsmall">Heading xsmall</Heading>
-    <Heading paddingInlineEnd="small">Heading small</Heading>
-    <Heading paddingInlineEnd="medium">Heading medium</Heading>
-    <Heading paddingInlineEnd="large">Heading large</Heading>
-    <Heading paddingInlineEnd="xlarge">Heading xlarge</Heading>
-    <Heading paddingInlineEnd="xxlarge">Heading xxlarge</Heading>
-    <Heading paddingInlineEnd="xxxlarge">Heading xxxlarge</Heading>
+    <Heading paddingInlineEnd="none">paddingInlineEnd: none</Heading>
+    <Heading paddingInlineEnd="xxxsmall">paddingInlineEnd: xxxsmall</Heading>
+    <Heading paddingInlineEnd="xxsmall">paddingInlineEnd: xxsmall</Heading>
+    <Heading paddingInlineEnd="xsmall">paddingInlineEnd: xsmall</Heading>
+    <Heading paddingInlineEnd="small">paddingInlineEnd: small</Heading>
+    <Heading paddingInlineEnd="medium">paddingInlineEnd: medium</Heading>
+    <Heading paddingInlineEnd="large">paddingInlineEnd: large</Heading>
+    <Heading paddingInlineEnd="xlarge">paddingInlineEnd: xlarge</Heading>
+    <Heading paddingInlineEnd="xxlarge">paddingInlineEnd: xxlarge</Heading>
+    <Heading paddingInlineEnd="xxxlarge">paddingInlineEnd: xxxlarge</Heading>
 </>);
 ```
 
@@ -492,15 +426,15 @@ import React from 'react';
 import { Heading } from 'typography';
 
 export default () => (<>
-    <Heading paddingInlineStart="none">Heading none</Heading>
-    <Heading paddingInlineStart="xxxsmall">Heading xxxsmall</Heading>
-    <Heading paddingInlineStart="xxsmall">Heading xxsmall</Heading>
-    <Heading paddingInlineStart="xsmall">Heading xsmall</Heading>
-    <Heading paddingInlineStart="small">Heading small</Heading>
-    <Heading paddingInlineStart="medium">Heading medium</Heading>
-    <Heading paddingInlineStart="large">Heading large</Heading>
-    <Heading paddingInlineStart="xlarge">Heading xlarge</Heading>
-    <Heading paddingInlineStart="xxlarge">Heading xxlarge</Heading>
-    <Heading paddingInlineStart="xxxlarge">Heading xxxlarge</Heading>
+    <Heading paddingInlineStart="none">paddingInlineStart: none</Heading>
+    <Heading paddingInlineStart="xxxsmall">paddingInlineStart: xxxsmall</Heading>
+    <Heading paddingInlineStart="xxsmall">paddingInlineStart: xxsmall</Heading>
+    <Heading paddingInlineStart="xsmall">paddingInlineStart: xsmall</Heading>
+    <Heading paddingInlineStart="small">paddingInlineStart: small</Heading>
+    <Heading paddingInlineStart="medium">paddingInlineStart: medium</Heading>
+    <Heading paddingInlineStart="large">paddingInlineStart: large</Heading>
+    <Heading paddingInlineStart="xlarge">paddingInlineStart: xlarge</Heading>
+    <Heading paddingInlineStart="xxlarge">paddingInlineStart: xxlarge</Heading>
+    <Heading paddingInlineStart="xxxlarge">paddingInlineStart: xxxlarge</Heading>
 </>);
 ```

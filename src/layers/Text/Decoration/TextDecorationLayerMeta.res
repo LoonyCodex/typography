@@ -1,3 +1,15 @@
+let textDecorationColor: TextDecorationColor.t = #currentColor;
+let color = textDecorationColor :> string;
+
+let textDecorationLine: TextDecorationLine.t = #underline;
+let line = textDecorationLine :> string;
+
+let textDecorationStyle: TextDecorationStyle.t = #solid;
+let style = textDecorationStyle :> string;
+
+let textDecorationThickness: TextDecorationThickness.t = #auto;
+let thickness = textDecorationThickness :> string;
+
 let make: array<Js.t<Meta.k>> = [
   Js.Obj.assign(Js.Obj.empty(), {
     "title": TextDecorationColorMeta.make.name,
@@ -5,7 +17,11 @@ let make: array<Js.t<Meta.k>> = [
     "key": TextDecorationColorMeta.make.name,
     "content": None,
     "args": TextDecorationColorMeta.make.args,
-    "props": None,
+    "props": Some(list{
+      ("textDecorationStyle", style),
+      ("textDecorationLine", line),
+      ("textDecorationThickness", thickness),
+    }),
   }),
 
   Js.Obj.assign(Js.Obj.empty(), {
@@ -14,7 +30,11 @@ let make: array<Js.t<Meta.k>> = [
     "key": TextDecorationLineMeta.make.name,
     "content": None,
     "args": TextDecorationLineMeta.make.args,
-    "props": None,
+    "props": Some(list{
+      ("textDecorationStyle", style),
+      ("textDecorationColor", color),
+      ("textDecorationThickness", thickness),
+    }),
   }),
 
   Js.Obj.assign(Js.Obj.empty(), {
@@ -23,7 +43,11 @@ let make: array<Js.t<Meta.k>> = [
     "key": TextDecorationStyleMeta.make.name,
     "content": None,
     "args": TextDecorationStyleMeta.make.args,
-    "props": None,
+    "props": Some(list{
+      ("textDecorationLine", line),
+      ("textDecorationColor", color),
+      ("textDecorationThickness", thickness),
+    }),
   }),
 
   Js.Obj.assign(Js.Obj.empty(), {
@@ -32,6 +56,10 @@ let make: array<Js.t<Meta.k>> = [
     "key": TextDecorationThicknessMeta.make.name,
     "content": None,
     "args": TextDecorationThicknessMeta.make.args,
-    "props": None,
+    "props": Some(list{
+      ("textDecorationLine", line),
+      ("textDecorationColor", color),
+      ("textDecorationStyle", style),
+    }),
   }),
 ]
