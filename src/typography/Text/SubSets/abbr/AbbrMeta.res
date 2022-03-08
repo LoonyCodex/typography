@@ -1,9 +1,25 @@
+let displayName = "Abbreviation";
+
 let make: Meta.t = {
   tag: HTMLTag(#abbr),
-  displayName: "Abbreviation",
+  displayName,
   parentName: TextMeta.make.displayName,
-  component: "Abbreviation",
+  component: displayName,
   description: "The Abbreviation element",
   mdn: Some("https://developer.mozilla.org/en-US/docs/Web/HTML/Element/abbr"),
-  docs: [],
+
+  docs: Belt.Array.concatMany([
+    [
+      Js.Obj.assign(Js.Obj.empty(), {
+        "title": displayName,
+        "description": None,
+        "key": "",
+        "content": Some(displayName ++ " " ++ "with default styles"),
+        "args": [],
+        "props": None,
+      }),
+    ],
+
+    TextMeta.docs,
+  ]),
 }

@@ -1,9 +1,25 @@
+let displayName = "FigCaption";
+
 let make: Meta.t = {
   tag: HTMLTag(#figcaption),
-  displayName: "FigCaption",
+  displayName,
   parentName: TextMeta.make.displayName,
-  component: "FigCaption",
+  component: displayName,
   description: "The Figure Caption element",
   mdn: Some("https://developer.mozilla.org/en-US/docs/Web/HTML/Element/figcaption"),
-  docs: [],
+
+  docs: Belt.Array.concatMany([
+    [
+      Js.Obj.assign(Js.Obj.empty(), {
+        "title": displayName,
+        "description": None,
+        "key": "",
+        "content": Some(displayName ++ " " ++ "with default styles"),
+        "args": [],
+        "props": None,
+      }),
+    ],
+
+    TextMeta.docs,
+  ]),
 }

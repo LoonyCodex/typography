@@ -13,7 +13,7 @@ let make: Meta.t = {
       Js.Obj.assign(Js.Obj.empty(), {
         "title": displayName,
         "description": None,
-        "key": "level",
+        "key": "",
         "content": Some(displayName ++ " " ++ "with default styles"),
         "args": [],
         "props": None,

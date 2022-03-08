@@ -1,9 +1,25 @@
+let displayName = "Idiomatic";
+
 let make: Meta.t = {
   tag: HTMLTag(#i),
-  displayName: "Idiomatic",
+  displayName,
   parentName: TextMeta.make.displayName,
-  component: "Idiomatic",
+  component: displayName,
   description: "The Idiomatic Text element",
   mdn: Some("https://developer.mozilla.org/en-US/docs/Web/HTML/Element/i"),
-  docs: [],
+
+  docs: Belt.Array.concatMany([
+    [
+      Js.Obj.assign(Js.Obj.empty(), {
+        "title": displayName,
+        "description": None,
+        "key": "",
+        "content": Some(displayName ++ " " ++ "with default styles"),
+        "args": [],
+        "props": None,
+      }),
+    ],
+
+    TextMeta.docs,
+  ]),
 }

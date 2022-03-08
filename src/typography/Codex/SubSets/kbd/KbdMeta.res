@@ -1,9 +1,25 @@
+let displayName = "Keyboard";
+
 let make: Meta.t = {
   tag: HTMLTag(#kbd),
-  displayName: "Keyboard",
+  displayName,
   parentName: CodexMeta.make.displayName,
-  component: "Keyboard",
+  component: displayName,
   description: "The Keyboard Input element",
   mdn: Some("https://developer.mozilla.org/en-US/docs/Web/HTML/Element/kbd"),
-  docs: [],
+
+  docs: Belt.Array.concatMany([
+    [
+      Js.Obj.assign(Js.Obj.empty(), {
+        "title": displayName,
+        "description": None,
+        "key": "",
+        "content": Some(displayName ++ " " ++ "with default styles"),
+        "args": [],
+        "props": None,
+      }),
+    ],
+
+    CodexMeta.docs,
+  ]),
 }
