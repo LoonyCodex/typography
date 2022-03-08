@@ -23,10 +23,10 @@ require("esbuild")
       vanillaExtractPlugin({
         processCss,
       }),
+      dtsPlugin(),
     ],
     format: "esm",
     target: "es6",
     external: ["react", "react-dom"],
-    plugins: [dtsPlugin()],
   })
   .catch(() => process.exit(1));
