@@ -30,7 +30,7 @@ type make = (. t) => string
 let initial: t = #none;
 
 let options = {
-  none: "max-content",
+  none: "initial",
   small: "18ch",
   medium: "24ch",
   large: "36ch",
