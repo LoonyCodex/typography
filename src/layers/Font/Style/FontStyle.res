@@ -3,27 +3,27 @@ type t = [
   | #normal
   | #italic
   | #oblique
-  | #inherit
-  | #initial
-  | #unset
+  // | #inherit
+  // | #initial
+  // | #unset
 ]
 
 let args: array<t> = [
   #normal,
   #italic,
   #oblique,
-  #inherit,
-  #initial,
-  #unset,
+  // #inherit,
+  // #initial,
+  // #unset,
 ]
 
 type r<'a> = {
   normal: 'a,
   italic: 'a,
   oblique: 'a,
-  inherit: 'a,
-  initial: 'a,
-  unset: 'a,
+  // inherit: 'a,
+  // initial: 'a,
+  // unset: 'a,
 }
 
 type value = string;
@@ -39,7 +39,7 @@ let options = {
   normal: "normal",
   italic: "italic",
   oblique: "oblique",
-  inherit: "inherit",
-  initial: "initial",
-  unset: "unset",
+  // inherit: "inherit",
+  // initial: "initial",
+  // unset: "unset",
 }
