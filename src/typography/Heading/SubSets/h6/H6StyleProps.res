@@ -6,7 +6,7 @@ let styleProps: HeadingProto.styleProps = {
 
   // font
   "fontFamily": #primary,
-  "fontSize": #xsmall,
+  "fontSize": #s,
   "fontStyle": #normal,
   "fontWeight": #heavy,
 

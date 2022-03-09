@@ -4,7 +4,7 @@ let styleProps: CodexProto.styleProps = {
 
   // font
   "fontFamily": #primary,
-  "fontSize": #xxxlarge,
+  "fontSize": #s,
   "fontStyle": #normal,
   "fontWeight": #normal,
 

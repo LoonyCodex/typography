@@ -4,7 +4,7 @@ let styleProps: TimeProto.styleProps = {
 
   // font
   "fontFamily": #primary,
-  "fontSize": #small,
+  "fontSize": #s,
   "fontStyle": #normal,
   "fontWeight": #normal,
 
