@@ -14,9 +14,9 @@ let make: Meta.t = {
     #samp,
     #var,
   ]),
-  displayName: "Codex",
-  parentName: "Codex",
-  component: "Codex",
+  displayName: displayName,
+  parentName: displayName,
+  component: displayName,
   description: "Codex",
   mdn: None,
 

@@ -6,7 +6,7 @@ let styleProps: TextProto.styleProps = {
   "fontFamily": #primary,
   "fontSize": #small,
   "fontStyle": #normal,
-  "fontWeight": #bold,
+  "fontWeight": #normal,
 
   // textDecoration
   "textDecorationColor": #currentColor,

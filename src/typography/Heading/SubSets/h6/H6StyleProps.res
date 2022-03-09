@@ -8,7 +8,7 @@ let styleProps: HeadingProto.styleProps = {
   "fontFamily": #primary,
   "fontSize": #xsmall,
   "fontStyle": #normal,
-  "fontWeight": #bold,
+  "fontWeight": #heavy,
 
   // textDecoration
   "textDecorationColor": #currentColor,
