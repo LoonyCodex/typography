@@ -1,6 +1,6 @@
 @genType
 let styleProps: CodexProto.styleProps = {
-  "color": #black,
+  "color": #gray900,
 
   // font
   "fontFamily": #primary,

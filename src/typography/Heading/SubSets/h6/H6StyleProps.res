@@ -1,7 +1,7 @@
 @genType
 let styleProps: HeadingProto.styleProps = {
   "charsPerLine": #none,
-  "color": #black,
+  "color": #gray900,
   "contentAlign": #start,
 
   // font

@@ -1,6 +1,6 @@
 @genType
 let styleProps: LinkProto.styleProps = {
-  "color": #black,
+  "color": #gray900,
 
   // font
   "fontFamily": #primary,
