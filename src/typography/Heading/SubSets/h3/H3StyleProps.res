@@ -26,10 +26,10 @@ let styleProps: HeadingProto.styleProps = {
   "wordBreak": #breakWord,
 
   // margin
-  "marginBlockEnd": #none,
-  "marginBlockStart": #none,
-  "marginInlineEnd": #none,
-  "marginInlineStart": #none,
+  "marginBlockEnd": #size0,
+  "marginBlockStart": #size0,
+  "marginInlineEnd": #size0,
+  "marginInlineStart": #size0,
 
   // padding
   "paddingBlockEnd": #size0,
