@@ -32,9 +32,9 @@ let styleProps: HeadingProto.styleProps = {
   "marginInlineStart": #none,
 
   // padding
-  "paddingBlockEnd": #medium,
-  "paddingBlockStart": #medium,
-  "paddingInlineStart": #none,
-  "paddingInlineEnd": #none,
+  "paddingBlockEnd": #size0,
+  "paddingBlockStart": #size0,
+  "paddingInlineStart": #size0,
+  "paddingInlineEnd": #size0,
 }
 
