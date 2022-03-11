@@ -14,7 +14,7 @@ import React from 'react';
 import { Keyboard } from 'typography';
 
 export default () => (<>
-
+    <Keyboard>Keyboard with default styles</Keyboard>
 </>);
 ```
 
@@ -25,10 +25,65 @@ import React from 'react';
 import { Keyboard } from 'typography';
 
 export default () => (<>
-    <Keyboard color="primary">color: primary</Keyboard>
-    <Keyboard color="secondary">color: secondary</Keyboard>
-    <Keyboard color="black">color: black</Keyboard>
-    <Keyboard color="white">color: white</Keyboard>
+    <Keyboard color="gray50">color: gray50</Keyboard>
+    <Keyboard color="gray75">color: gray75</Keyboard>
+    <Keyboard color="gray100">color: gray100</Keyboard>
+    <Keyboard color="gray200">color: gray200</Keyboard>
+    <Keyboard color="gray300">color: gray300</Keyboard>
+    <Keyboard color="gray400">color: gray400</Keyboard>
+    <Keyboard color="gray500">color: gray500</Keyboard>
+    <Keyboard color="gray600">color: gray600</Keyboard>
+    <Keyboard color="gray700">color: gray700</Keyboard>
+    <Keyboard color="gray800">color: gray800</Keyboard>
+    <Keyboard color="gray900">color: gray900</Keyboard>
+    <Keyboard color="blue400">color: blue400</Keyboard>
+    <Keyboard color="blue500">color: blue500</Keyboard>
+    <Keyboard color="blue600">color: blue600</Keyboard>
+    <Keyboard color="blue700">color: blue700</Keyboard>
+    <Keyboard color="red400">color: red400</Keyboard>
+    <Keyboard color="red500">color: red500</Keyboard>
+    <Keyboard color="red600">color: red600</Keyboard>
+    <Keyboard color="red700">color: red700</Keyboard>
+    <Keyboard color="orange400">color: orange400</Keyboard>
+    <Keyboard color="orange500">color: orange500</Keyboard>
+    <Keyboard color="orange600">color: orange600</Keyboard>
+    <Keyboard color="orange700">color: orange700</Keyboard>
+    <Keyboard color="green400">color: green400</Keyboard>
+    <Keyboard color="green500">color: green500</Keyboard>
+    <Keyboard color="green600">color: green600</Keyboard>
+    <Keyboard color="green700">color: green700</Keyboard>
+    <Keyboard color="indigo400">color: indigo400</Keyboard>
+    <Keyboard color="indigo500">color: indigo500</Keyboard>
+    <Keyboard color="indigo600">color: indigo600</Keyboard>
+    <Keyboard color="indigo700">color: indigo700</Keyboard>
+    <Keyboard color="celery400">color: celery400</Keyboard>
+    <Keyboard color="celery500">color: celery500</Keyboard>
+    <Keyboard color="celery600">color: celery600</Keyboard>
+    <Keyboard color="celery700">color: celery700</Keyboard>
+    <Keyboard color="magenta400">color: magenta400</Keyboard>
+    <Keyboard color="magenta500">color: magenta500</Keyboard>
+    <Keyboard color="magenta600">color: magenta600</Keyboard>
+    <Keyboard color="magenta700">color: magenta700</Keyboard>
+    <Keyboard color="yellow400">color: yellow400</Keyboard>
+    <Keyboard color="yellow500">color: yellow500</Keyboard>
+    <Keyboard color="yellow600">color: yellow600</Keyboard>
+    <Keyboard color="yellow700">color: yellow700</Keyboard>
+    <Keyboard color="fuchsia400">color: fuchsia400</Keyboard>
+    <Keyboard color="fuchsia500">color: fuchsia500</Keyboard>
+    <Keyboard color="fuchsia600">color: fuchsia600</Keyboard>
+    <Keyboard color="fuchsia700">color: fuchsia700</Keyboard>
+    <Keyboard color="seafoam400">color: seafoam400</Keyboard>
+    <Keyboard color="seafoam500">color: seafoam500</Keyboard>
+    <Keyboard color="seafoam600">color: seafoam600</Keyboard>
+    <Keyboard color="seafoam700">color: seafoam700</Keyboard>
+    <Keyboard color="chartreuse400">color: chartreuse400</Keyboard>
+    <Keyboard color="chartreuse500">color: chartreuse500</Keyboard>
+    <Keyboard color="chartreuse600">color: chartreuse600</Keyboard>
+    <Keyboard color="chartreuse700">color: chartreuse700</Keyboard>
+    <Keyboard color="purple400">color: purple400</Keyboard>
+    <Keyboard color="purple500">color: purple500</Keyboard>
+    <Keyboard color="purple600">color: purple600</Keyboard>
+    <Keyboard color="purple700">color: purple700</Keyboard>
 </>);
 ```
 
@@ -51,18 +106,15 @@ import React from 'react';
 import { Keyboard } from 'typography';
 
 export default () => (<>
-    <Keyboard fontSize="larger">fontSize: larger</Keyboard>
-    <Keyboard fontSize="smaller">fontSize: smaller</Keyboard>
     <Keyboard fontSize="none">fontSize: none</Keyboard>
-    <Keyboard fontSize="xxxsmall">fontSize: xxxsmall</Keyboard>
-    <Keyboard fontSize="xxsmall">fontSize: xxsmall</Keyboard>
-    <Keyboard fontSize="xsmall">fontSize: xsmall</Keyboard>
-    <Keyboard fontSize="small">fontSize: small</Keyboard>
-    <Keyboard fontSize="medium">fontSize: medium</Keyboard>
-    <Keyboard fontSize="large">fontSize: large</Keyboard>
-    <Keyboard fontSize="xlarge">fontSize: xlarge</Keyboard>
-    <Keyboard fontSize="xxlarge">fontSize: xxlarge</Keyboard>
-    <Keyboard fontSize="xxxlarge">fontSize: xxxlarge</Keyboard>
+    <Keyboard fontSize="xxs">fontSize: xxs</Keyboard>
+    <Keyboard fontSize="xs">fontSize: xs</Keyboard>
+    <Keyboard fontSize="s">fontSize: s</Keyboard>
+    <Keyboard fontSize="m">fontSize: m</Keyboard>
+    <Keyboard fontSize="l">fontSize: l</Keyboard>
+    <Keyboard fontSize="xl">fontSize: xl</Keyboard>
+    <Keyboard fontSize="xxl">fontSize: xxl</Keyboard>
+    <Keyboard fontSize="xxxl">fontSize: xxxl</Keyboard>
 </>);
 ```
 
@@ -76,9 +128,6 @@ export default () => (<>
     <Keyboard fontStyle="normal">fontStyle: normal</Keyboard>
     <Keyboard fontStyle="italic">fontStyle: italic</Keyboard>
     <Keyboard fontStyle="oblique">fontStyle: oblique</Keyboard>
-    <Keyboard fontStyle="inherit">fontStyle: inherit</Keyboard>
-    <Keyboard fontStyle="initial">fontStyle: initial</Keyboard>
-    <Keyboard fontStyle="unset">fontStyle: unset</Keyboard>
 </>);
 ```
 
@@ -89,20 +138,9 @@ import React from 'react';
 import { Keyboard } from 'typography';
 
 export default () => (<>
-    <Keyboard fontWeight="thin">fontWeight: thin</Keyboard>
-    <Keyboard fontWeight="extraLight">fontWeight: extraLight</Keyboard>
     <Keyboard fontWeight="light">fontWeight: light</Keyboard>
     <Keyboard fontWeight="normal">fontWeight: normal</Keyboard>
-    <Keyboard fontWeight="medium">fontWeight: medium</Keyboard>
-    <Keyboard fontWeight="semiBold">fontWeight: semiBold</Keyboard>
-    <Keyboard fontWeight="bold">fontWeight: bold</Keyboard>
-    <Keyboard fontWeight="extraBold">fontWeight: extraBold</Keyboard>
     <Keyboard fontWeight="heavy">fontWeight: heavy</Keyboard>
-    <Keyboard fontWeight="lighter">fontWeight: lighter</Keyboard>
-    <Keyboard fontWeight="bolder">fontWeight: bolder</Keyboard>
-    <Keyboard fontWeight="inherit">fontWeight: inherit</Keyboard>
-    <Keyboard fontWeight="initial">fontWeight: initial</Keyboard>
-    <Keyboard fontWeight="unset">fontWeight: unset</Keyboard>
 </>);
 ```
 
@@ -114,10 +152,65 @@ import { Keyboard } from 'typography';
 
 export default () => (<>
     <Keyboard textDecorationStyle="solid" textDecorationLine="underline" textDecorationThickness="auto" textDecorationColor="currentColor">textDecorationColor: currentColor</Keyboard>
-    <Keyboard textDecorationStyle="solid" textDecorationLine="underline" textDecorationThickness="auto" textDecorationColor="primary">textDecorationColor: primary</Keyboard>
-    <Keyboard textDecorationStyle="solid" textDecorationLine="underline" textDecorationThickness="auto" textDecorationColor="secondary">textDecorationColor: secondary</Keyboard>
-    <Keyboard textDecorationStyle="solid" textDecorationLine="underline" textDecorationThickness="auto" textDecorationColor="black">textDecorationColor: black</Keyboard>
-    <Keyboard textDecorationStyle="solid" textDecorationLine="underline" textDecorationThickness="auto" textDecorationColor="white">textDecorationColor: white</Keyboard>
+    <Keyboard textDecorationStyle="solid" textDecorationLine="underline" textDecorationThickness="auto" textDecorationColor="gray50">textDecorationColor: gray50</Keyboard>
+    <Keyboard textDecorationStyle="solid" textDecorationLine="underline" textDecorationThickness="auto" textDecorationColor="gray75">textDecorationColor: gray75</Keyboard>
+    <Keyboard textDecorationStyle="solid" textDecorationLine="underline" textDecorationThickness="auto" textDecorationColor="gray100">textDecorationColor: gray100</Keyboard>
+    <Keyboard textDecorationStyle="solid" textDecorationLine="underline" textDecorationThickness="auto" textDecorationColor="gray200">textDecorationColor: gray200</Keyboard>
+    <Keyboard textDecorationStyle="solid" textDecorationLine="underline" textDecorationThickness="auto" textDecorationColor="gray300">textDecorationColor: gray300</Keyboard>
+    <Keyboard textDecorationStyle="solid" textDecorationLine="underline" textDecorationThickness="auto" textDecorationColor="gray400">textDecorationColor: gray400</Keyboard>
+    <Keyboard textDecorationStyle="solid" textDecorationLine="underline" textDecorationThickness="auto" textDecorationColor="gray500">textDecorationColor: gray500</Keyboard>
+    <Keyboard textDecorationStyle="solid" textDecorationLine="underline" textDecorationThickness="auto" textDecorationColor="gray600">textDecorationColor: gray600</Keyboard>
+    <Keyboard textDecorationStyle="solid" textDecorationLine="underline" textDecorationThickness="auto" textDecorationColor="gray700">textDecorationColor: gray700</Keyboard>
+    <Keyboard textDecorationStyle="solid" textDecorationLine="underline" textDecorationThickness="auto" textDecorationColor="gray800">textDecorationColor: gray800</Keyboard>
+    <Keyboard textDecorationStyle="solid" textDecorationLine="underline" textDecorationThickness="auto" textDecorationColor="gray900">textDecorationColor: gray900</Keyboard>
+    <Keyboard textDecorationStyle="solid" textDecorationLine="underline" textDecorationThickness="auto" textDecorationColor="blue400">textDecorationColor: blue400</Keyboard>
+    <Keyboard textDecorationStyle="solid" textDecorationLine="underline" textDecorationThickness="auto" textDecorationColor="blue500">textDecorationColor: blue500</Keyboard>
+    <Keyboard textDecorationStyle="solid" textDecorationLine="underline" textDecorationThickness="auto" textDecorationColor="blue600">textDecorationColor: blue600</Keyboard>
+    <Keyboard textDecorationStyle="solid" textDecorationLine="underline" textDecorationThickness="auto" textDecorationColor="blue700">textDecorationColor: blue700</Keyboard>
+    <Keyboard textDecorationStyle="solid" textDecorationLine="underline" textDecorationThickness="auto" textDecorationColor="red400">textDecorationColor: red400</Keyboard>
+    <Keyboard textDecorationStyle="solid" textDecorationLine="underline" textDecorationThickness="auto" textDecorationColor="red500">textDecorationColor: red500</Keyboard>
+    <Keyboard textDecorationStyle="solid" textDecorationLine="underline" textDecorationThickness="auto" textDecorationColor="red600">textDecorationColor: red600</Keyboard>
+    <Keyboard textDecorationStyle="solid" textDecorationLine="underline" textDecorationThickness="auto" textDecorationColor="red700">textDecorationColor: red700</Keyboard>
+    <Keyboard textDecorationStyle="solid" textDecorationLine="underline" textDecorationThickness="auto" textDecorationColor="orange400">textDecorationColor: orange400</Keyboard>
+    <Keyboard textDecorationStyle="solid" textDecorationLine="underline" textDecorationThickness="auto" textDecorationColor="orange500">textDecorationColor: orange500</Keyboard>
+    <Keyboard textDecorationStyle="solid" textDecorationLine="underline" textDecorationThickness="auto" textDecorationColor="orange600">textDecorationColor: orange600</Keyboard>
+    <Keyboard textDecorationStyle="solid" textDecorationLine="underline" textDecorationThickness="auto" textDecorationColor="orange700">textDecorationColor: orange700</Keyboard>
+    <Keyboard textDecorationStyle="solid" textDecorationLine="underline" textDecorationThickness="auto" textDecorationColor="green400">textDecorationColor: green400</Keyboard>
+    <Keyboard textDecorationStyle="solid" textDecorationLine="underline" textDecorationThickness="auto" textDecorationColor="green500">textDecorationColor: green500</Keyboard>
+    <Keyboard textDecorationStyle="solid" textDecorationLine="underline" textDecorationThickness="auto" textDecorationColor="green600">textDecorationColor: green600</Keyboard>
+    <Keyboard textDecorationStyle="solid" textDecorationLine="underline" textDecorationThickness="auto" textDecorationColor="green700">textDecorationColor: green700</Keyboard>
+    <Keyboard textDecorationStyle="solid" textDecorationLine="underline" textDecorationThickness="auto" textDecorationColor="indigo400">textDecorationColor: indigo400</Keyboard>
+    <Keyboard textDecorationStyle="solid" textDecorationLine="underline" textDecorationThickness="auto" textDecorationColor="indigo500">textDecorationColor: indigo500</Keyboard>
+    <Keyboard textDecorationStyle="solid" textDecorationLine="underline" textDecorationThickness="auto" textDecorationColor="indigo600">textDecorationColor: indigo600</Keyboard>
+    <Keyboard textDecorationStyle="solid" textDecorationLine="underline" textDecorationThickness="auto" textDecorationColor="indigo700">textDecorationColor: indigo700</Keyboard>
+    <Keyboard textDecorationStyle="solid" textDecorationLine="underline" textDecorationThickness="auto" textDecorationColor="celery400">textDecorationColor: celery400</Keyboard>
+    <Keyboard textDecorationStyle="solid" textDecorationLine="underline" textDecorationThickness="auto" textDecorationColor="celery500">textDecorationColor: celery500</Keyboard>
+    <Keyboard textDecorationStyle="solid" textDecorationLine="underline" textDecorationThickness="auto" textDecorationColor="celery600">textDecorationColor: celery600</Keyboard>
+    <Keyboard textDecorationStyle="solid" textDecorationLine="underline" textDecorationThickness="auto" textDecorationColor="celery700">textDecorationColor: celery700</Keyboard>
+    <Keyboard textDecorationStyle="solid" textDecorationLine="underline" textDecorationThickness="auto" textDecorationColor="magenta400">textDecorationColor: magenta400</Keyboard>
+    <Keyboard textDecorationStyle="solid" textDecorationLine="underline" textDecorationThickness="auto" textDecorationColor="magenta500">textDecorationColor: magenta500</Keyboard>
+    <Keyboard textDecorationStyle="solid" textDecorationLine="underline" textDecorationThickness="auto" textDecorationColor="magenta600">textDecorationColor: magenta600</Keyboard>
+    <Keyboard textDecorationStyle="solid" textDecorationLine="underline" textDecorationThickness="auto" textDecorationColor="magenta700">textDecorationColor: magenta700</Keyboard>
+    <Keyboard textDecorationStyle="solid" textDecorationLine="underline" textDecorationThickness="auto" textDecorationColor="yellow400">textDecorationColor: yellow400</Keyboard>
+    <Keyboard textDecorationStyle="solid" textDecorationLine="underline" textDecorationThickness="auto" textDecorationColor="yellow500">textDecorationColor: yellow500</Keyboard>
+    <Keyboard textDecorationStyle="solid" textDecorationLine="underline" textDecorationThickness="auto" textDecorationColor="yellow600">textDecorationColor: yellow600</Keyboard>
+    <Keyboard textDecorationStyle="solid" textDecorationLine="underline" textDecorationThickness="auto" textDecorationColor="yellow700">textDecorationColor: yellow700</Keyboard>
+    <Keyboard textDecorationStyle="solid" textDecorationLine="underline" textDecorationThickness="auto" textDecorationColor="fuchsia400">textDecorationColor: fuchsia400</Keyboard>
+    <Keyboard textDecorationStyle="solid" textDecorationLine="underline" textDecorationThickness="auto" textDecorationColor="fuchsia500">textDecorationColor: fuchsia500</Keyboard>
+    <Keyboard textDecorationStyle="solid" textDecorationLine="underline" textDecorationThickness="auto" textDecorationColor="fuchsia600">textDecorationColor: fuchsia600</Keyboard>
+    <Keyboard textDecorationStyle="solid" textDecorationLine="underline" textDecorationThickness="auto" textDecorationColor="fuchsia700">textDecorationColor: fuchsia700</Keyboard>
+    <Keyboard textDecorationStyle="solid" textDecorationLine="underline" textDecorationThickness="auto" textDecorationColor="seafoam400">textDecorationColor: seafoam400</Keyboard>
+    <Keyboard textDecorationStyle="solid" textDecorationLine="underline" textDecorationThickness="auto" textDecorationColor="seafoam500">textDecorationColor: seafoam500</Keyboard>
+    <Keyboard textDecorationStyle="solid" textDecorationLine="underline" textDecorationThickness="auto" textDecorationColor="seafoam600">textDecorationColor: seafoam600</Keyboard>
+    <Keyboard textDecorationStyle="solid" textDecorationLine="underline" textDecorationThickness="auto" textDecorationColor="seafoam700">textDecorationColor: seafoam700</Keyboard>
+    <Keyboard textDecorationStyle="solid" textDecorationLine="underline" textDecorationThickness="auto" textDecorationColor="chartreuse400">textDecorationColor: chartreuse400</Keyboard>
+    <Keyboard textDecorationStyle="solid" textDecorationLine="underline" textDecorationThickness="auto" textDecorationColor="chartreuse500">textDecorationColor: chartreuse500</Keyboard>
+    <Keyboard textDecorationStyle="solid" textDecorationLine="underline" textDecorationThickness="auto" textDecorationColor="chartreuse600">textDecorationColor: chartreuse600</Keyboard>
+    <Keyboard textDecorationStyle="solid" textDecorationLine="underline" textDecorationThickness="auto" textDecorationColor="chartreuse700">textDecorationColor: chartreuse700</Keyboard>
+    <Keyboard textDecorationStyle="solid" textDecorationLine="underline" textDecorationThickness="auto" textDecorationColor="purple400">textDecorationColor: purple400</Keyboard>
+    <Keyboard textDecorationStyle="solid" textDecorationLine="underline" textDecorationThickness="auto" textDecorationColor="purple500">textDecorationColor: purple500</Keyboard>
+    <Keyboard textDecorationStyle="solid" textDecorationLine="underline" textDecorationThickness="auto" textDecorationColor="purple600">textDecorationColor: purple600</Keyboard>
+    <Keyboard textDecorationStyle="solid" textDecorationLine="underline" textDecorationThickness="auto" textDecorationColor="purple700">textDecorationColor: purple700</Keyboard>
 </>);
 ```
 

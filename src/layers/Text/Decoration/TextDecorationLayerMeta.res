@@ -10,18 +10,26 @@ let style = textDecorationStyle :> string;
 let textDecorationThickness: TextDecorationThickness.t = #auto;
 let thickness = textDecorationThickness :> string;
 
-let make: array<Js.t<Meta.k>> = [
+let make: (~props: option<list<(string, string)>>) => array<Js.t<Meta.k>> = (~props) => [
   Js.Obj.assign(Js.Obj.empty(), {
     "title": TextDecorationColorMeta.make.name,
     "description": None,
     "key": TextDecorationColorMeta.make.name,
     "content": None,
     "args": TextDecorationColorMeta.make.args,
-    "props": Some(list{
-      ("textDecorationStyle", style),
-      ("textDecorationLine", line),
-      ("textDecorationThickness", thickness),
-    }),
+    "props": Some(
+      Belt.List.concatMany([
+        switch props {
+        | Some(l) => l
+        | None => list{}
+        },
+        list{
+          ("textDecorationStyle", style),
+          ("textDecorationLine", line),
+          ("textDecorationThickness", thickness),
+        },
+      ])
+    ),
   }),
 
   Js.Obj.assign(Js.Obj.empty(), {
@@ -30,11 +38,19 @@ let make: array<Js.t<Meta.k>> = [
     "key": TextDecorationLineMeta.make.name,
     "content": None,
     "args": TextDecorationLineMeta.make.args,
-    "props": Some(list{
-      ("textDecorationStyle", style),
-      ("textDecorationColor", color),
-      ("textDecorationThickness", thickness),
-    }),
+    "props": Some(
+      Belt.List.concatMany([
+        switch props {
+        | Some(l) => l
+        | None => list{}
+        },
+        list{
+          ("textDecorationStyle", style),
+          ("textDecorationColor", color),
+          ("textDecorationThickness", thickness),
+        },
+      ])
+    ),
   }),
 
   Js.Obj.assign(Js.Obj.empty(), {
@@ -43,11 +59,19 @@ let make: array<Js.t<Meta.k>> = [
     "key": TextDecorationStyleMeta.make.name,
     "content": None,
     "args": TextDecorationStyleMeta.make.args,
-    "props": Some(list{
-      ("textDecorationLine", line),
-      ("textDecorationColor", color),
-      ("textDecorationThickness", thickness),
-    }),
+    "props": Some(
+      Belt.List.concatMany([
+        switch props {
+        | Some(l) => l
+        | None => list{}
+        },
+        list{
+          ("textDecorationLine", line),
+          ("textDecorationColor", color),
+          ("textDecorationThickness", thickness),
+        },
+      ])
+    ),
   }),
 
   Js.Obj.assign(Js.Obj.empty(), {
@@ -56,10 +80,18 @@ let make: array<Js.t<Meta.k>> = [
     "key": TextDecorationThicknessMeta.make.name,
     "content": None,
     "args": TextDecorationThicknessMeta.make.args,
-    "props": Some(list{
-      ("textDecorationLine", line),
-      ("textDecorationColor", color),
-      ("textDecorationStyle", style),
-    }),
+    "props": Some(
+      Belt.List.concatMany([
+        switch props {
+        | Some(l) => l
+        | None => list{}
+        },
+        list{
+          ("textDecorationLine", line),
+          ("textDecorationColor", color),
+          ("textDecorationStyle", style),
+        },
+      ])
+    ),
   }),
 ]

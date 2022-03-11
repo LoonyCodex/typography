@@ -32,7 +32,7 @@ let section = (
   ~tag: string,
   ~key: string,
   ~content: option<string>,
-  ~args: array<'a>,
+  ~args: option<array<'a>>,
   ~props: option<list<'b>>,
 ) => `
 ## ${title}
@@ -47,24 +47,36 @@ import React from 'react';
 import { ${tag} } from 'typography';
 
 export default () => (<>
-${Belt.Array.reduce(
-  args,
-  "",
-  (prev, current) =>
-    prev ++
-    (prev == "" ? "\t" : "\n\t") ++
-    Template.make(
-      ~component = tag,
-      ~content = switch content {
-      | Some(s) => Some(s)
-      | None => Some(key ++ ": " ++ str(current))
-      },
-      ~props = switch props {
-      | Some(s) => Belt.List.concat(s, list{(key, str(current))})
-      | None => list{(key, str(current))}
-      }
-    )
-)}
+${
+  switch args {
+  | Some(a) => Belt.Array.reduce(
+    a,
+    "",
+    (prev, current) =>
+      prev ++
+      (prev == "" ? "\t" : "\n\t") ++
+      Template.make(
+        ~component = tag,
+        ~content = switch content {
+        | Some(s) => Some(s)
+        | None => Some(key ++ ": " ++ str(current))
+        },
+        ~props = switch props {
+        | Some(s) => Belt.List.concat(s, list{(key, str(current))})
+        | None => list{(key, str(current))}
+        }
+      )
+  )
+  | None => "\t" ++ Template.make(
+    ~component = tag,
+    ~content = content,
+    ~props = switch props {
+    | Some(s) => s
+    | None => list{}
+    }
+  )
+  }
+}
 </>);
 \`\`\`
 `

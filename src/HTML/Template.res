@@ -1,4 +1,4 @@
-let propsToString = (. acc, (k, v)) => acc ++ (acc == "" ? "" : " ") ++ k ++ "=" ++ `"${v}"`
+let propsToString = (. acc, (k, v)) => acc ++ " " ++ k ++ "=" ++ `"${v}"`
 
 let make = (
   ~component: string,
@@ -6,7 +6,7 @@ let make = (
   ~props: list<'a>,
 ) => {
   switch content {
-  | Some(s) => `<${component} ${props -> Belt.List.reduceU("", propsToString)}>${s}</${component}>`
+  | Some(s) => `<${component}${props -> Belt.List.reduceU("", propsToString)}>${s}</${component}>`
   | None => `<${component} />`
   }
 }

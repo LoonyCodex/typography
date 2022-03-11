@@ -1,11 +1,11 @@
-let make: array<Js.t<Meta.k>> = [
+let make: (~props: option<list<(string, string)>>) => array<Js.t<Meta.k>> = (~props) => [
   Js.Obj.assign(Js.Obj.empty(), {
     "title": HyphensMeta.make.name,
     "description": None,
     "key": HyphensMeta.make.name,
     "content": None,
     "args": HyphensMeta.make.args,
-    "props": None,
+    "props": props,
   }),
 
   Js.Obj.assign(Js.Obj.empty(), {
@@ -23,7 +23,7 @@ let make: array<Js.t<Meta.k>> = [
     "key": TextOverflowMeta.make.name,
     "content": None,
     "args": TextOverflowMeta.make.args,
-    "props": None,
+    "props": props,
   }),
 
   Js.Obj.assign(Js.Obj.empty(), {
@@ -32,6 +32,6 @@ let make: array<Js.t<Meta.k>> = [
     "key": WordBreakMeta.make.name,
     "content": None,
     "args": WordBreakMeta.make.args,
-    "props": None,
+    "props": props,
   }),
 ]

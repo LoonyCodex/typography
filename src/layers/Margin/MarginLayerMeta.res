@@ -1,11 +1,11 @@
-let make: array<Js.t<Meta.k>> = [
+let make: (~props: option<list<(string, string)>>) => array<Js.t<Meta.k>> = (~props) => [
   Js.Obj.assign(Js.Obj.empty(), {
     "title": MarginBlockEndMeta.make.name,
     "description": None,
     "key": MarginBlockEndMeta.make.name,
     "content": None,
     "args": MarginBlockEndMeta.make.args,
-    "props": None,
+    "props": props,
   }),
 
   Js.Obj.assign(Js.Obj.empty(), {
@@ -14,7 +14,7 @@ let make: array<Js.t<Meta.k>> = [
     "key": MarginBlockStartMeta.make.name,
     "content": None,
     "args": MarginBlockStartMeta.make.args,
-    "props": None,
+    "props": props,
   }),
 
   Js.Obj.assign(Js.Obj.empty(), {
@@ -23,7 +23,7 @@ let make: array<Js.t<Meta.k>> = [
     "key": MarginInlineEndMeta.make.name,
     "content": None,
     "args": MarginInlineEndMeta.make.args,
-    "props": None,
+    "props": props,
   }),
 
   Js.Obj.assign(Js.Obj.empty(), {
@@ -32,6 +32,6 @@ let make: array<Js.t<Meta.k>> = [
     "key": MarginInlineStartMeta.make.name,
     "content": None,
     "args": MarginInlineStartMeta.make.args,
-    "props": None,
+    "props": props,
   }),
 ]

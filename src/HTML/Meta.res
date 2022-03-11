@@ -43,7 +43,7 @@ type k = {
   "tag": string,
   "key": string,
   "content": option<string>,
-  "args": array<string>,
+  "args": option<array<string>>,
   "props": option<list<(string, string)>>,
 }
 

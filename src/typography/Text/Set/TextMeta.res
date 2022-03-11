@@ -1,12 +1,5 @@
 let displayName = "Text";
 
-let docs: array<Js.t<Meta.k>> = Belt.Array.concatMany([
-  ColorLayerMeta.make,
-  FontLayerMeta.make,
-  TextDecorationLayerMeta.make,
-  TextTransformLayerMeta.make,
-]);
-
 let make: Meta.t = {
   tag: HTMLSet([
     #abbr,
@@ -53,6 +46,28 @@ let make: Meta.t = {
       }),
     ],
 
-    docs,
+    ColorLayerMeta.make(
+      ~props = Some(list{
+        ("tag", "span"),
+      }),
+    ),
+
+    FontLayerMeta.make(
+      ~props = Some(list{
+        ("tag", "span"),
+      }),
+    ),
+
+    TextDecorationLayerMeta.make(
+      ~props = Some(list{
+        ("tag", "span"),
+      }),
+    ),
+
+    TextTransformLayerMeta.make(
+      ~props = Some(list{
+        ("tag", "span"),
+      }),
+    ),
   ]),
 }

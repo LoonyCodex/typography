@@ -1,11 +1,11 @@
-let make: array<Js.t<Meta.k>> = [
+let make: (~props: option<list<(string, string)>>) => array<Js.t<Meta.k>> = (~props) => [
   Js.Obj.assign(Js.Obj.empty(), {
     "title": BackgroundAttachmentMeta.make.name,
     "description": None,
     "key": BackgroundAttachmentMeta.make.name,
     "content": None,
     "args": BackgroundAttachmentMeta.make.args,
-    "props": None,
+    "props": props,
   }),
 
   Js.Obj.assign(Js.Obj.empty(), {
@@ -14,7 +14,7 @@ let make: array<Js.t<Meta.k>> = [
     "key": BackgroundClipMeta.make.name,
     "content": None,
     "args": BackgroundClipMeta.make.args,
-    "props": None,
+    "props": props,
   }),
 
   Js.Obj.assign(Js.Obj.empty(), {
@@ -23,7 +23,7 @@ let make: array<Js.t<Meta.k>> = [
     "key": BackgroundColorMeta.make.name,
     "content": None,
     "args": BackgroundColorMeta.make.args,
-    "props": None,
+    "props": props,
   }),
 
   Js.Obj.assign(Js.Obj.empty(), {
@@ -32,7 +32,7 @@ let make: array<Js.t<Meta.k>> = [
     "key": BackgroundOpacityMeta.make.name,
     "content": None,
     "args": BackgroundOpacityMeta.make.args,
-    "props": None,
+    "props": props,
   }),
 
   Js.Obj.assign(Js.Obj.empty(), {
@@ -41,7 +41,7 @@ let make: array<Js.t<Meta.k>> = [
     "key": BackgroundOriginMeta.make.name,
     "content": None,
     "args": BackgroundOriginMeta.make.args,
-    "props": None,
+    "props": props,
   }),
 
   Js.Obj.assign(Js.Obj.empty(), {
@@ -50,7 +50,7 @@ let make: array<Js.t<Meta.k>> = [
     "key": BackgroundPositionMeta.make.name,
     "content": None,
     "args": BackgroundPositionMeta.make.args,
-    "props": None,
+    "props": props,
   }),
 
   Js.Obj.assign(Js.Obj.empty(), {
@@ -59,7 +59,7 @@ let make: array<Js.t<Meta.k>> = [
     "key": BackgroundRepeatMeta.make.name,
     "content": None,
     "args": BackgroundRepeatMeta.make.args,
-    "props": None,
+    "props": props,
   }),
 
   Js.Obj.assign(Js.Obj.empty(), {
@@ -68,6 +68,6 @@ let make: array<Js.t<Meta.k>> = [
     "key": BackgroundSizeMeta.make.name,
     "content": None,
     "args": BackgroundSizeMeta.make.args,
-    "props": None,
+    "props": props,
   }),
 ]

@@ -15,11 +15,14 @@ let make: Meta.t = {
         "description": None,
         "key": "",
         "content": Some(displayName ++ " " ++ "with default styles"),
-        "args": [],
+        "args": None,
         "props": None,
       }),
     ],
 
-    CodexMeta.docs,
+    ColorLayerMeta.make(~props = None),
+    FontLayerMeta.make(~props = None),
+    TextDecorationLayerMeta.make(~props = None),
+    TextTransformLayerMeta.make(~props = None),
   ]),
 }

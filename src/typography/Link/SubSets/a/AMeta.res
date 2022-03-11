@@ -1,12 +1,5 @@
 let displayName = "Link";
 
-let docs: array<Js.t<Meta.k>> = Belt.Array.concatMany([
-  ColorLayerMeta.make,
-  FontLayerMeta.make,
-  TextDecorationLayerMeta.make,
-  TextTransformLayerMeta.make,
-]);
-
 let make: Meta.t = {
   tag: HTMLTag(#a),
   displayName,
@@ -27,6 +20,9 @@ let make: Meta.t = {
       }),
     ],
 
-    docs,
+    ColorLayerMeta.make(~props = None),
+    FontLayerMeta.make(~props = None),
+    TextDecorationLayerMeta.make(~props = None),
+    TextTransformLayerMeta.make(~props = None),
   ]),
 }

@@ -14,7 +14,7 @@ import React from 'react';
 import { TextInline } from 'typography';
 
 export default () => (<>
-
+    <TextInline>TextInline with default styles</TextInline>
 </>);
 ```
 
@@ -25,10 +25,65 @@ import React from 'react';
 import { TextInline } from 'typography';
 
 export default () => (<>
-    <TextInline color="primary">color: primary</TextInline>
-    <TextInline color="secondary">color: secondary</TextInline>
-    <TextInline color="black">color: black</TextInline>
-    <TextInline color="white">color: white</TextInline>
+    <TextInline color="gray50">color: gray50</TextInline>
+    <TextInline color="gray75">color: gray75</TextInline>
+    <TextInline color="gray100">color: gray100</TextInline>
+    <TextInline color="gray200">color: gray200</TextInline>
+    <TextInline color="gray300">color: gray300</TextInline>
+    <TextInline color="gray400">color: gray400</TextInline>
+    <TextInline color="gray500">color: gray500</TextInline>
+    <TextInline color="gray600">color: gray600</TextInline>
+    <TextInline color="gray700">color: gray700</TextInline>
+    <TextInline color="gray800">color: gray800</TextInline>
+    <TextInline color="gray900">color: gray900</TextInline>
+    <TextInline color="blue400">color: blue400</TextInline>
+    <TextInline color="blue500">color: blue500</TextInline>
+    <TextInline color="blue600">color: blue600</TextInline>
+    <TextInline color="blue700">color: blue700</TextInline>
+    <TextInline color="red400">color: red400</TextInline>
+    <TextInline color="red500">color: red500</TextInline>
+    <TextInline color="red600">color: red600</TextInline>
+    <TextInline color="red700">color: red700</TextInline>
+    <TextInline color="orange400">color: orange400</TextInline>
+    <TextInline color="orange500">color: orange500</TextInline>
+    <TextInline color="orange600">color: orange600</TextInline>
+    <TextInline color="orange700">color: orange700</TextInline>
+    <TextInline color="green400">color: green400</TextInline>
+    <TextInline color="green500">color: green500</TextInline>
+    <TextInline color="green600">color: green600</TextInline>
+    <TextInline color="green700">color: green700</TextInline>
+    <TextInline color="indigo400">color: indigo400</TextInline>
+    <TextInline color="indigo500">color: indigo500</TextInline>
+    <TextInline color="indigo600">color: indigo600</TextInline>
+    <TextInline color="indigo700">color: indigo700</TextInline>
+    <TextInline color="celery400">color: celery400</TextInline>
+    <TextInline color="celery500">color: celery500</TextInline>
+    <TextInline color="celery600">color: celery600</TextInline>
+    <TextInline color="celery700">color: celery700</TextInline>
+    <TextInline color="magenta400">color: magenta400</TextInline>
+    <TextInline color="magenta500">color: magenta500</TextInline>
+    <TextInline color="magenta600">color: magenta600</TextInline>
+    <TextInline color="magenta700">color: magenta700</TextInline>
+    <TextInline color="yellow400">color: yellow400</TextInline>
+    <TextInline color="yellow500">color: yellow500</TextInline>
+    <TextInline color="yellow600">color: yellow600</TextInline>
+    <TextInline color="yellow700">color: yellow700</TextInline>
+    <TextInline color="fuchsia400">color: fuchsia400</TextInline>
+    <TextInline color="fuchsia500">color: fuchsia500</TextInline>
+    <TextInline color="fuchsia600">color: fuchsia600</TextInline>
+    <TextInline color="fuchsia700">color: fuchsia700</TextInline>
+    <TextInline color="seafoam400">color: seafoam400</TextInline>
+    <TextInline color="seafoam500">color: seafoam500</TextInline>
+    <TextInline color="seafoam600">color: seafoam600</TextInline>
+    <TextInline color="seafoam700">color: seafoam700</TextInline>
+    <TextInline color="chartreuse400">color: chartreuse400</TextInline>
+    <TextInline color="chartreuse500">color: chartreuse500</TextInline>
+    <TextInline color="chartreuse600">color: chartreuse600</TextInline>
+    <TextInline color="chartreuse700">color: chartreuse700</TextInline>
+    <TextInline color="purple400">color: purple400</TextInline>
+    <TextInline color="purple500">color: purple500</TextInline>
+    <TextInline color="purple600">color: purple600</TextInline>
+    <TextInline color="purple700">color: purple700</TextInline>
 </>);
 ```
 
@@ -51,18 +106,15 @@ import React from 'react';
 import { TextInline } from 'typography';
 
 export default () => (<>
-    <TextInline fontSize="larger">fontSize: larger</TextInline>
-    <TextInline fontSize="smaller">fontSize: smaller</TextInline>
     <TextInline fontSize="none">fontSize: none</TextInline>
-    <TextInline fontSize="xxxsmall">fontSize: xxxsmall</TextInline>
-    <TextInline fontSize="xxsmall">fontSize: xxsmall</TextInline>
-    <TextInline fontSize="xsmall">fontSize: xsmall</TextInline>
-    <TextInline fontSize="small">fontSize: small</TextInline>
-    <TextInline fontSize="medium">fontSize: medium</TextInline>
-    <TextInline fontSize="large">fontSize: large</TextInline>
-    <TextInline fontSize="xlarge">fontSize: xlarge</TextInline>
-    <TextInline fontSize="xxlarge">fontSize: xxlarge</TextInline>
-    <TextInline fontSize="xxxlarge">fontSize: xxxlarge</TextInline>
+    <TextInline fontSize="xxs">fontSize: xxs</TextInline>
+    <TextInline fontSize="xs">fontSize: xs</TextInline>
+    <TextInline fontSize="s">fontSize: s</TextInline>
+    <TextInline fontSize="m">fontSize: m</TextInline>
+    <TextInline fontSize="l">fontSize: l</TextInline>
+    <TextInline fontSize="xl">fontSize: xl</TextInline>
+    <TextInline fontSize="xxl">fontSize: xxl</TextInline>
+    <TextInline fontSize="xxxl">fontSize: xxxl</TextInline>
 </>);
 ```
 
@@ -76,9 +128,6 @@ export default () => (<>
     <TextInline fontStyle="normal">fontStyle: normal</TextInline>
     <TextInline fontStyle="italic">fontStyle: italic</TextInline>
     <TextInline fontStyle="oblique">fontStyle: oblique</TextInline>
-    <TextInline fontStyle="inherit">fontStyle: inherit</TextInline>
-    <TextInline fontStyle="initial">fontStyle: initial</TextInline>
-    <TextInline fontStyle="unset">fontStyle: unset</TextInline>
 </>);
 ```
 
@@ -89,20 +138,9 @@ import React from 'react';
 import { TextInline } from 'typography';
 
 export default () => (<>
-    <TextInline fontWeight="thin">fontWeight: thin</TextInline>
-    <TextInline fontWeight="extraLight">fontWeight: extraLight</TextInline>
     <TextInline fontWeight="light">fontWeight: light</TextInline>
     <TextInline fontWeight="normal">fontWeight: normal</TextInline>
-    <TextInline fontWeight="medium">fontWeight: medium</TextInline>
-    <TextInline fontWeight="semiBold">fontWeight: semiBold</TextInline>
-    <TextInline fontWeight="bold">fontWeight: bold</TextInline>
-    <TextInline fontWeight="extraBold">fontWeight: extraBold</TextInline>
     <TextInline fontWeight="heavy">fontWeight: heavy</TextInline>
-    <TextInline fontWeight="lighter">fontWeight: lighter</TextInline>
-    <TextInline fontWeight="bolder">fontWeight: bolder</TextInline>
-    <TextInline fontWeight="inherit">fontWeight: inherit</TextInline>
-    <TextInline fontWeight="initial">fontWeight: initial</TextInline>
-    <TextInline fontWeight="unset">fontWeight: unset</TextInline>
 </>);
 ```
 
@@ -114,10 +152,65 @@ import { TextInline } from 'typography';
 
 export default () => (<>
     <TextInline textDecorationStyle="solid" textDecorationLine="underline" textDecorationThickness="auto" textDecorationColor="currentColor">textDecorationColor: currentColor</TextInline>
-    <TextInline textDecorationStyle="solid" textDecorationLine="underline" textDecorationThickness="auto" textDecorationColor="primary">textDecorationColor: primary</TextInline>
-    <TextInline textDecorationStyle="solid" textDecorationLine="underline" textDecorationThickness="auto" textDecorationColor="secondary">textDecorationColor: secondary</TextInline>
-    <TextInline textDecorationStyle="solid" textDecorationLine="underline" textDecorationThickness="auto" textDecorationColor="black">textDecorationColor: black</TextInline>
-    <TextInline textDecorationStyle="solid" textDecorationLine="underline" textDecorationThickness="auto" textDecorationColor="white">textDecorationColor: white</TextInline>
+    <TextInline textDecorationStyle="solid" textDecorationLine="underline" textDecorationThickness="auto" textDecorationColor="gray50">textDecorationColor: gray50</TextInline>
+    <TextInline textDecorationStyle="solid" textDecorationLine="underline" textDecorationThickness="auto" textDecorationColor="gray75">textDecorationColor: gray75</TextInline>
+    <TextInline textDecorationStyle="solid" textDecorationLine="underline" textDecorationThickness="auto" textDecorationColor="gray100">textDecorationColor: gray100</TextInline>
+    <TextInline textDecorationStyle="solid" textDecorationLine="underline" textDecorationThickness="auto" textDecorationColor="gray200">textDecorationColor: gray200</TextInline>
+    <TextInline textDecorationStyle="solid" textDecorationLine="underline" textDecorationThickness="auto" textDecorationColor="gray300">textDecorationColor: gray300</TextInline>
+    <TextInline textDecorationStyle="solid" textDecorationLine="underline" textDecorationThickness="auto" textDecorationColor="gray400">textDecorationColor: gray400</TextInline>
+    <TextInline textDecorationStyle="solid" textDecorationLine="underline" textDecorationThickness="auto" textDecorationColor="gray500">textDecorationColor: gray500</TextInline>
+    <TextInline textDecorationStyle="solid" textDecorationLine="underline" textDecorationThickness="auto" textDecorationColor="gray600">textDecorationColor: gray600</TextInline>
+    <TextInline textDecorationStyle="solid" textDecorationLine="underline" textDecorationThickness="auto" textDecorationColor="gray700">textDecorationColor: gray700</TextInline>
+    <TextInline textDecorationStyle="solid" textDecorationLine="underline" textDecorationThickness="auto" textDecorationColor="gray800">textDecorationColor: gray800</TextInline>
+    <TextInline textDecorationStyle="solid" textDecorationLine="underline" textDecorationThickness="auto" textDecorationColor="gray900">textDecorationColor: gray900</TextInline>
+    <TextInline textDecorationStyle="solid" textDecorationLine="underline" textDecorationThickness="auto" textDecorationColor="blue400">textDecorationColor: blue400</TextInline>
+    <TextInline textDecorationStyle="solid" textDecorationLine="underline" textDecorationThickness="auto" textDecorationColor="blue500">textDecorationColor: blue500</TextInline>
+    <TextInline textDecorationStyle="solid" textDecorationLine="underline" textDecorationThickness="auto" textDecorationColor="blue600">textDecorationColor: blue600</TextInline>
+    <TextInline textDecorationStyle="solid" textDecorationLine="underline" textDecorationThickness="auto" textDecorationColor="blue700">textDecorationColor: blue700</TextInline>
+    <TextInline textDecorationStyle="solid" textDecorationLine="underline" textDecorationThickness="auto" textDecorationColor="red400">textDecorationColor: red400</TextInline>
+    <TextInline textDecorationStyle="solid" textDecorationLine="underline" textDecorationThickness="auto" textDecorationColor="red500">textDecorationColor: red500</TextInline>
+    <TextInline textDecorationStyle="solid" textDecorationLine="underline" textDecorationThickness="auto" textDecorationColor="red600">textDecorationColor: red600</TextInline>
+    <TextInline textDecorationStyle="solid" textDecorationLine="underline" textDecorationThickness="auto" textDecorationColor="red700">textDecorationColor: red700</TextInline>
+    <TextInline textDecorationStyle="solid" textDecorationLine="underline" textDecorationThickness="auto" textDecorationColor="orange400">textDecorationColor: orange400</TextInline>
+    <TextInline textDecorationStyle="solid" textDecorationLine="underline" textDecorationThickness="auto" textDecorationColor="orange500">textDecorationColor: orange500</TextInline>
+    <TextInline textDecorationStyle="solid" textDecorationLine="underline" textDecorationThickness="auto" textDecorationColor="orange600">textDecorationColor: orange600</TextInline>
+    <TextInline textDecorationStyle="solid" textDecorationLine="underline" textDecorationThickness="auto" textDecorationColor="orange700">textDecorationColor: orange700</TextInline>
+    <TextInline textDecorationStyle="solid" textDecorationLine="underline" textDecorationThickness="auto" textDecorationColor="green400">textDecorationColor: green400</TextInline>
+    <TextInline textDecorationStyle="solid" textDecorationLine="underline" textDecorationThickness="auto" textDecorationColor="green500">textDecorationColor: green500</TextInline>
+    <TextInline textDecorationStyle="solid" textDecorationLine="underline" textDecorationThickness="auto" textDecorationColor="green600">textDecorationColor: green600</TextInline>
+    <TextInline textDecorationStyle="solid" textDecorationLine="underline" textDecorationThickness="auto" textDecorationColor="green700">textDecorationColor: green700</TextInline>
+    <TextInline textDecorationStyle="solid" textDecorationLine="underline" textDecorationThickness="auto" textDecorationColor="indigo400">textDecorationColor: indigo400</TextInline>
+    <TextInline textDecorationStyle="solid" textDecorationLine="underline" textDecorationThickness="auto" textDecorationColor="indigo500">textDecorationColor: indigo500</TextInline>
+    <TextInline textDecorationStyle="solid" textDecorationLine="underline" textDecorationThickness="auto" textDecorationColor="indigo600">textDecorationColor: indigo600</TextInline>
+    <TextInline textDecorationStyle="solid" textDecorationLine="underline" textDecorationThickness="auto" textDecorationColor="indigo700">textDecorationColor: indigo700</TextInline>
+    <TextInline textDecorationStyle="solid" textDecorationLine="underline" textDecorationThickness="auto" textDecorationColor="celery400">textDecorationColor: celery400</TextInline>
+    <TextInline textDecorationStyle="solid" textDecorationLine="underline" textDecorationThickness="auto" textDecorationColor="celery500">textDecorationColor: celery500</TextInline>
+    <TextInline textDecorationStyle="solid" textDecorationLine="underline" textDecorationThickness="auto" textDecorationColor="celery600">textDecorationColor: celery600</TextInline>
+    <TextInline textDecorationStyle="solid" textDecorationLine="underline" textDecorationThickness="auto" textDecorationColor="celery700">textDecorationColor: celery700</TextInline>
+    <TextInline textDecorationStyle="solid" textDecorationLine="underline" textDecorationThickness="auto" textDecorationColor="magenta400">textDecorationColor: magenta400</TextInline>
+    <TextInline textDecorationStyle="solid" textDecorationLine="underline" textDecorationThickness="auto" textDecorationColor="magenta500">textDecorationColor: magenta500</TextInline>
+    <TextInline textDecorationStyle="solid" textDecorationLine="underline" textDecorationThickness="auto" textDecorationColor="magenta600">textDecorationColor: magenta600</TextInline>
+    <TextInline textDecorationStyle="solid" textDecorationLine="underline" textDecorationThickness="auto" textDecorationColor="magenta700">textDecorationColor: magenta700</TextInline>
+    <TextInline textDecorationStyle="solid" textDecorationLine="underline" textDecorationThickness="auto" textDecorationColor="yellow400">textDecorationColor: yellow400</TextInline>
+    <TextInline textDecorationStyle="solid" textDecorationLine="underline" textDecorationThickness="auto" textDecorationColor="yellow500">textDecorationColor: yellow500</TextInline>
+    <TextInline textDecorationStyle="solid" textDecorationLine="underline" textDecorationThickness="auto" textDecorationColor="yellow600">textDecorationColor: yellow600</TextInline>
+    <TextInline textDecorationStyle="solid" textDecorationLine="underline" textDecorationThickness="auto" textDecorationColor="yellow700">textDecorationColor: yellow700</TextInline>
+    <TextInline textDecorationStyle="solid" textDecorationLine="underline" textDecorationThickness="auto" textDecorationColor="fuchsia400">textDecorationColor: fuchsia400</TextInline>
+    <TextInline textDecorationStyle="solid" textDecorationLine="underline" textDecorationThickness="auto" textDecorationColor="fuchsia500">textDecorationColor: fuchsia500</TextInline>
+    <TextInline textDecorationStyle="solid" textDecorationLine="underline" textDecorationThickness="auto" textDecorationColor="fuchsia600">textDecorationColor: fuchsia600</TextInline>
+    <TextInline textDecorationStyle="solid" textDecorationLine="underline" textDecorationThickness="auto" textDecorationColor="fuchsia700">textDecorationColor: fuchsia700</TextInline>
+    <TextInline textDecorationStyle="solid" textDecorationLine="underline" textDecorationThickness="auto" textDecorationColor="seafoam400">textDecorationColor: seafoam400</TextInline>
+    <TextInline textDecorationStyle="solid" textDecorationLine="underline" textDecorationThickness="auto" textDecorationColor="seafoam500">textDecorationColor: seafoam500</TextInline>
+    <TextInline textDecorationStyle="solid" textDecorationLine="underline" textDecorationThickness="auto" textDecorationColor="seafoam600">textDecorationColor: seafoam600</TextInline>
+    <TextInline textDecorationStyle="solid" textDecorationLine="underline" textDecorationThickness="auto" textDecorationColor="seafoam700">textDecorationColor: seafoam700</TextInline>
+    <TextInline textDecorationStyle="solid" textDecorationLine="underline" textDecorationThickness="auto" textDecorationColor="chartreuse400">textDecorationColor: chartreuse400</TextInline>
+    <TextInline textDecorationStyle="solid" textDecorationLine="underline" textDecorationThickness="auto" textDecorationColor="chartreuse500">textDecorationColor: chartreuse500</TextInline>
+    <TextInline textDecorationStyle="solid" textDecorationLine="underline" textDecorationThickness="auto" textDecorationColor="chartreuse600">textDecorationColor: chartreuse600</TextInline>
+    <TextInline textDecorationStyle="solid" textDecorationLine="underline" textDecorationThickness="auto" textDecorationColor="chartreuse700">textDecorationColor: chartreuse700</TextInline>
+    <TextInline textDecorationStyle="solid" textDecorationLine="underline" textDecorationThickness="auto" textDecorationColor="purple400">textDecorationColor: purple400</TextInline>
+    <TextInline textDecorationStyle="solid" textDecorationLine="underline" textDecorationThickness="auto" textDecorationColor="purple500">textDecorationColor: purple500</TextInline>
+    <TextInline textDecorationStyle="solid" textDecorationLine="underline" textDecorationThickness="auto" textDecorationColor="purple600">textDecorationColor: purple600</TextInline>
+    <TextInline textDecorationStyle="solid" textDecorationLine="underline" textDecorationThickness="auto" textDecorationColor="purple700">textDecorationColor: purple700</TextInline>
 </>);
 ```
 

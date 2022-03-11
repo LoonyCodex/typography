@@ -1,11 +1,11 @@
-let make: array<Js.t<Meta.k>> = [
+let make: (~props: option<list<(string, string)>>) => array<Js.t<Meta.k>> = (~props) => [
   Js.Obj.assign(Js.Obj.empty(), {
     "title": FontFamilyMeta.make.name,
     "description": None,
     "key": FontFamilyMeta.make.name,
     "content": None,
     "args": FontFamilyMeta.make.args,
-    "props": None,
+    "props": props,
   }),
 
   Js.Obj.assign(Js.Obj.empty(), {
@@ -14,7 +14,7 @@ let make: array<Js.t<Meta.k>> = [
     "key": FontSizeMeta.make.name,
     "content": None,
     "args": FontSizeMeta.make.args,
-    "props": None,
+    "props": props,
   }),
 
   Js.Obj.assign(Js.Obj.empty(), {
@@ -23,7 +23,7 @@ let make: array<Js.t<Meta.k>> = [
     "key": FontStyleMeta.make.name,
     "content": None,
     "args": FontStyleMeta.make.args,
-    "props": None,
+    "props": props,
   }),
 
   Js.Obj.assign(Js.Obj.empty(), {
@@ -32,6 +32,6 @@ let make: array<Js.t<Meta.k>> = [
     "key": FontWeightMeta.make.name,
     "content": None,
     "args": FontWeightMeta.make.args,
-    "props": None,
+    "props": props,
   }),
 ]

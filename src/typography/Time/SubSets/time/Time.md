@@ -14,7 +14,7 @@ import React from 'react';
 import { Time } from 'typography';
 
 export default () => (<>
-
+    <Time>Time with default styles</Time>
 </>);
 ```
 
@@ -25,10 +25,65 @@ import React from 'react';
 import { Time } from 'typography';
 
 export default () => (<>
-    <Time color="primary">color: primary</Time>
-    <Time color="secondary">color: secondary</Time>
-    <Time color="black">color: black</Time>
-    <Time color="white">color: white</Time>
+    <Time color="gray50">color: gray50</Time>
+    <Time color="gray75">color: gray75</Time>
+    <Time color="gray100">color: gray100</Time>
+    <Time color="gray200">color: gray200</Time>
+    <Time color="gray300">color: gray300</Time>
+    <Time color="gray400">color: gray400</Time>
+    <Time color="gray500">color: gray500</Time>
+    <Time color="gray600">color: gray600</Time>
+    <Time color="gray700">color: gray700</Time>
+    <Time color="gray800">color: gray800</Time>
+    <Time color="gray900">color: gray900</Time>
+    <Time color="blue400">color: blue400</Time>
+    <Time color="blue500">color: blue500</Time>
+    <Time color="blue600">color: blue600</Time>
+    <Time color="blue700">color: blue700</Time>
+    <Time color="red400">color: red400</Time>
+    <Time color="red500">color: red500</Time>
+    <Time color="red600">color: red600</Time>
+    <Time color="red700">color: red700</Time>
+    <Time color="orange400">color: orange400</Time>
+    <Time color="orange500">color: orange500</Time>
+    <Time color="orange600">color: orange600</Time>
+    <Time color="orange700">color: orange700</Time>
+    <Time color="green400">color: green400</Time>
+    <Time color="green500">color: green500</Time>
+    <Time color="green600">color: green600</Time>
+    <Time color="green700">color: green700</Time>
+    <Time color="indigo400">color: indigo400</Time>
+    <Time color="indigo500">color: indigo500</Time>
+    <Time color="indigo600">color: indigo600</Time>
+    <Time color="indigo700">color: indigo700</Time>
+    <Time color="celery400">color: celery400</Time>
+    <Time color="celery500">color: celery500</Time>
+    <Time color="celery600">color: celery600</Time>
+    <Time color="celery700">color: celery700</Time>
+    <Time color="magenta400">color: magenta400</Time>
+    <Time color="magenta500">color: magenta500</Time>
+    <Time color="magenta600">color: magenta600</Time>
+    <Time color="magenta700">color: magenta700</Time>
+    <Time color="yellow400">color: yellow400</Time>
+    <Time color="yellow500">color: yellow500</Time>
+    <Time color="yellow600">color: yellow600</Time>
+    <Time color="yellow700">color: yellow700</Time>
+    <Time color="fuchsia400">color: fuchsia400</Time>
+    <Time color="fuchsia500">color: fuchsia500</Time>
+    <Time color="fuchsia600">color: fuchsia600</Time>
+    <Time color="fuchsia700">color: fuchsia700</Time>
+    <Time color="seafoam400">color: seafoam400</Time>
+    <Time color="seafoam500">color: seafoam500</Time>
+    <Time color="seafoam600">color: seafoam600</Time>
+    <Time color="seafoam700">color: seafoam700</Time>
+    <Time color="chartreuse400">color: chartreuse400</Time>
+    <Time color="chartreuse500">color: chartreuse500</Time>
+    <Time color="chartreuse600">color: chartreuse600</Time>
+    <Time color="chartreuse700">color: chartreuse700</Time>
+    <Time color="purple400">color: purple400</Time>
+    <Time color="purple500">color: purple500</Time>
+    <Time color="purple600">color: purple600</Time>
+    <Time color="purple700">color: purple700</Time>
 </>);
 ```
 
@@ -51,18 +106,15 @@ import React from 'react';
 import { Time } from 'typography';
 
 export default () => (<>
-    <Time fontSize="larger">fontSize: larger</Time>
-    <Time fontSize="smaller">fontSize: smaller</Time>
     <Time fontSize="none">fontSize: none</Time>
-    <Time fontSize="xxxsmall">fontSize: xxxsmall</Time>
-    <Time fontSize="xxsmall">fontSize: xxsmall</Time>
-    <Time fontSize="xsmall">fontSize: xsmall</Time>
-    <Time fontSize="small">fontSize: small</Time>
-    <Time fontSize="medium">fontSize: medium</Time>
-    <Time fontSize="large">fontSize: large</Time>
-    <Time fontSize="xlarge">fontSize: xlarge</Time>
-    <Time fontSize="xxlarge">fontSize: xxlarge</Time>
-    <Time fontSize="xxxlarge">fontSize: xxxlarge</Time>
+    <Time fontSize="xxs">fontSize: xxs</Time>
+    <Time fontSize="xs">fontSize: xs</Time>
+    <Time fontSize="s">fontSize: s</Time>
+    <Time fontSize="m">fontSize: m</Time>
+    <Time fontSize="l">fontSize: l</Time>
+    <Time fontSize="xl">fontSize: xl</Time>
+    <Time fontSize="xxl">fontSize: xxl</Time>
+    <Time fontSize="xxxl">fontSize: xxxl</Time>
 </>);
 ```
 
@@ -76,9 +128,6 @@ export default () => (<>
     <Time fontStyle="normal">fontStyle: normal</Time>
     <Time fontStyle="italic">fontStyle: italic</Time>
     <Time fontStyle="oblique">fontStyle: oblique</Time>
-    <Time fontStyle="inherit">fontStyle: inherit</Time>
-    <Time fontStyle="initial">fontStyle: initial</Time>
-    <Time fontStyle="unset">fontStyle: unset</Time>
 </>);
 ```
 
@@ -89,20 +138,9 @@ import React from 'react';
 import { Time } from 'typography';
 
 export default () => (<>
-    <Time fontWeight="thin">fontWeight: thin</Time>
-    <Time fontWeight="extraLight">fontWeight: extraLight</Time>
     <Time fontWeight="light">fontWeight: light</Time>
     <Time fontWeight="normal">fontWeight: normal</Time>
-    <Time fontWeight="medium">fontWeight: medium</Time>
-    <Time fontWeight="semiBold">fontWeight: semiBold</Time>
-    <Time fontWeight="bold">fontWeight: bold</Time>
-    <Time fontWeight="extraBold">fontWeight: extraBold</Time>
     <Time fontWeight="heavy">fontWeight: heavy</Time>
-    <Time fontWeight="lighter">fontWeight: lighter</Time>
-    <Time fontWeight="bolder">fontWeight: bolder</Time>
-    <Time fontWeight="inherit">fontWeight: inherit</Time>
-    <Time fontWeight="initial">fontWeight: initial</Time>
-    <Time fontWeight="unset">fontWeight: unset</Time>
 </>);
 ```
 
@@ -114,10 +152,65 @@ import { Time } from 'typography';
 
 export default () => (<>
     <Time textDecorationStyle="solid" textDecorationLine="underline" textDecorationThickness="auto" textDecorationColor="currentColor">textDecorationColor: currentColor</Time>
-    <Time textDecorationStyle="solid" textDecorationLine="underline" textDecorationThickness="auto" textDecorationColor="primary">textDecorationColor: primary</Time>
-    <Time textDecorationStyle="solid" textDecorationLine="underline" textDecorationThickness="auto" textDecorationColor="secondary">textDecorationColor: secondary</Time>
-    <Time textDecorationStyle="solid" textDecorationLine="underline" textDecorationThickness="auto" textDecorationColor="black">textDecorationColor: black</Time>
-    <Time textDecorationStyle="solid" textDecorationLine="underline" textDecorationThickness="auto" textDecorationColor="white">textDecorationColor: white</Time>
+    <Time textDecorationStyle="solid" textDecorationLine="underline" textDecorationThickness="auto" textDecorationColor="gray50">textDecorationColor: gray50</Time>
+    <Time textDecorationStyle="solid" textDecorationLine="underline" textDecorationThickness="auto" textDecorationColor="gray75">textDecorationColor: gray75</Time>
+    <Time textDecorationStyle="solid" textDecorationLine="underline" textDecorationThickness="auto" textDecorationColor="gray100">textDecorationColor: gray100</Time>
+    <Time textDecorationStyle="solid" textDecorationLine="underline" textDecorationThickness="auto" textDecorationColor="gray200">textDecorationColor: gray200</Time>
+    <Time textDecorationStyle="solid" textDecorationLine="underline" textDecorationThickness="auto" textDecorationColor="gray300">textDecorationColor: gray300</Time>
+    <Time textDecorationStyle="solid" textDecorationLine="underline" textDecorationThickness="auto" textDecorationColor="gray400">textDecorationColor: gray400</Time>
+    <Time textDecorationStyle="solid" textDecorationLine="underline" textDecorationThickness="auto" textDecorationColor="gray500">textDecorationColor: gray500</Time>
+    <Time textDecorationStyle="solid" textDecorationLine="underline" textDecorationThickness="auto" textDecorationColor="gray600">textDecorationColor: gray600</Time>
+    <Time textDecorationStyle="solid" textDecorationLine="underline" textDecorationThickness="auto" textDecorationColor="gray700">textDecorationColor: gray700</Time>
+    <Time textDecorationStyle="solid" textDecorationLine="underline" textDecorationThickness="auto" textDecorationColor="gray800">textDecorationColor: gray800</Time>
+    <Time textDecorationStyle="solid" textDecorationLine="underline" textDecorationThickness="auto" textDecorationColor="gray900">textDecorationColor: gray900</Time>
+    <Time textDecorationStyle="solid" textDecorationLine="underline" textDecorationThickness="auto" textDecorationColor="blue400">textDecorationColor: blue400</Time>
+    <Time textDecorationStyle="solid" textDecorationLine="underline" textDecorationThickness="auto" textDecorationColor="blue500">textDecorationColor: blue500</Time>
+    <Time textDecorationStyle="solid" textDecorationLine="underline" textDecorationThickness="auto" textDecorationColor="blue600">textDecorationColor: blue600</Time>
+    <Time textDecorationStyle="solid" textDecorationLine="underline" textDecorationThickness="auto" textDecorationColor="blue700">textDecorationColor: blue700</Time>
+    <Time textDecorationStyle="solid" textDecorationLine="underline" textDecorationThickness="auto" textDecorationColor="red400">textDecorationColor: red400</Time>
+    <Time textDecorationStyle="solid" textDecorationLine="underline" textDecorationThickness="auto" textDecorationColor="red500">textDecorationColor: red500</Time>
+    <Time textDecorationStyle="solid" textDecorationLine="underline" textDecorationThickness="auto" textDecorationColor="red600">textDecorationColor: red600</Time>
+    <Time textDecorationStyle="solid" textDecorationLine="underline" textDecorationThickness="auto" textDecorationColor="red700">textDecorationColor: red700</Time>
+    <Time textDecorationStyle="solid" textDecorationLine="underline" textDecorationThickness="auto" textDecorationColor="orange400">textDecorationColor: orange400</Time>
+    <Time textDecorationStyle="solid" textDecorationLine="underline" textDecorationThickness="auto" textDecorationColor="orange500">textDecorationColor: orange500</Time>
+    <Time textDecorationStyle="solid" textDecorationLine="underline" textDecorationThickness="auto" textDecorationColor="orange600">textDecorationColor: orange600</Time>
+    <Time textDecorationStyle="solid" textDecorationLine="underline" textDecorationThickness="auto" textDecorationColor="orange700">textDecorationColor: orange700</Time>
+    <Time textDecorationStyle="solid" textDecorationLine="underline" textDecorationThickness="auto" textDecorationColor="green400">textDecorationColor: green400</Time>
+    <Time textDecorationStyle="solid" textDecorationLine="underline" textDecorationThickness="auto" textDecorationColor="green500">textDecorationColor: green500</Time>
+    <Time textDecorationStyle="solid" textDecorationLine="underline" textDecorationThickness="auto" textDecorationColor="green600">textDecorationColor: green600</Time>
+    <Time textDecorationStyle="solid" textDecorationLine="underline" textDecorationThickness="auto" textDecorationColor="green700">textDecorationColor: green700</Time>
+    <Time textDecorationStyle="solid" textDecorationLine="underline" textDecorationThickness="auto" textDecorationColor="indigo400">textDecorationColor: indigo400</Time>
+    <Time textDecorationStyle="solid" textDecorationLine="underline" textDecorationThickness="auto" textDecorationColor="indigo500">textDecorationColor: indigo500</Time>
+    <Time textDecorationStyle="solid" textDecorationLine="underline" textDecorationThickness="auto" textDecorationColor="indigo600">textDecorationColor: indigo600</Time>
+    <Time textDecorationStyle="solid" textDecorationLine="underline" textDecorationThickness="auto" textDecorationColor="indigo700">textDecorationColor: indigo700</Time>
+    <Time textDecorationStyle="solid" textDecorationLine="underline" textDecorationThickness="auto" textDecorationColor="celery400">textDecorationColor: celery400</Time>
+    <Time textDecorationStyle="solid" textDecorationLine="underline" textDecorationThickness="auto" textDecorationColor="celery500">textDecorationColor: celery500</Time>
+    <Time textDecorationStyle="solid" textDecorationLine="underline" textDecorationThickness="auto" textDecorationColor="celery600">textDecorationColor: celery600</Time>
+    <Time textDecorationStyle="solid" textDecorationLine="underline" textDecorationThickness="auto" textDecorationColor="celery700">textDecorationColor: celery700</Time>
+    <Time textDecorationStyle="solid" textDecorationLine="underline" textDecorationThickness="auto" textDecorationColor="magenta400">textDecorationColor: magenta400</Time>
+    <Time textDecorationStyle="solid" textDecorationLine="underline" textDecorationThickness="auto" textDecorationColor="magenta500">textDecorationColor: magenta500</Time>
+    <Time textDecorationStyle="solid" textDecorationLine="underline" textDecorationThickness="auto" textDecorationColor="magenta600">textDecorationColor: magenta600</Time>
+    <Time textDecorationStyle="solid" textDecorationLine="underline" textDecorationThickness="auto" textDecorationColor="magenta700">textDecorationColor: magenta700</Time>
+    <Time textDecorationStyle="solid" textDecorationLine="underline" textDecorationThickness="auto" textDecorationColor="yellow400">textDecorationColor: yellow400</Time>
+    <Time textDecorationStyle="solid" textDecorationLine="underline" textDecorationThickness="auto" textDecorationColor="yellow500">textDecorationColor: yellow500</Time>
+    <Time textDecorationStyle="solid" textDecorationLine="underline" textDecorationThickness="auto" textDecorationColor="yellow600">textDecorationColor: yellow600</Time>
+    <Time textDecorationStyle="solid" textDecorationLine="underline" textDecorationThickness="auto" textDecorationColor="yellow700">textDecorationColor: yellow700</Time>
+    <Time textDecorationStyle="solid" textDecorationLine="underline" textDecorationThickness="auto" textDecorationColor="fuchsia400">textDecorationColor: fuchsia400</Time>
+    <Time textDecorationStyle="solid" textDecorationLine="underline" textDecorationThickness="auto" textDecorationColor="fuchsia500">textDecorationColor: fuchsia500</Time>
+    <Time textDecorationStyle="solid" textDecorationLine="underline" textDecorationThickness="auto" textDecorationColor="fuchsia600">textDecorationColor: fuchsia600</Time>
+    <Time textDecorationStyle="solid" textDecorationLine="underline" textDecorationThickness="auto" textDecorationColor="fuchsia700">textDecorationColor: fuchsia700</Time>
+    <Time textDecorationStyle="solid" textDecorationLine="underline" textDecorationThickness="auto" textDecorationColor="seafoam400">textDecorationColor: seafoam400</Time>
+    <Time textDecorationStyle="solid" textDecorationLine="underline" textDecorationThickness="auto" textDecorationColor="seafoam500">textDecorationColor: seafoam500</Time>
+    <Time textDecorationStyle="solid" textDecorationLine="underline" textDecorationThickness="auto" textDecorationColor="seafoam600">textDecorationColor: seafoam600</Time>
+    <Time textDecorationStyle="solid" textDecorationLine="underline" textDecorationThickness="auto" textDecorationColor="seafoam700">textDecorationColor: seafoam700</Time>
+    <Time textDecorationStyle="solid" textDecorationLine="underline" textDecorationThickness="auto" textDecorationColor="chartreuse400">textDecorationColor: chartreuse400</Time>
+    <Time textDecorationStyle="solid" textDecorationLine="underline" textDecorationThickness="auto" textDecorationColor="chartreuse500">textDecorationColor: chartreuse500</Time>
+    <Time textDecorationStyle="solid" textDecorationLine="underline" textDecorationThickness="auto" textDecorationColor="chartreuse600">textDecorationColor: chartreuse600</Time>
+    <Time textDecorationStyle="solid" textDecorationLine="underline" textDecorationThickness="auto" textDecorationColor="chartreuse700">textDecorationColor: chartreuse700</Time>
+    <Time textDecorationStyle="solid" textDecorationLine="underline" textDecorationThickness="auto" textDecorationColor="purple400">textDecorationColor: purple400</Time>
+    <Time textDecorationStyle="solid" textDecorationLine="underline" textDecorationThickness="auto" textDecorationColor="purple500">textDecorationColor: purple500</Time>
+    <Time textDecorationStyle="solid" textDecorationLine="underline" textDecorationThickness="auto" textDecorationColor="purple600">textDecorationColor: purple600</Time>
+    <Time textDecorationStyle="solid" textDecorationLine="underline" textDecorationThickness="auto" textDecorationColor="purple700">textDecorationColor: purple700</Time>
 </>);
 ```
 

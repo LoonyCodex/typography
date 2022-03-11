@@ -1,12 +1,5 @@
 let displayName = "Time";
 
-let docs: array<Js.t<Meta.k>> = Belt.Array.concatMany([
-  ColorLayerMeta.make,
-  FontLayerMeta.make,
-  TextDecorationLayerMeta.make,
-  TextTransformLayerMeta.make,
-]);
-
 let make: Meta.t = {
   tag: HTMLTag(#time),
   displayName,
@@ -22,11 +15,14 @@ let make: Meta.t = {
         "description": None,
         "key": "",
         "content": Some(displayName ++ " " ++ "with default styles"),
-        "args": [],
+        "args": None,
         "props": None,
       }),
     ],
 
-    docs,
+    ColorLayerMeta.make(~props = None),
+    FontLayerMeta.make(~props = None),
+    TextDecorationLayerMeta.make(~props = None),
+    TextTransformLayerMeta.make(~props = None),
   ]),
 }

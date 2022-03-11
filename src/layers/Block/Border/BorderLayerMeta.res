@@ -1,11 +1,11 @@
-let make: array<Js.t<Meta.k>> = [
+let make: (~props: option<list<(string, string)>>) => array<Js.t<Meta.k>> = (~props) => [
   Js.Obj.assign(Js.Obj.empty(), {
     "title": BorderColorMeta.make.name,
     "description": None,
     "key": BorderColorMeta.make.name,
     "content": None,
     "args": BorderColorMeta.make.args,
-    "props": None,
+    "props": props,
   }),
 
   Js.Obj.assign(Js.Obj.empty(), {
@@ -14,7 +14,7 @@ let make: array<Js.t<Meta.k>> = [
     "key": BorderOpacityMeta.make.name,
     "content": None,
     "args": BorderOpacityMeta.make.args,
-    "props": None,
+    "props": props,
   }),
 
   Js.Obj.assign(Js.Obj.empty(), {
@@ -23,7 +23,7 @@ let make: array<Js.t<Meta.k>> = [
     "key": BorderStyleMeta.make.name,
     "content": None,
     "args": BorderStyleMeta.make.args,
-    "props": None,
+    "props": props,
   }),
 
   Js.Obj.assign(Js.Obj.empty(), {
@@ -32,6 +32,6 @@ let make: array<Js.t<Meta.k>> = [
     "key": BorderThicknessMeta.make.name,
     "content": None,
     "args": BorderThicknessMeta.make.args,
-    "props": None,
+    "props": props,
   }),
 ]

@@ -14,7 +14,7 @@ import React from 'react';
 import { Abbreviation } from 'typography';
 
 export default () => (<>
-
+    <Abbreviation>Abbreviation with default styles</Abbreviation>
 </>);
 ```
 
@@ -25,10 +25,65 @@ import React from 'react';
 import { Abbreviation } from 'typography';
 
 export default () => (<>
-    <Abbreviation color="primary">color: primary</Abbreviation>
-    <Abbreviation color="secondary">color: secondary</Abbreviation>
-    <Abbreviation color="black">color: black</Abbreviation>
-    <Abbreviation color="white">color: white</Abbreviation>
+    <Abbreviation color="gray50">color: gray50</Abbreviation>
+    <Abbreviation color="gray75">color: gray75</Abbreviation>
+    <Abbreviation color="gray100">color: gray100</Abbreviation>
+    <Abbreviation color="gray200">color: gray200</Abbreviation>
+    <Abbreviation color="gray300">color: gray300</Abbreviation>
+    <Abbreviation color="gray400">color: gray400</Abbreviation>
+    <Abbreviation color="gray500">color: gray500</Abbreviation>
+    <Abbreviation color="gray600">color: gray600</Abbreviation>
+    <Abbreviation color="gray700">color: gray700</Abbreviation>
+    <Abbreviation color="gray800">color: gray800</Abbreviation>
+    <Abbreviation color="gray900">color: gray900</Abbreviation>
+    <Abbreviation color="blue400">color: blue400</Abbreviation>
+    <Abbreviation color="blue500">color: blue500</Abbreviation>
+    <Abbreviation color="blue600">color: blue600</Abbreviation>
+    <Abbreviation color="blue700">color: blue700</Abbreviation>
+    <Abbreviation color="red400">color: red400</Abbreviation>
+    <Abbreviation color="red500">color: red500</Abbreviation>
+    <Abbreviation color="red600">color: red600</Abbreviation>
+    <Abbreviation color="red700">color: red700</Abbreviation>
+    <Abbreviation color="orange400">color: orange400</Abbreviation>
+    <Abbreviation color="orange500">color: orange500</Abbreviation>
+    <Abbreviation color="orange600">color: orange600</Abbreviation>
+    <Abbreviation color="orange700">color: orange700</Abbreviation>
+    <Abbreviation color="green400">color: green400</Abbreviation>
+    <Abbreviation color="green500">color: green500</Abbreviation>
+    <Abbreviation color="green600">color: green600</Abbreviation>
+    <Abbreviation color="green700">color: green700</Abbreviation>
+    <Abbreviation color="indigo400">color: indigo400</Abbreviation>
+    <Abbreviation color="indigo500">color: indigo500</Abbreviation>
+    <Abbreviation color="indigo600">color: indigo600</Abbreviation>
+    <Abbreviation color="indigo700">color: indigo700</Abbreviation>
+    <Abbreviation color="celery400">color: celery400</Abbreviation>
+    <Abbreviation color="celery500">color: celery500</Abbreviation>
+    <Abbreviation color="celery600">color: celery600</Abbreviation>
+    <Abbreviation color="celery700">color: celery700</Abbreviation>
+    <Abbreviation color="magenta400">color: magenta400</Abbreviation>
+    <Abbreviation color="magenta500">color: magenta500</Abbreviation>
+    <Abbreviation color="magenta600">color: magenta600</Abbreviation>
+    <Abbreviation color="magenta700">color: magenta700</Abbreviation>
+    <Abbreviation color="yellow400">color: yellow400</Abbreviation>
+    <Abbreviation color="yellow500">color: yellow500</Abbreviation>
+    <Abbreviation color="yellow600">color: yellow600</Abbreviation>
+    <Abbreviation color="yellow700">color: yellow700</Abbreviation>
+    <Abbreviation color="fuchsia400">color: fuchsia400</Abbreviation>
+    <Abbreviation color="fuchsia500">color: fuchsia500</Abbreviation>
+    <Abbreviation color="fuchsia600">color: fuchsia600</Abbreviation>
+    <Abbreviation color="fuchsia700">color: fuchsia700</Abbreviation>
+    <Abbreviation color="seafoam400">color: seafoam400</Abbreviation>
+    <Abbreviation color="seafoam500">color: seafoam500</Abbreviation>
+    <Abbreviation color="seafoam600">color: seafoam600</Abbreviation>
+    <Abbreviation color="seafoam700">color: seafoam700</Abbreviation>
+    <Abbreviation color="chartreuse400">color: chartreuse400</Abbreviation>
+    <Abbreviation color="chartreuse500">color: chartreuse500</Abbreviation>
+    <Abbreviation color="chartreuse600">color: chartreuse600</Abbreviation>
+    <Abbreviation color="chartreuse700">color: chartreuse700</Abbreviation>
+    <Abbreviation color="purple400">color: purple400</Abbreviation>
+    <Abbreviation color="purple500">color: purple500</Abbreviation>
+    <Abbreviation color="purple600">color: purple600</Abbreviation>
+    <Abbreviation color="purple700">color: purple700</Abbreviation>
 </>);
 ```
 
@@ -51,18 +106,15 @@ import React from 'react';
 import { Abbreviation } from 'typography';
 
 export default () => (<>
-    <Abbreviation fontSize="larger">fontSize: larger</Abbreviation>
-    <Abbreviation fontSize="smaller">fontSize: smaller</Abbreviation>
     <Abbreviation fontSize="none">fontSize: none</Abbreviation>
-    <Abbreviation fontSize="xxxsmall">fontSize: xxxsmall</Abbreviation>
-    <Abbreviation fontSize="xxsmall">fontSize: xxsmall</Abbreviation>
-    <Abbreviation fontSize="xsmall">fontSize: xsmall</Abbreviation>
-    <Abbreviation fontSize="small">fontSize: small</Abbreviation>
-    <Abbreviation fontSize="medium">fontSize: medium</Abbreviation>
-    <Abbreviation fontSize="large">fontSize: large</Abbreviation>
-    <Abbreviation fontSize="xlarge">fontSize: xlarge</Abbreviation>
-    <Abbreviation fontSize="xxlarge">fontSize: xxlarge</Abbreviation>
-    <Abbreviation fontSize="xxxlarge">fontSize: xxxlarge</Abbreviation>
+    <Abbreviation fontSize="xxs">fontSize: xxs</Abbreviation>
+    <Abbreviation fontSize="xs">fontSize: xs</Abbreviation>
+    <Abbreviation fontSize="s">fontSize: s</Abbreviation>
+    <Abbreviation fontSize="m">fontSize: m</Abbreviation>
+    <Abbreviation fontSize="l">fontSize: l</Abbreviation>
+    <Abbreviation fontSize="xl">fontSize: xl</Abbreviation>
+    <Abbreviation fontSize="xxl">fontSize: xxl</Abbreviation>
+    <Abbreviation fontSize="xxxl">fontSize: xxxl</Abbreviation>
 </>);
 ```
 
@@ -76,9 +128,6 @@ export default () => (<>
     <Abbreviation fontStyle="normal">fontStyle: normal</Abbreviation>
     <Abbreviation fontStyle="italic">fontStyle: italic</Abbreviation>
     <Abbreviation fontStyle="oblique">fontStyle: oblique</Abbreviation>
-    <Abbreviation fontStyle="inherit">fontStyle: inherit</Abbreviation>
-    <Abbreviation fontStyle="initial">fontStyle: initial</Abbreviation>
-    <Abbreviation fontStyle="unset">fontStyle: unset</Abbreviation>
 </>);
 ```
 
@@ -89,20 +138,9 @@ import React from 'react';
 import { Abbreviation } from 'typography';
 
 export default () => (<>
-    <Abbreviation fontWeight="thin">fontWeight: thin</Abbreviation>
-    <Abbreviation fontWeight="extraLight">fontWeight: extraLight</Abbreviation>
     <Abbreviation fontWeight="light">fontWeight: light</Abbreviation>
     <Abbreviation fontWeight="normal">fontWeight: normal</Abbreviation>
-    <Abbreviation fontWeight="medium">fontWeight: medium</Abbreviation>
-    <Abbreviation fontWeight="semiBold">fontWeight: semiBold</Abbreviation>
-    <Abbreviation fontWeight="bold">fontWeight: bold</Abbreviation>
-    <Abbreviation fontWeight="extraBold">fontWeight: extraBold</Abbreviation>
     <Abbreviation fontWeight="heavy">fontWeight: heavy</Abbreviation>
-    <Abbreviation fontWeight="lighter">fontWeight: lighter</Abbreviation>
-    <Abbreviation fontWeight="bolder">fontWeight: bolder</Abbreviation>
-    <Abbreviation fontWeight="inherit">fontWeight: inherit</Abbreviation>
-    <Abbreviation fontWeight="initial">fontWeight: initial</Abbreviation>
-    <Abbreviation fontWeight="unset">fontWeight: unset</Abbreviation>
 </>);
 ```
 
@@ -114,10 +152,65 @@ import { Abbreviation } from 'typography';
 
 export default () => (<>
     <Abbreviation textDecorationStyle="solid" textDecorationLine="underline" textDecorationThickness="auto" textDecorationColor="currentColor">textDecorationColor: currentColor</Abbreviation>
-    <Abbreviation textDecorationStyle="solid" textDecorationLine="underline" textDecorationThickness="auto" textDecorationColor="primary">textDecorationColor: primary</Abbreviation>
-    <Abbreviation textDecorationStyle="solid" textDecorationLine="underline" textDecorationThickness="auto" textDecorationColor="secondary">textDecorationColor: secondary</Abbreviation>
-    <Abbreviation textDecorationStyle="solid" textDecorationLine="underline" textDecorationThickness="auto" textDecorationColor="black">textDecorationColor: black</Abbreviation>
-    <Abbreviation textDecorationStyle="solid" textDecorationLine="underline" textDecorationThickness="auto" textDecorationColor="white">textDecorationColor: white</Abbreviation>
+    <Abbreviation textDecorationStyle="solid" textDecorationLine="underline" textDecorationThickness="auto" textDecorationColor="gray50">textDecorationColor: gray50</Abbreviation>
+    <Abbreviation textDecorationStyle="solid" textDecorationLine="underline" textDecorationThickness="auto" textDecorationColor="gray75">textDecorationColor: gray75</Abbreviation>
+    <Abbreviation textDecorationStyle="solid" textDecorationLine="underline" textDecorationThickness="auto" textDecorationColor="gray100">textDecorationColor: gray100</Abbreviation>
+    <Abbreviation textDecorationStyle="solid" textDecorationLine="underline" textDecorationThickness="auto" textDecorationColor="gray200">textDecorationColor: gray200</Abbreviation>
+    <Abbreviation textDecorationStyle="solid" textDecorationLine="underline" textDecorationThickness="auto" textDecorationColor="gray300">textDecorationColor: gray300</Abbreviation>
+    <Abbreviation textDecorationStyle="solid" textDecorationLine="underline" textDecorationThickness="auto" textDecorationColor="gray400">textDecorationColor: gray400</Abbreviation>
+    <Abbreviation textDecorationStyle="solid" textDecorationLine="underline" textDecorationThickness="auto" textDecorationColor="gray500">textDecorationColor: gray500</Abbreviation>
+    <Abbreviation textDecorationStyle="solid" textDecorationLine="underline" textDecorationThickness="auto" textDecorationColor="gray600">textDecorationColor: gray600</Abbreviation>
+    <Abbreviation textDecorationStyle="solid" textDecorationLine="underline" textDecorationThickness="auto" textDecorationColor="gray700">textDecorationColor: gray700</Abbreviation>
+    <Abbreviation textDecorationStyle="solid" textDecorationLine="underline" textDecorationThickness="auto" textDecorationColor="gray800">textDecorationColor: gray800</Abbreviation>
+    <Abbreviation textDecorationStyle="solid" textDecorationLine="underline" textDecorationThickness="auto" textDecorationColor="gray900">textDecorationColor: gray900</Abbreviation>
+    <Abbreviation textDecorationStyle="solid" textDecorationLine="underline" textDecorationThickness="auto" textDecorationColor="blue400">textDecorationColor: blue400</Abbreviation>
+    <Abbreviation textDecorationStyle="solid" textDecorationLine="underline" textDecorationThickness="auto" textDecorationColor="blue500">textDecorationColor: blue500</Abbreviation>
+    <Abbreviation textDecorationStyle="solid" textDecorationLine="underline" textDecorationThickness="auto" textDecorationColor="blue600">textDecorationColor: blue600</Abbreviation>
+    <Abbreviation textDecorationStyle="solid" textDecorationLine="underline" textDecorationThickness="auto" textDecorationColor="blue700">textDecorationColor: blue700</Abbreviation>
+    <Abbreviation textDecorationStyle="solid" textDecorationLine="underline" textDecorationThickness="auto" textDecorationColor="red400">textDecorationColor: red400</Abbreviation>
+    <Abbreviation textDecorationStyle="solid" textDecorationLine="underline" textDecorationThickness="auto" textDecorationColor="red500">textDecorationColor: red500</Abbreviation>
+    <Abbreviation textDecorationStyle="solid" textDecorationLine="underline" textDecorationThickness="auto" textDecorationColor="red600">textDecorationColor: red600</Abbreviation>
+    <Abbreviation textDecorationStyle="solid" textDecorationLine="underline" textDecorationThickness="auto" textDecorationColor="red700">textDecorationColor: red700</Abbreviation>
+    <Abbreviation textDecorationStyle="solid" textDecorationLine="underline" textDecorationThickness="auto" textDecorationColor="orange400">textDecorationColor: orange400</Abbreviation>
+    <Abbreviation textDecorationStyle="solid" textDecorationLine="underline" textDecorationThickness="auto" textDecorationColor="orange500">textDecorationColor: orange500</Abbreviation>
+    <Abbreviation textDecorationStyle="solid" textDecorationLine="underline" textDecorationThickness="auto" textDecorationColor="orange600">textDecorationColor: orange600</Abbreviation>
+    <Abbreviation textDecorationStyle="solid" textDecorationLine="underline" textDecorationThickness="auto" textDecorationColor="orange700">textDecorationColor: orange700</Abbreviation>
+    <Abbreviation textDecorationStyle="solid" textDecorationLine="underline" textDecorationThickness="auto" textDecorationColor="green400">textDecorationColor: green400</Abbreviation>
+    <Abbreviation textDecorationStyle="solid" textDecorationLine="underline" textDecorationThickness="auto" textDecorationColor="green500">textDecorationColor: green500</Abbreviation>
+    <Abbreviation textDecorationStyle="solid" textDecorationLine="underline" textDecorationThickness="auto" textDecorationColor="green600">textDecorationColor: green600</Abbreviation>
+    <Abbreviation textDecorationStyle="solid" textDecorationLine="underline" textDecorationThickness="auto" textDecorationColor="green700">textDecorationColor: green700</Abbreviation>
+    <Abbreviation textDecorationStyle="solid" textDecorationLine="underline" textDecorationThickness="auto" textDecorationColor="indigo400">textDecorationColor: indigo400</Abbreviation>
+    <Abbreviation textDecorationStyle="solid" textDecorationLine="underline" textDecorationThickness="auto" textDecorationColor="indigo500">textDecorationColor: indigo500</Abbreviation>
+    <Abbreviation textDecorationStyle="solid" textDecorationLine="underline" textDecorationThickness="auto" textDecorationColor="indigo600">textDecorationColor: indigo600</Abbreviation>
+    <Abbreviation textDecorationStyle="solid" textDecorationLine="underline" textDecorationThickness="auto" textDecorationColor="indigo700">textDecorationColor: indigo700</Abbreviation>
+    <Abbreviation textDecorationStyle="solid" textDecorationLine="underline" textDecorationThickness="auto" textDecorationColor="celery400">textDecorationColor: celery400</Abbreviation>
+    <Abbreviation textDecorationStyle="solid" textDecorationLine="underline" textDecorationThickness="auto" textDecorationColor="celery500">textDecorationColor: celery500</Abbreviation>
+    <Abbreviation textDecorationStyle="solid" textDecorationLine="underline" textDecorationThickness="auto" textDecorationColor="celery600">textDecorationColor: celery600</Abbreviation>
+    <Abbreviation textDecorationStyle="solid" textDecorationLine="underline" textDecorationThickness="auto" textDecorationColor="celery700">textDecorationColor: celery700</Abbreviation>
+    <Abbreviation textDecorationStyle="solid" textDecorationLine="underline" textDecorationThickness="auto" textDecorationColor="magenta400">textDecorationColor: magenta400</Abbreviation>
+    <Abbreviation textDecorationStyle="solid" textDecorationLine="underline" textDecorationThickness="auto" textDecorationColor="magenta500">textDecorationColor: magenta500</Abbreviation>
+    <Abbreviation textDecorationStyle="solid" textDecorationLine="underline" textDecorationThickness="auto" textDecorationColor="magenta600">textDecorationColor: magenta600</Abbreviation>
+    <Abbreviation textDecorationStyle="solid" textDecorationLine="underline" textDecorationThickness="auto" textDecorationColor="magenta700">textDecorationColor: magenta700</Abbreviation>
+    <Abbreviation textDecorationStyle="solid" textDecorationLine="underline" textDecorationThickness="auto" textDecorationColor="yellow400">textDecorationColor: yellow400</Abbreviation>
+    <Abbreviation textDecorationStyle="solid" textDecorationLine="underline" textDecorationThickness="auto" textDecorationColor="yellow500">textDecorationColor: yellow500</Abbreviation>
+    <Abbreviation textDecorationStyle="solid" textDecorationLine="underline" textDecorationThickness="auto" textDecorationColor="yellow600">textDecorationColor: yellow600</Abbreviation>
+    <Abbreviation textDecorationStyle="solid" textDecorationLine="underline" textDecorationThickness="auto" textDecorationColor="yellow700">textDecorationColor: yellow700</Abbreviation>
+    <Abbreviation textDecorationStyle="solid" textDecorationLine="underline" textDecorationThickness="auto" textDecorationColor="fuchsia400">textDecorationColor: fuchsia400</Abbreviation>
+    <Abbreviation textDecorationStyle="solid" textDecorationLine="underline" textDecorationThickness="auto" textDecorationColor="fuchsia500">textDecorationColor: fuchsia500</Abbreviation>
+    <Abbreviation textDecorationStyle="solid" textDecorationLine="underline" textDecorationThickness="auto" textDecorationColor="fuchsia600">textDecorationColor: fuchsia600</Abbreviation>
+    <Abbreviation textDecorationStyle="solid" textDecorationLine="underline" textDecorationThickness="auto" textDecorationColor="fuchsia700">textDecorationColor: fuchsia700</Abbreviation>
+    <Abbreviation textDecorationStyle="solid" textDecorationLine="underline" textDecorationThickness="auto" textDecorationColor="seafoam400">textDecorationColor: seafoam400</Abbreviation>
+    <Abbreviation textDecorationStyle="solid" textDecorationLine="underline" textDecorationThickness="auto" textDecorationColor="seafoam500">textDecorationColor: seafoam500</Abbreviation>
+    <Abbreviation textDecorationStyle="solid" textDecorationLine="underline" textDecorationThickness="auto" textDecorationColor="seafoam600">textDecorationColor: seafoam600</Abbreviation>
+    <Abbreviation textDecorationStyle="solid" textDecorationLine="underline" textDecorationThickness="auto" textDecorationColor="seafoam700">textDecorationColor: seafoam700</Abbreviation>
+    <Abbreviation textDecorationStyle="solid" textDecorationLine="underline" textDecorationThickness="auto" textDecorationColor="chartreuse400">textDecorationColor: chartreuse400</Abbreviation>
+    <Abbreviation textDecorationStyle="solid" textDecorationLine="underline" textDecorationThickness="auto" textDecorationColor="chartreuse500">textDecorationColor: chartreuse500</Abbreviation>
+    <Abbreviation textDecorationStyle="solid" textDecorationLine="underline" textDecorationThickness="auto" textDecorationColor="chartreuse600">textDecorationColor: chartreuse600</Abbreviation>
+    <Abbreviation textDecorationStyle="solid" textDecorationLine="underline" textDecorationThickness="auto" textDecorationColor="chartreuse700">textDecorationColor: chartreuse700</Abbreviation>
+    <Abbreviation textDecorationStyle="solid" textDecorationLine="underline" textDecorationThickness="auto" textDecorationColor="purple400">textDecorationColor: purple400</Abbreviation>
+    <Abbreviation textDecorationStyle="solid" textDecorationLine="underline" textDecorationThickness="auto" textDecorationColor="purple500">textDecorationColor: purple500</Abbreviation>
+    <Abbreviation textDecorationStyle="solid" textDecorationLine="underline" textDecorationThickness="auto" textDecorationColor="purple600">textDecorationColor: purple600</Abbreviation>
+    <Abbreviation textDecorationStyle="solid" textDecorationLine="underline" textDecorationThickness="auto" textDecorationColor="purple700">textDecorationColor: purple700</Abbreviation>
 </>);
 ```
 

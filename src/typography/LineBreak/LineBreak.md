@@ -14,6 +14,6 @@ import React from 'react';
 import { LineBreak } from 'typography';
 
 export default () => (<>
-
+    <LineBreak />
 </>);
 ```

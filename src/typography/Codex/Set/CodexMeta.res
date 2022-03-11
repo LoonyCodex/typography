@@ -1,12 +1,5 @@
 let displayName = "Codex";
 
-let docs: array<Js.t<Meta.k>> = Belt.Array.concatMany([
-  ColorLayerMeta.make,
-  FontLayerMeta.make,
-  TextDecorationLayerMeta.make,
-  TextTransformLayerMeta.make,
-]);
-
 let make: Meta.t = {
   tag: HTMLSet([
     #code,
@@ -41,6 +34,28 @@ let make: Meta.t = {
       }),
     ],
 
-    docs,
+    ColorLayerMeta.make(
+      ~props = Some(list{
+        ("tag", "code"),
+      }),
+    ),
+
+    FontLayerMeta.make(
+      ~props = Some(list{
+        ("tag", "code"),
+      }),
+    ),
+
+    TextDecorationLayerMeta.make(
+      ~props = Some(list{
+        ("tag", "code"),
+      }),
+    ),
+
+    TextTransformLayerMeta.make(
+      ~props = Some(list{
+        ("tag", "code"),
+      }),
+    ),
   ]),
 }

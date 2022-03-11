@@ -1,11 +1,11 @@
 let displayName = "TextContainer";
 
-let docs: array<Js.t<Meta.k>> = Belt.Array.concatMany([
-  ColorLayerMeta.make,
-  FontLayerMeta.make,
-  TextDecorationLayerMeta.make,
-  TextTransformLayerMeta.make,
-]);
+// let docs: array<Js.t<Meta.k>> = Belt.Array.concatMany([
+//   // ColorLayerMeta.make,
+//   FontLayerMeta.make,
+//   TextDecorationLayerMeta.make,
+//   TextTransformLayerMeta.make,
+// ]);
 
 let make: Meta.t = {
   tag: HTMLSet([
@@ -39,6 +39,28 @@ let make: Meta.t = {
       }),
     ],
 
-    docs,
+    ColorLayerMeta.make(
+      ~props = Some(list{
+        ("tag", "p"),
+      }),
+    ),
+
+    FontLayerMeta.make(
+      ~props = Some(list{
+        ("tag", "p"),
+      }),
+    ),
+
+    TextDecorationLayerMeta.make(
+      ~props = Some(list{
+        ("tag", "p"),
+      }),
+    ),
+
+    TextTransformLayerMeta.make(
+      ~props = Some(list{
+        ("tag", "p"),
+      }),
+    ),
   ]),
 }
