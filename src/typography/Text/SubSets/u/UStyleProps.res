@@ -9,10 +9,10 @@ let styleProps: TextProto.styleProps = {
   "fontWeight": #normal,
 
   // textDecoration
-  "textDecorationColor": #currentColor,
-  "textDecorationLine": #none,
-  "textDecorationStyle": #initial,
-  "textDecorationThickness": #initial,
+  "textDecorationColor": #red700,
+  "textDecorationLine": #underline,
+  "textDecorationStyle": #wavy,
+  "textDecorationThickness": #thin,
 
   // text
   "textTransform": #none,

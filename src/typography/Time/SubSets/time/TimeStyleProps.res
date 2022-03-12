@@ -6,7 +6,7 @@ let styleProps: TimeProto.styleProps = {
   "fontFamily": #primary,
   "fontSize": #s,
   "fontStyle": #normal,
-  "fontWeight": #normal,
+  "fontWeight": #heavy,
 
   // textDecoration
   "textDecorationColor": #currentColor,

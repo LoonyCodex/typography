@@ -11,9 +11,9 @@ group:
 
 ```tsx
 import React from 'react';
-import { LineBreak } from 'typography';
+import { LineBreak } from '@LoonyCodex/typography';
 
-export default () => (<>
+export default () => (<div style={{ display: 'grid', gap: 10 }}>
     <LineBreak />
-</>);
+</div>);
 ```

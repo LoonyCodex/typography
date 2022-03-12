@@ -44,9 +44,9 @@ ${switch description {
 
 \`\`\`tsx
 import React from 'react';
-import { ${tag} } from 'typography';
+import { ${tag} } from '@LoonyCodex/typography';
 
-export default () => (<>
+export default () => (<div style={{ display: 'grid', gap: 10 }}>
 ${
   switch args {
   | Some(a) => Belt.Array.reduce(
@@ -77,7 +77,7 @@ ${
   )
   }
 }
-</>);
+</div>);
 \`\`\`
 `
 

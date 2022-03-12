@@ -5,14 +5,14 @@ let styleProps: TextProto.styleProps = {
   // font
   "fontFamily": #primary,
   "fontSize": #s,
-  "fontStyle": #normal,
-  "fontWeight": #normal,
+  "fontStyle": #italic,
+  "fontWeight": #light,
 
   // textDecoration
   "textDecorationColor": #currentColor,
-  "textDecorationLine": #none,
-  "textDecorationStyle": #initial,
-  "textDecorationThickness": #initial,
+  "textDecorationLine": #underline,
+  "textDecorationStyle": #dotted,
+  "textDecorationThickness": #thin,
 
   // text
   "textTransform": #none,

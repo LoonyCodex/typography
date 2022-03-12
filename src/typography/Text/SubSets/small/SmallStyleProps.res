@@ -1,10 +1,10 @@
 @genType
 let styleProps: TextProto.styleProps = {
-  "color": #gray900,
+  "color": #gray700,
 
   // font
   "fontFamily": #primary,
-  "fontSize": #s,
+  "fontSize": #xs,
   "fontStyle": #normal,
   "fontWeight": #normal,
 
