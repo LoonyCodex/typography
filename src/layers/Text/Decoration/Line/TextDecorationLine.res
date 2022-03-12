@@ -5,10 +5,10 @@ type t = [
   | #overline
   | #lineThrough
   // | #blink
-  | #overline_lineThrough
-  | #overline_underline
-  | #lineThrough_underline
-  | #overline_lineThrough_underline
+  // | #overline_lineThrough
+  // | #overline_underline
+  // | #lineThrough_underline
+  // | #overline_lineThrough_underline
   // | #inherit
   // | #initial
   // | #unset
@@ -20,10 +20,10 @@ let args: array<t> = [
   #overline,
   #lineThrough,
   // #blink,
-  #overline_lineThrough,
-  #overline_underline,
-  #lineThrough_underline,
-  #overline_lineThrough_underline,
+  // #overline_lineThrough,
+  // #overline_underline,
+  // #lineThrough_underline,
+  // #overline_lineThrough_underline,
   // #inherit,
   // #initial,
   // #unset,
@@ -35,10 +35,10 @@ type r<'a> = {
   overline: 'a,
   lineThrough: 'a,
   // blink: 'a,
-  overline_lineThrough: 'a,
-  overline_underline: 'a,
-  lineThrough_underline: 'a,
-  overline_lineThrough_underline: 'a,
+  // overline_lineThrough: 'a,
+  // overline_underline: 'a,
+  // lineThrough_underline: 'a,
+  // overline_lineThrough_underline: 'a,
   // inherit: 'a,
   // initial: 'a,
   // unset: 'a,
@@ -59,10 +59,10 @@ let options = {
   overline: "overline",
   lineThrough: "line-through",
   // blink: "blink",
-  overline_lineThrough: "overline line-through",
-  overline_underline: "overline underline",
-  lineThrough_underline: "line-through underline",
-  overline_lineThrough_underline: "overline line-through underline",
+  // overline_lineThrough: "overline line-through",
+  // overline_underline: "overline underline",
+  // lineThrough_underline: "line-through underline",
+  // overline_lineThrough_underline: "overline line-through underline",
   // inherit: "inherit",
   // initial: "initial",
   // unset: "unset",

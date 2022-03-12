@@ -1,6 +1,6 @@
 @genType
 let styleProps: LinkProto.styleProps = {
-  "color": #gray900,
+  "color": #red400,
 
   // font
   "fontFamily": #primary,
@@ -10,9 +10,9 @@ let styleProps: LinkProto.styleProps = {
 
   // textDecoration
   "textDecorationColor": #currentColor,
-  "textDecorationLine": #none,
-  "textDecorationStyle": #initial,
-  "textDecorationThickness": #initial,
+  "textDecorationLine": #underline,
+  "textDecorationStyle": #solid,
+  "textDecorationThickness": #thin,
 
   // text
   "textTransform": #none,

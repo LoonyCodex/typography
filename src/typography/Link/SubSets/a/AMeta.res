@@ -20,9 +20,28 @@ let make: Meta.t = {
       }),
     ],
 
-    ColorLayerMeta.make(~props = None),
-    FontLayerMeta.make(~props = None),
-    TextDecorationLayerMeta.make(~props = None),
-    TextTransformLayerMeta.make(~props = None),
+    ColorLayerMeta.make(
+      ~props = Some(list{
+        ("href", "http://google.com"),
+      }),
+    ),
+
+    FontLayerMeta.make(
+      ~props = Some(list{
+        ("href", "http://google.com"),
+      }),
+    ),
+
+    TextDecorationLayerMeta.make(
+      ~props = Some(list{
+        ("href", "http://google.com"),
+      }),
+    ),
+
+    TextTransformLayerMeta.make(
+      ~props = Some(list{
+        ("href", "http://google.com"),
+      }),
+    ),
   ]),
 }
