@@ -1,12 +1,12 @@
 let make: (~props: option<list<(string, string)>>) => array<Js.t<Meta.k>> = (~props) => [
-  Js.Obj.assign(Js.Obj.empty(), {
-    "title": FontFamilyMeta.make.name,
-    "description": None,
-    "key": FontFamilyMeta.make.name,
-    "content": None,
-    "args": FontFamilyMeta.make.args,
-    "props": props,
-  }),
+  // Js.Obj.assign(Js.Obj.empty(), {
+  //   "title": FontFamilyMeta.make.name,
+  //   "description": None,
+  //   "key": FontFamilyMeta.make.name,
+  //   "content": None,
+  //   "args": FontFamilyMeta.make.args,
+  //   "props": props,
+  // }),
 
   Js.Obj.assign(Js.Obj.empty(), {
     "title": FontSizeMeta.make.name,
