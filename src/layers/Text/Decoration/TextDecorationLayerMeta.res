@@ -7,7 +7,7 @@ let line = textDecorationLine :> string;
 let textDecorationStyle: TextDecorationStyle.t = #solid;
 let style = textDecorationStyle :> string;
 
-let textDecorationThickness: TextDecorationThickness.t = #auto;
+let textDecorationThickness: TextDecorationThickness.t = #initial;
 let thickness = textDecorationThickness :> string;
 
 let make: (~props: option<list<(string, string)>>) => array<Js.t<Meta.k>> = (~props) => [

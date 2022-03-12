@@ -1,38 +1,38 @@
 @genType
 type t = [
-  | #auto
-  | #fromFont
+  // | #auto
+  // | #fromFont
   | #thin
   | #light
   | #medium
   | #bold
   | #inherit
   | #initial
-  | #unset
+  // | #unset
 ]
 
 let args: array<t> = [
-  #auto,
-  #fromFont,
+  // #auto,
+  // #fromFont,
   #thin,
   #light,
   #medium,
   #bold,
   #inherit,
   #initial,
-  #unset,
+  // #unset,
 ]
 
 type r<'a> = {
-  auto: 'a,
-  fromFont: 'a,
+  // auto: 'a,
+  // fromFont: 'a,
   thin: 'a,
   light: 'a,
   medium: 'a,
   bold: 'a,
   inherit: 'a,
   initial: 'a,
-  unset: 'a,
+  // unset: 'a,
 }
 
 type value = string;
@@ -45,15 +45,15 @@ type make = (. t) => string
 let initial: t = #initial;
 
 let options = {
-  auto: "auto",
-  fromFont: "fromFont",
+  // auto: "auto",
+  // fromFont: "fromFont",
 
   thin: "1px",
   light: "2px",
-  medium: "3px",
-  bold: "4px",
+  medium: "4px",
+  bold: "6px",
 
-  inherit: "inheritValue",
+  inherit: "inherit",
   initial: "initial",
-  unset: "unset",
+  // unset: "unset",
 }
