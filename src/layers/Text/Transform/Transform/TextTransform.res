@@ -4,8 +4,8 @@ type t = [
   | #uppercase
   | #lowercase
   | #capitalize
-  | #fullWidth
-  | #fullSizeKana
+  // | #fullWidth
+  // | #fullSizeKana
 ]
 
 let args: array<t> = [
@@ -13,8 +13,8 @@ let args: array<t> = [
   #uppercase,
   #lowercase,
   #capitalize,
-  #fullWidth,
-  #fullSizeKana,
+  // #fullWidth,
+  // #fullSizeKana,
 ]
 
 type r<'a> = {
@@ -22,8 +22,8 @@ type r<'a> = {
   uppercase: 'a,
   lowercase: 'a,
   capitalize: 'a,
-  fullWidth: 'a,
-  fullSizeKana: 'a,
+  // fullWidth: 'a,
+  // fullSizeKana: 'a,
 }
 
 type value = string;
@@ -40,6 +40,6 @@ let options = {
   uppercase: "uppercase",
   lowercase: "lowercase",
   capitalize: "capitalize",
-  fullWidth: "full-width",
-  fullSizeKana: "full-size-kana",
+  // fullWidth: "full-width",
+  // fullSizeKana: "full-size-kana",
 }
