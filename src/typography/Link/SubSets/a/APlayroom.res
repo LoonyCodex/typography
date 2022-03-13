@@ -8,7 +8,7 @@ let make: array<Playroom.t> = [
       ~component,
       ~content = Some(description),
       ~props = list{
-        ("href", "http://google.com"),
+        ("href", String("http://google.com")),
       },
     ),
   },

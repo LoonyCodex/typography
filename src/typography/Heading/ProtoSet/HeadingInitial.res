@@ -3,6 +3,7 @@
 let className = classNameRoot;
 
 let make = (props: HeadingProtoMeta.props) => {
+  Js.log({ "props": props })
   let tag = switch props["tag"] {
   | None => switch props["level"] {
     | #1 => "h1"
@@ -76,18 +77,7 @@ let make = (props: HeadingProtoMeta.props) => {
           ~paddingInlineStart = props["paddingInlineStart"],
         ),
       ]),
-      ~role = switch props["tag"] {
-      | None => ""
-      | Some(_) => "heading"
-      },
-      ~ariaLevel = switch props["level"] {
-      | #1 => 1
-      | #2 => 2
-      | #3 => 3
-      | #4 => 4
-      | #5 => 5
-      | #6 => 6
-      },
+      // #todo: conditionally render `role` and `ariaLevel` attributes if `tag` is passed
       ()
     ),
     [props["children"]],

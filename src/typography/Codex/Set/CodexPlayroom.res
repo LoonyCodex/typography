@@ -8,7 +8,7 @@ let make: array<Playroom.t> = [
       ~component,
       ~content = Some(description),
       ~props = list{
-        ("tag", "code"),
+        ("tag", String("code")),
       },
     ),
   },
