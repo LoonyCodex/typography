@@ -20,12 +20,11 @@ type value =
 
 type prop = (string, value)
 
-let propsToString = (. acc, (k, v)) => acc ++ " " ++ k ++ "=" ++ `"${
-  switch v {
-  | Number(int) => int -> Belt.Int.toString
-  | String(s) => s
+let propsToString = (. acc, (k, v)) =>
+  acc ++ " " ++ k ++ "=" ++ switch v {
+  | Number(int) => `{${int -> Belt.Int.toString}}`
+  | String(s) => `${s}`
   }
-}"`
 
 let getCode = (
   ~component: string,
