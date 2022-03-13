@@ -22,7 +22,7 @@
   "scripts": {
     "build:docs": "node scripts/dumi.cjs",
     "ts-types": "tsc --emitDeclarationOnly --outDir package",
-    "build": "rimraf lib && rimraf package && npx yarn re:build && node scripts/build.cjs && npm run ts-types",
+    "build": "rimraf lib && rimraf package && npx yarn re:build && node scripts/build.cjs",
     "cocaine": "rescript build -w",
     "rescript": "rescript build -w",
     "re:build": "rescript",

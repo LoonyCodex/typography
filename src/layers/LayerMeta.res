@@ -17,7 +17,7 @@ let title = (
 title: ${name}
 
 ${switch group {
-| Some(s) =>`
+| Some(s) => `
 group:
 title: ${s}
 `
