@@ -22,6 +22,6 @@ export default defineConfig({
   // ],
 
   alias: {
-    'typography': path.resolve(__dirname, './package/index.gen.js'),
+    '@LoonyCodex/typography': path.resolve(__dirname, './package/index.gen.js'),
   },
 });
