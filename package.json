@@ -39,7 +39,7 @@
     "playroom:_cleanup": "rimraf ./.playroom/package",
     "playroom:_build": "npm run build && rimraf ./.playroom/build && shx cp -r ./package ./.playroom/build",
     "playroom": "npm run playroom:_build && playroom start --config ./.playroom/config.cjs",
-    "playroom:package": "npm run playroom:_cleanup && npm run playroom:_build && playroom build --config ./.playroom/config.cjs"
+    "playroom:package": "npm i && npm run playroom:_cleanup && npm run playroom:_build && playroom build --config ./.playroom/config.cjs"
   },
   "devDependencies": {
     "@babel/core": "^7.17.2",
