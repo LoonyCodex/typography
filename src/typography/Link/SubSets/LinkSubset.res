@@ -1,5 +1,6 @@
 @genType
 type props = {
+  "href": string,
   "className": option<string>,
 
   "color": option<Color.t>,
@@ -20,6 +21,7 @@ type props = {
 }
 
 @obj external makeProps:(
+  ~href: string,
   ~className: option<string>,
 
   ~color: option<Color.t>,
@@ -50,6 +52,7 @@ let make = (
 
   LinkProto.make({
     "tag": tag,
+    "href": props["href"],
 
     "className": className,
 
