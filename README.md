@@ -26,7 +26,7 @@ Publish documentation via Github Pages,
 $ npm run dumi:publish
 ```
 
-## Interactive Playground
+## (Interactive Playground)[https://confident-minsky-795005.netlify.app/]
 ```bash
 $ npm i && npm run playroom
 ```
