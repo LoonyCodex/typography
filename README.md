@@ -27,7 +27,7 @@ $ npm run dumi:publish
 ```
 
 ## [Interactive Playground](https://confident-minsky-795005.netlify.app/)
-https://confident-minsky-795005.netlify.app/
+Online - https://confident-minsky-795005.netlify.app/
 
 ```bash
 $ npm i && npm run playroom
