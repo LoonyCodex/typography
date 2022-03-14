@@ -28,12 +28,14 @@ type props = {
   ...styleProps,
 
   "tag": tag,
+  "href": string,
   "className": string,
   "children": React.element,
 }
 
 @obj external makeProps:(
   ~tag: tag,
+  ~href: string,
   ~className: string,
 
   ~color: Color.t,
@@ -84,6 +86,7 @@ let make = (props: props) => {
           ~textTransform = props["textTransform"],
         ),
       ]),
+      ~href = props["href"],
       ()
     ),
     [props["children"]],
