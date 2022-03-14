@@ -7,7 +7,7 @@ type prop = (string, value)
 let attributeFromProp = (. acc, (k, v)) =>
   acc ++ " " ++ k ++ "=" ++ switch v {
   | Number(int) => `{${int -> Belt.Int.toString}}`
-  | String(s) => `${s}`
+  | String(s) => `"${s}"`
   }
 
 let m = (
