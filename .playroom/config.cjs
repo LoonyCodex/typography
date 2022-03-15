@@ -18,7 +18,7 @@ module.exports = {
   <LineBreak />
   You can also refer to a <Link href="https://loonycodex.github.io/typography/">docs</Link>
   <LineBreak />
-  <Disclaimer>Build with <Important>Rescript</Important> and <Important>vanilla-extract</Important></Disclaimer>
+  <Disclaimer>Build with <Important><Link href="https://rescript-lang.org/" color="blue700">Rescript</Link></Important> and <Important><Link href="https://vanilla-extract.style/" color="blue700">vanilla-extract</Link></Important></Disclaimer>
 </Paragraph>
 `,
   webpackConfig: () => ({
