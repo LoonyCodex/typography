@@ -1,5 +1,8 @@
 # typography
 
+## [Documentation](https://loonycodex.github.io/typography/)
+https://loonycodex.github.io/typography/
+
 ## Getting Started 
 
 Install dependencies,
