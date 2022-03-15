@@ -47,7 +47,6 @@ let make = (
   ~className: string,
   ~styleProps: LinkProto.styleProps,
 ) => (props: props) => {
-  let colorCtx = Color.useColor();
   let fontSizeCtx = FontSize.useFontSize();
 
   LinkProto.make({
@@ -58,10 +57,7 @@ let make = (
 
     "color": switch props["color"] {
     | Some(s) => s
-    | None => switch colorCtx {
-      | Some(l) => l
-      | None => styleProps["color"]
-      }
+    | None => styleProps["color"]
     },
 
     // font
