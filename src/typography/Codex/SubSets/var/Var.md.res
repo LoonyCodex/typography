@@ -3,7 +3,7 @@ let {
   parentName,
   component,
   docs,
-}: Meta.t = VarMeta.make
+}: Template.t = VarMeta.make
 
 @genType
 let make = LayerMeta.make(

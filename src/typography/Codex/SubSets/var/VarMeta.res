@@ -1,6 +1,6 @@
 let displayName = "Variable";
 
-let make: Meta.t = {
+let make: Template.t = {
   tag: HTMLTag(#var),
   displayName,
   parentName: CodexMeta.make.displayName,

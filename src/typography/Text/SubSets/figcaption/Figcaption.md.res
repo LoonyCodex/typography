@@ -3,7 +3,7 @@ let {
   parentName,
   component,
   docs,
-}: Meta.t = FigcaptionMeta.make
+}: Template.t = FigcaptionMeta.make
 
 @genType
 let make = LayerMeta.make(

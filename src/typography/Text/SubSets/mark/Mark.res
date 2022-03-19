@@ -1,6 +1,6 @@
 @module("./MarkStyle.css.js") external classNameRoot: string = "className"
 
-let { displayName }: Meta.t = MarkMeta.make
+let { displayName }: Template.t = MarkMeta.make
 let className = classNameRoot
 type styleProps = TextProto.styleProps
 let styleProps = MarkStyleProps.styleProps

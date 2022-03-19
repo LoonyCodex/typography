@@ -1,6 +1,6 @@
 @module("./AStyle.css.js") external classNameRoot: string = "className"
 
-let { displayName }: Meta.t = AMeta.make
+let { displayName }: Template.t = AMeta.make
 let className = classNameRoot
 type styleProps = LinkProto.styleProps
 let styleProps = AStyleProps.styleProps

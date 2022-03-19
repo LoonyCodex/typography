@@ -1,4 +1,4 @@
-let { component, displayName, description, tag }: Meta.t = MarkMeta.make
+let { component, displayName, description, tag }: Template.t = MarkMeta.make
 
 let make: array<Playroom.t> = [
   {

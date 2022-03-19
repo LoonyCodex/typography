@@ -1,6 +1,6 @@
 let displayName = "Outdated";
 
-let make: Meta.t = {
+let make: Template.t = {
   tag: HTMLTag(#s),
   displayName,
   parentName: TextMeta.make.displayName,

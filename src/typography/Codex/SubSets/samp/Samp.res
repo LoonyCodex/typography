@@ -1,6 +1,6 @@
 @module("./SampStyle.css.js") external classNameRoot: string = "className"
 
-let { displayName }: Meta.t = SampMeta.make
+let { displayName }: Template.t = SampMeta.make
 let className = classNameRoot
 type styleProps = CodexProto.styleProps
 let styleProps = SampStyleProps.styleProps

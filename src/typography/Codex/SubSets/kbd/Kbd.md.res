@@ -3,7 +3,7 @@ let {
   parentName,
   component,
   docs,
-}: Meta.t = KbdMeta.make
+}: Template.t = KbdMeta.make
 
 @genType
 let make = LayerMeta.make(

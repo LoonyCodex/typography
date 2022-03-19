@@ -1,6 +1,6 @@
 @module("./H4Style.css.js") external classNameRoot: string = "className"
 
-let { displayName }: Meta.t = H4Meta.make
+let { displayName }: Template.t = H4Meta.make
 let className = classNameRoot
 type styleProps = HeadingProto.styleProps
 let styleProps = H4StyleProps.styleProps

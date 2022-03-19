@@ -1,6 +1,6 @@
 let displayName = "LineBreak";
 
-let make: Meta.t = {
+let make: Template.t = {
   tag: HTMLTag(#br),
   displayName,
   parentName: "LineBreak",

@@ -1,6 +1,6 @@
 @module("./SStyle.css.js") external classNameRoot: string = "className"
 
-let { displayName }: Meta.t = SMeta.make
+let { displayName }: Template.t = SMeta.make
 let className = classNameRoot
 type styleProps = TextProto.styleProps
 let styleProps = SStyleProps.styleProps

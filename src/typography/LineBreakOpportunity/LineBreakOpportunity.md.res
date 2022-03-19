@@ -3,7 +3,7 @@ let {
   parentName,
   component,
   docs,
-}: Meta.t = LineBreakOpportunityMeta.make
+}: Template.t = LineBreakOpportunityMeta.make
 
 @genType
 let make = LayerMeta.make(

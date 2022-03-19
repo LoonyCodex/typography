@@ -1,6 +1,6 @@
 let displayName = "Time";
 
-let make: Meta.t = {
+let make: Template.t = {
   tag: HTMLTag(#time),
   displayName,
   parentName: "Time",

@@ -1,6 +1,6 @@
 let displayName = "Disclaimer";
 
-let make: Meta.t = {
+let make: Template.t = {
   tag: HTMLTag(#small),
   displayName,
   parentName: TextMeta.make.displayName,

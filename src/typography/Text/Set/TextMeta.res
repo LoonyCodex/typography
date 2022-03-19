@@ -1,6 +1,6 @@
 let displayName = "Text";
 
-let make: Meta.t = {
+let make: Template.t = {
   tag: HTMLSet([
     #abbr,
     #b,

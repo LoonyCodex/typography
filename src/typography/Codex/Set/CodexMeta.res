@@ -1,6 +1,6 @@
 let displayName = "Codex";
 
-let make: Meta.t = {
+let make: Template.t = {
   tag: HTMLSet([
     #code,
     #kbd,

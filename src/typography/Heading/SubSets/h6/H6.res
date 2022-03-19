@@ -1,6 +1,6 @@
 @module("./H6Style.css.js") external classNameRoot: string = "className"
 
-let { displayName }: Meta.t = H6Meta.make
+let { displayName }: Template.t = H6Meta.make
 let className = classNameRoot
 type styleProps = HeadingProto.styleProps
 let styleProps = H6StyleProps.styleProps

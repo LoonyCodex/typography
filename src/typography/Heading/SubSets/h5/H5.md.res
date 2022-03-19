@@ -3,7 +3,7 @@ let {
   parentName,
   component,
   docs,
-}: Meta.t = H5Meta.make
+}: Template.t = H5Meta.make
 
 @genType
 let make = LayerMeta.make(

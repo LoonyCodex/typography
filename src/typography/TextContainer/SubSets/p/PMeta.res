@@ -1,6 +1,6 @@
 let displayName = "Paragraph";
 
-let make: Meta.t = {
+let make: Template.t = {
   tag: HTMLTag(#p),
   displayName,
   parentName: TextContainerMeta.make.displayName,

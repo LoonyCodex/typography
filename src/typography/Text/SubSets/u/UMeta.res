@@ -1,6 +1,6 @@
 let displayName = "UnarticulatedAnnotation";
 
-let make: Meta.t = {
+let make: Template.t = {
   tag: HTMLTag(#u),
   displayName,
   parentName: TextMeta.make.displayName,

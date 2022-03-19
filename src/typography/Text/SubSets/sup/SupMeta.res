@@ -1,6 +1,6 @@
 let displayName = "Superscript";
 
-let make: Meta.t = {
+let make: Template.t = {
   tag: HTMLTag(#sup),
   displayName,
   parentName: TextMeta.make.displayName,

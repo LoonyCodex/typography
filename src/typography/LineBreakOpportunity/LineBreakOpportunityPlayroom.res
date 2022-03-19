@@ -1,4 +1,4 @@
-let { component, displayName, description, tag }: Meta.t = LineBreakOpportunityMeta.make
+let { component, displayName, description, tag }: Template.t = LineBreakOpportunityMeta.make
 
 let make: array<Playroom.t> = [
   {

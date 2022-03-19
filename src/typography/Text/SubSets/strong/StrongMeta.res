@@ -1,6 +1,6 @@
 let displayName = "Important";
 
-let make: Meta.t = {
+let make: Template.t = {
   tag: HTMLTag(#strong),
   displayName,
   parentName: TextMeta.make.displayName,

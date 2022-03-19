@@ -1,6 +1,6 @@
 @module("./UStyle.css.js") external classNameRoot: string = "className"
 
-let { displayName }: Meta.t = UMeta.make
+let { displayName }: Template.t = UMeta.make
 let className = classNameRoot
 type styleProps = TextProto.styleProps
 let styleProps = UStyleProps.styleProps

@@ -1,6 +1,6 @@
 let displayName = "Citation";
 
-let make: Meta.t = {
+let make: Template.t = {
   tag: HTMLTag(#cite),
   displayName,
   parentName: TextMeta.make.displayName,

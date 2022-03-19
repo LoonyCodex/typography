@@ -5,7 +5,7 @@ type t = {
 }
 
 let getName = (
-  ~tag: Meta.tag,
+  ~tag: Template.tag,
   ~description: string,
 ) => {
   switch tag {
@@ -14,4 +14,4 @@ let getName = (
   }
 }
 
-let getCode = Template.m
+let getCode = Template.make

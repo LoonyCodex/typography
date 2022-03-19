@@ -1,6 +1,6 @@
 let displayName = "Keyboard";
 
-let make: Meta.t = {
+let make: Template.t = {
   tag: HTMLTag(#kbd),
   displayName,
   parentName: CodexMeta.make.displayName,

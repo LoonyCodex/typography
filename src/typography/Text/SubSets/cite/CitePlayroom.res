@@ -1,4 +1,4 @@
-let { component, displayName, description, tag }: Meta.t = CiteMeta.make
+let { component, displayName, description, tag }: Template.t = CiteMeta.make
 
 let make: array<Playroom.t> = [
   {

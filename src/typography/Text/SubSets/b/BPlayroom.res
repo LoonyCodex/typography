@@ -1,4 +1,4 @@
-let { component, displayName, description, tag }: Meta.t = BMeta.make
+let { component, displayName, description, tag }: Template.t = BMeta.make
 
 let make: array<Playroom.t> = [
   {

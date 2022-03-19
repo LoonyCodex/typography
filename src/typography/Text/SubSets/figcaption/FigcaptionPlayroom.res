@@ -1,4 +1,4 @@
-let { component, displayName, description, tag }: Meta.t = FigcaptionMeta.make
+let { component, displayName, description, tag }: Template.t = FigcaptionMeta.make
 
 let make: array<Playroom.t> = [
   {

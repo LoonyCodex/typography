@@ -1,6 +1,6 @@
 let displayName = "H5";
 
-let make: Meta.t = {
+let make: Template.t = {
   tag: HTMLTag(#h5),
   displayName,
   parentName: HeadingMeta.make.displayName,

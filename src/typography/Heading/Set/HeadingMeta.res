@@ -1,6 +1,6 @@
 let displayName = "Heading";
 
-let make: Meta.t = {
+let make: Template.t = {
   tag: HTMLSet([
     #h1,
     #h2,

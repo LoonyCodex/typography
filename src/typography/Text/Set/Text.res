@@ -1,6 +1,6 @@
 @module("./TextStyle.css.js") external classNameRoot: string = "className"
 
-let { displayName }: Meta.t = TextMeta.make
+let { displayName }: Template.t = TextMeta.make
 let className = classNameRoot
 type styleProps = TextProto.styleProps
 let styleProps = TextStyleProps.styleProps

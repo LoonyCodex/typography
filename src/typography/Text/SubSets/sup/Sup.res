@@ -1,6 +1,6 @@
 @module("./SupStyle.css.js") external classNameRoot: string = "className"
 
-let { displayName }: Meta.t = SupMeta.make
+let { displayName }: Template.t = SupMeta.make
 let className = classNameRoot
 type styleProps = TextProto.styleProps
 let styleProps = SupStyleProps.styleProps

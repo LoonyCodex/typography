@@ -1,6 +1,6 @@
 let displayName = "TextInline";
 
-let make: Meta.t = {
+let make: Template.t = {
   tag: HTMLTag(#span),
   displayName,
   parentName: TextMeta.make.displayName,

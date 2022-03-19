@@ -1,6 +1,6 @@
 let displayName = "LineBreakOpportunity";
 
-let make: Meta.t = {
+let make: Template.t = {
   tag: HTMLTag(#wbr),
   displayName,
   parentName: "LineBreakOpportunity",

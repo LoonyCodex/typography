@@ -1,4 +1,4 @@
-let { component, displayName, description, tag }: Meta.t = CodexMeta.make
+let { component, displayName, description, tag }: Template.t = CodexMeta.make
 
 let make: array<Playroom.t> = [
   {

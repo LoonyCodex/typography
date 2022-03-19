@@ -1,4 +1,4 @@
-let { displayName }: Meta.t = LineBreakMeta.make
+let { displayName }: Template.t = LineBreakMeta.make
 
 @genType
 @react.component

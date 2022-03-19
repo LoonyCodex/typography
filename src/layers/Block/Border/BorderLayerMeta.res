@@ -1,4 +1,4 @@
-let make: (~props: option<list<(string, string)>>) => array<Js.t<Meta.k>> = (~props) => [
+let make: (~props: option<list<(string, string)>>) => array<Js.t<Template.k>> = (~props) => [
   Js.Obj.assign(Js.Obj.empty(), {
     "title": BorderColorMeta.make.name,
     "description": None,

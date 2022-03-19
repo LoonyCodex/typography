@@ -1,6 +1,6 @@
 @module("./VarStyle.css.js") external classNameRoot: string = "className"
 
-let { displayName }: Meta.t = VarMeta.make
+let { displayName }: Template.t = VarMeta.make
 let className = classNameRoot
 type styleProps = CodexProto.styleProps
 let styleProps = VarStyleProps.styleProps

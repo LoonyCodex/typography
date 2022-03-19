@@ -1,4 +1,4 @@
-let { component, displayName, description, tag }: Meta.t = StrongMeta.make
+let { component, displayName, description, tag }: Template.t = StrongMeta.make
 
 let make: array<Playroom.t> = [
   {

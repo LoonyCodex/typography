@@ -1,6 +1,6 @@
 @module("./EmStyle.css.js") external classNameRoot: string = "className"
 
-let { displayName }: Meta.t = EmMeta.make
+let { displayName }: Template.t = EmMeta.make
 let className = classNameRoot
 type styleProps = TextProto.styleProps
 let styleProps = EmStyleProps.styleProps

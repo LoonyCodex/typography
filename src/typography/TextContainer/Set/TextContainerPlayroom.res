@@ -1,4 +1,4 @@
-let { component, displayName, description, tag }: Meta.t = TextContainerMeta.make
+let { component, displayName, description, tag }: Template.t = TextContainerMeta.make
 
 let make: array<Playroom.t> = [
   {

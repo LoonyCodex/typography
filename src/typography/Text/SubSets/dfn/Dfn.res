@@ -1,6 +1,6 @@
 @module("./DfnStyle.css.js") external classNameRoot: string = "className"
 
-let { displayName }: Meta.t = DfnMeta.make
+let { displayName }: Template.t = DfnMeta.make
 let className = classNameRoot
 type styleProps = TextProto.styleProps
 let styleProps = DfnStyleProps.styleProps

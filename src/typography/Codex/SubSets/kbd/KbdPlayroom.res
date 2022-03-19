@@ -1,4 +1,4 @@
-let { component, displayName, description, tag }: Meta.t = KbdMeta.make
+let { component, displayName, description, tag }: Template.t = KbdMeta.make
 
 let make: array<Playroom.t> = [
   {

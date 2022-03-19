@@ -1,4 +1,4 @@
-let { component, displayName, description, tag }: Meta.t = UMeta.make
+let { component, displayName, description, tag }: Template.t = UMeta.make
 
 let make: array<Playroom.t> = [
   {

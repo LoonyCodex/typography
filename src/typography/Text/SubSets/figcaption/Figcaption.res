@@ -1,6 +1,6 @@
 @module("./FigcaptionStyle.css.js") external classNameRoot: string = "className"
 
-let { displayName }: Meta.t = FigcaptionMeta.make
+let { displayName }: Template.t = FigcaptionMeta.make
 let className = classNameRoot
 type styleProps = TextProto.styleProps
 let styleProps = FigcaptionStyleProps.styleProps

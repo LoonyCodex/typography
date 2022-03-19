@@ -1,6 +1,6 @@
 @module("./SpanStyle.css.js") external classNameRoot: string = "className"
 
-let { displayName }: Meta.t = SpanMeta.make
+let { displayName }: Template.t = SpanMeta.make
 let className = classNameRoot
 type styleProps = TextProto.styleProps
 let styleProps = SpanStyleProps.styleProps

@@ -1,6 +1,6 @@
 let displayName = "FigCaption";
 
-let make: Meta.t = {
+let make: Template.t = {
   tag: HTMLTag(#figcaption),
   displayName,
   parentName: TextMeta.make.displayName,

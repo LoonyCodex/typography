@@ -1,3 +1,5 @@
+open Template
+
 type t<'a> = {
   name: string,
   css: string,
@@ -47,8 +49,8 @@ switch args {
       | None => Some(key ++ ": " ++ str(current))
       },
       ~props = switch props {
-      | Some(s) => Belt.List.concat(s, list{(key, str(current))})
-      | None => list{(key, str(current))}
+      | Some(s) => Belt.List.concat(s, list{(key, String(current))})
+      | None => list{(key, String(current))}
       }
     )
 )
@@ -74,7 +76,7 @@ let make = (
   ~name: string,
   ~group: option<string>,
   ~displayName: string,
-  ~docs: array<Js.t<Meta.k>>,
+  ~docs: array<Js.t<Template.k>>,
 ) => title(
   ~name,
   ~group,

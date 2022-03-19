@@ -1,6 +1,6 @@
 let displayName = "Subscript";
 
-let make: Meta.t = {
+let make: Template.t = {
   tag: HTMLTag(#sub),
   displayName,
   parentName: TextMeta.make.displayName,

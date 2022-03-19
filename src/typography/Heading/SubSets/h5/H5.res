@@ -1,6 +1,6 @@
 @module("./H5Style.css.js") external classNameRoot: string = "className"
 
-let { displayName }: Meta.t = H5Meta.make
+let { displayName }: Template.t = H5Meta.make
 let className = classNameRoot
 type styleProps = HeadingProto.styleProps
 let styleProps = H5StyleProps.styleProps

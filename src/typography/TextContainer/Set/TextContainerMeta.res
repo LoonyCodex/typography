@@ -1,13 +1,13 @@
 let displayName = "TextContainer";
 
-// let docs: array<Js.t<Meta.k>> = Belt.Array.concatMany([
+// let docs: array<Js.t<Template.k>> = Belt.Array.concatMany([
 //   // ColorLayerMeta.make,
 //   FontLayerMeta.make,
 //   TextDecorationLayerMeta.make,
 //   TextTransformLayerMeta.make,
 // ]);
 
-let make: Meta.t = {
+let make: Template.t = {
   tag: HTMLSet([
     #div,
     #p,

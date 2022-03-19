@@ -1,6 +1,6 @@
 @module("./CodeStyle.css.js") external classNameRoot: string = "className"
 
-let { displayName }: Meta.t = CodeMeta.make
+let { displayName }: Template.t = CodeMeta.make
 let className = classNameRoot
 type styleProps = CodexProto.styleProps
 let styleProps = CodeStyleProps.styleProps

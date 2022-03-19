@@ -1,4 +1,4 @@
-let { component, displayName, description, tag }: Meta.t = DfnMeta.make
+let { component, displayName, description, tag }: Template.t = DfnMeta.make
 
 let make: array<Playroom.t> = [
   {
